@@ -1,7 +1,7 @@
-diff --git a/reverse_linked_list/Buggy-Version/reverse_linked_list.java b/reverse_linked_list/Patched-Version/reverse_linked_list.java
-index 920bc161..61956c2c 100644
---- a/reverse_linked_list/Buggy-Version/reverse_linked_list.java
-+++ b/reverse_linked_list/Patched-Version/reverse_linked_list.java
+diff --git a/reverse_linked_list/Buggy-Version/java_programs/reverse_linked_list.java b/reverse_linked_list/Patched-Version/correct_java_programs/reverse_linked_list.java
+index 920bc161a..61956c2cf 100644
+--- a/reverse_linked_list/Buggy-Version/java_programs/reverse_linked_list.java
++++ b/reverse_linked_list/Patched-Version/correct_java_programs/reverse_linked_list.java
 @@ -1,6 +1,8 @@
 -package java_programs;
 +package correct_java_programs;

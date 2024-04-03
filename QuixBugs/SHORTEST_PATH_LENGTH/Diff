@@ -1,7 +1,7 @@
-diff --git a/shortest_path_length/Buggy-Version/shortest_path_length.java b/shortest_path_length/Patched-Version/shortest_path_length.java
-index 95f5dbf7..3c8c588c 100644
---- a/shortest_path_length/Buggy-Version/shortest_path_length.java
-+++ b/shortest_path_length/Patched-Version/shortest_path_length.java
+diff --git a/shortest_path_length/Buggy-Version/java_programs/shortest_path_length.java b/shortest_path_length/Patched-Version/correct_java_programs/shortest_path_length.java
+index 95f5dbf7e..3c8c588cc 100644
+--- a/shortest_path_length/Buggy-Version/java_programs/shortest_path_length.java
++++ b/shortest_path_length/Patched-Version/correct_java_programs/shortest_path_length.java
 @@ -1,6 +1,8 @@
 -package java_programs;
 +package correct_java_programs;

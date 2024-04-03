@@ -1,7 +1,7 @@
-diff --git a/shortest_paths/Buggy-Version/shortest_paths.java b/shortest_paths/Patched-Version/shortest_paths.java
-index 1fc80b04..dbd784b6 100644
---- a/shortest_paths/Buggy-Version/shortest_paths.java
-+++ b/shortest_paths/Patched-Version/shortest_paths.java
+diff --git a/shortest_paths/Buggy-Version/java_programs/shortest_paths.java b/shortest_paths/Patched-Version/correct_java_programs/shortest_paths.java
+index 1fc80b041..dbd784b68 100644
+--- a/shortest_paths/Buggy-Version/java_programs/shortest_paths.java
++++ b/shortest_paths/Patched-Version/correct_java_programs/shortest_paths.java
 @@ -1,5 +1,9 @@
 -package java_programs;
 +package correct_java_programs;

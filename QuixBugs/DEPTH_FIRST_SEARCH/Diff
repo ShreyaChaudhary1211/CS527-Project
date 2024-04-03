@@ -1,7 +1,7 @@
-diff --git a/depth_first_search/Buggy-Version/depth_first_search.java b/depth_first_search/Patched-Version/depth_first_search.java
-index b2dca5ee..6a037fef 100644
---- a/depth_first_search/Buggy-Version/depth_first_search.java
-+++ b/depth_first_search/Patched-Version/depth_first_search.java
+diff --git a/depth_first_search/Buggy-Version/java_programs/depth_first_search.java b/depth_first_search/Patched-Version/correct_java_programs/depth_first_search.java
+index b2dca5ee3..6a037fefc 100644
+--- a/depth_first_search/Buggy-Version/java_programs/depth_first_search.java
++++ b/depth_first_search/Patched-Version/correct_java_programs/depth_first_search.java
 @@ -1,10 +1,12 @@
 -package java_programs;
 +package correct_java_programs;

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define QuixBugs directory
-quixbugs_dir="/Users/sejalpekam/MCS/Spring 24/CS 527 Topics in SE/Milestone 2/CS527-Project/Bugs/QuixBugs"
+quixbugs_dir="/Users/sejalpekam/MCS/Spring 24/CS 527 Topics in SE/Milestone 2 Updated/CS527-Project/QuixBugs"
 
 # Function to generate diff file
 generate_diff() {
@@ -18,8 +18,8 @@ for program_dir in "$quixbugs_dir"/*/; do
     if [ -d "$program_dir" ]; then
         program_name_upper=$(basename "$program_dir")
         program_name=$(echo "$program_name_upper" | tr '[:upper:]' '[:lower:]')
-        buggy_file="$program_name/Buggy-Version/$program_name.java"
-        fixed_file="$program_name/Patched-Version/$program_name.java"
+        buggy_file="$program_name/Buggy-Version/java_programs/$program_name.java"
+        fixed_file="$program_name/Patched-Version/correct_java_programs/$program_name.java"
         
         # Check if both buggy and fixed files exist
         if [ -f "$buggy_file" ] && [ -f "$fixed_file" ]; then

@@ -1,7 +1,7 @@
-diff --git a/breadth_first_search/Buggy-Version/breadth_first_search.java b/breadth_first_search/Patched-Version/breadth_first_search.java
-index 68fea377..ad0b60e4 100644
---- a/breadth_first_search/Buggy-Version/breadth_first_search.java
-+++ b/breadth_first_search/Patched-Version/breadth_first_search.java
+diff --git a/breadth_first_search/Buggy-Version/java_programs/breadth_first_search.java b/breadth_first_search/Patched-Version/correct_java_programs/breadth_first_search.java
+index 68fea377f..ad0b60e4a 100644
+--- a/breadth_first_search/Buggy-Version/java_programs/breadth_first_search.java
++++ b/breadth_first_search/Patched-Version/correct_java_programs/breadth_first_search.java
 @@ -1,7 +1,9 @@
 -package java_programs;
 +package correct_java_programs;
