@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mockito.release.notes.vcs.GitContributionsProviderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-07T05:35:18" hostname="Shrushtis-MacBook-Air.local" time="0.136">
+<testsuite name="org.mockito.release.notes.vcs.GitContributionsProviderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-07T20:27:24" hostname="Shrushtis-MacBook-Air.local" time="0.141">
   <properties/>
-  <testcase name="provides contributions" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.13"/>
-  <testcase name="has basic handling of garbage in log" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.004"/>
+  <testcase name="provides contributions" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.135"/>
+  <testcase name="has basic handling of garbage in log" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.003"/>
   <testcase name="handles empty log" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.002"/>
-  <system-out><![CDATA[22:35:18.820 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
-22:35:18.822 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
-22:35:18.858 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
-22:35:18.858 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
-22:35:18.861 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
-22:35:18.861 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+  <system-out><![CDATA[13:27:24.312 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+13:27:24.315 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+13:27:24.349 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+13:27:24.350 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+13:27:24.352 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+13:27:24.352 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
