@@ -81,14 +81,14 @@ def move_or_copy_file(source, destination):
 
 if __name__ == '__main__':
     # Root path for the dataset
-    dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/CS527-Project/Defects4J")
+    dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/project_git/CS527-Project/Defects4J")
     version = ["Buggy-Version", "Patched-Version"]
     dpath = str(dataset_path)
 
     for bug in dataset_path.iterdir():
         print("*******************", bug.name, "***********************")
 
-        if not bug.is_dir() or bug.name == "results":
+        if not bug.is_dir() or bug.name == "results" or bug.name == "Math_3":
             print("skipping")
             continue
 
@@ -127,5 +127,6 @@ if __name__ == '__main__':
         print("\n")
 
         copy_files_to_coverage(generated_files, op_dir)
+
 
     print("Failed bugs: ", failed_bug)
