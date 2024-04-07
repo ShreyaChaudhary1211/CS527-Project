@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mockito.release.notes.vcs.GitContributionsProviderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-07T05:31:34" hostname="Shrushtis-MacBook-Air.local" time="0.137">
+  <properties/>
+  <testcase name="provides contributions" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.131"/>
+  <testcase name="has basic handling of garbage in log" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.003"/>
+  <testcase name="handles empty log" classname="org.mockito.release.notes.vcs.GitContributionsProviderTest" time="0.002"/>
+  <system-out><![CDATA[22:31:34.971 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+22:31:34.973 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+22:31:35.010 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+22:31:35.010 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+22:31:35.012 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Fetching v1.10.10 from the repo
+22:31:35.012 [Test worker] INFO  o.m.r.n.vcs.GitContributionsProvider - Loading all commits between v1.10.10 and HEAD
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

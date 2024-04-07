@@ -54,7 +54,7 @@ def run_test(version_path, zippath, bname):
 
 if __name__ == '__main__':
         # Root path for the dataset
-        dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/Temp_test")
+        dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/project_git/Temp")
         version = ["Buggy-Version", "Patched-Version"]
         dpath = str(dataset_path)
 

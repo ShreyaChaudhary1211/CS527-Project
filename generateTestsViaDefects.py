@@ -29,7 +29,7 @@ def generate_tests_randoop(version_path, bname, version):
     try:
         subprocess.run(command, check=True, cwd=version_path, capture_output=True)
         print("Generated randoop tests for ", bname, version)
-        restructure_folders_randoop(version_path, bname)
+        #restructure_folders_randoop(version_path, bname)
     except subprocess.CalledProcessError as e:
         # logger.error(f"Failed to generate randoop tests with -E {e.output}, trying just regression tests now")
         # try:
@@ -55,7 +55,7 @@ def generate_tests_evosuite(version_path, bname, version):
     try:
         subprocess.run(command_evosuite, check=True, cwd=version_path, capture_output=True)
         print("Generated evosuite tests for ", bname, version)
-        restructure_folders_evosuite(version_path, bname)
+        #restructure_folders_evosuite(version_path, bname)
     except subprocess.CalledProcessError as e:
         failed_bug_evosuite.append(bname)
         print("Generation of evosuite tests failed ", bname, version)
@@ -148,23 +148,30 @@ def restructure_folders_evosuite(root_path, bname):
 
 if __name__ == '__main__':
         # Root path for the dataset
-        dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/project_git/CS527-Project/sejal")
+        dataset_path = Path("/Users/shrushtijagtap/uiuc/Spring2024/CS527/project_git/CS527-Project/Defects4J")
 
         for bug in dataset_path.iterdir():
             print("*******************", bug.name,"***********************")
 
-            if not bug.is_dir() or "Mockito" in bug.name or bug.name == "results" or "Gson" in bug.name or bug.name == "Math_3" or bug.name == "Math_4":
+            # if not bug.is_dir() or "Mockito" in bug.name or bug.name == "results" or "Gson" in bug.name or bug.name == "Math_3" or bug.name == "Math_4":
+            #     print("skipping")
+            #     continue
+
+            if not bug.is_dir() or bug.name == "results":
                 print("skipping")
                 continue
 
+            if "Mockito" in bug.name or "Gson" in bug.name:
             # Compile and generate tests for both buggy and patched versions
-            for version in ["Buggy-Version", "Patched-Version"]:
-                version_path = bug / version
-                logger.info(f"Processing -{bug.name}-{version}")
-                # logger.info(f"Path: {version_path}")
+                for version in ["Buggy-Version", "Patched-Version"]:
+                    version_path = bug / version
+                    logger.info(f"Processing -{bug.name}-{version}")
+                    # logger.info(f"Path: {version_path}")
 
-                generate_tests_evosuite(version_path, bug.name, version)
-                generate_tests_randoop(version_path, bug.name, version)
+                    generate_tests_evosuite(version_path, bug.name, version)
+                    generate_tests_randoop(version_path, bug.name, version)
+            else:
+                print("skipping")
 
         print("Failed evosuite bugs: ", failed_bug_evosuite)
         print("Failed randoop bugs: ", failed_bug_randoop)
