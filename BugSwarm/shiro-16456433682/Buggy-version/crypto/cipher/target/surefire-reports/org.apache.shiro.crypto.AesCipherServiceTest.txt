@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.shiro.crypto.AesCipherServiceTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.414 s - in org.apache.shiro.crypto.AesCipherServiceTest
