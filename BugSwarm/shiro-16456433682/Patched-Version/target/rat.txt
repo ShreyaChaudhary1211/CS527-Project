@@ -2,12 +2,12 @@
 *****************************************************
 Summary
 -------
-Generated at: 2024-04-08T18:12:53-05:00
+Generated at: 2024-04-05T20:09:49-05:00
 
 Notes: 4
 Binaries: 2
 Archives: 0
-Standards: 11
+Standards: 10
 
 Apache Licensed: 9
 Generated Documents: 0
@@ -15,13 +15,12 @@ Generated Documents: 0
 JavaDocs are generated, thus a license header is optional.
 Generated files do not require license headers.
 
-2 Unknown Licenses
+1 Unknown Licenses
 
 *****************************************************
 
 Files with unapproved licenses:
 
-  dependencies.log
   compile.log
 
 *****************************************************
@@ -31,7 +30,6 @@ Files with unapproved licenses:
   Binary files (which do not require any license headers) will be marked B
   Compressed archives will be marked A
   Notices, licenses etc. will be marked N
- !????? dependencies.log
   N     LICENSE
   AL    shiro.doap.rdf
   AL    pom.xml
@@ -53,60 +51,6 @@ Files with unapproved licenses:
 
  Printing headers for text files without a valid license header...
  
-=====================================================
-== File: dependencies.log
-=====================================================
-[INFO] Scanning for projects...
-[INFO] Inspecting build with total of 51 modules...
-[INFO] Installing Nexus Staging features:
-[INFO]   ... total of 51 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
-[WARNING] The project org.apache.shiro:shiro-root:pom:1.12.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Build Order:
-[INFO] 
-[INFO] Apache Shiro                                                       [pom]
-[INFO] Apache Shiro :: Lang                                            [bundle]
-[INFO] Apache Shiro :: Cryptography                                       [pom]
-[INFO] Apache Shiro :: Cryptography :: Core                            [bundle]
-[INFO] Apache Shiro :: Cryptography :: Hashing                         [bundle]
-[INFO] Apache Shiro :: Cryptography :: Ciphers                         [bundle]
-[INFO] Apache Shiro :: Event                                           [bundle]
-[INFO] Apache Shiro :: Cache                                           [bundle]
-[INFO] Apache Shiro :: Configuration                                      [pom]
-[INFO] Apache Shiro :: Configuration :: Core                           [bundle]
-[INFO] Apache Shiro :: Configuration :: OGDL                           [bundle]
-[INFO] Apache Shiro :: Core                                            [bundle]
-[INFO] Apache Shiro :: Web                                             [bundle]
-[INFO] Apache Shiro :: Support                                            [pom]
-[INFO] Apache Shiro :: Support :: AspectJ                              [bundle]
-[INFO] Apache Shiro :: Support :: JCache                               [bundle]
-[INFO] Apache Shiro :: Support :: EHCache                              [bundle]
-[INFO] Apache Shiro :: Support :: Hazelcast                            [bundle]
-[INFO] Apache Shiro :: Support :: Quartz                               [bundle]
-[INFO] Apache Shiro :: Support :: Spring                               [bundle]
-[INFO] Apache Shiro :: Support :: Guice                                [bundle]
-[INFO] Apache Shiro :: Support :: CAS                                  [bundle]
-[INFO] Apache Shiro :: Support :: Spring Boot Parent                      [pom]
-[INFO] Apache Shiro :: Support :: Spring Boot                             [jar]
-[INFO] Apache Shiro :: Support :: Spring Boot Web                         [jar]
-[INFO] Apache Shiro :: Support :: Servlet Plugin                          [jar]
-[INFO] Apache Shiro :: Support :: JAX-RS                               [bundle]
-[INFO] Apache Shiro :: Support :: Karaf Features                          [pom]
-[INFO] Apache Shiro :: Tools                                              [pom]
-[INFO] Apache Shiro :: Tools :: Hasher                                 [bundle]
-[INFO] Apache Shiro :: All (aggregate jar)                                [pom]
-[INFO] Apache Shiro :: Integration Tests                                  [pom]
-[INFO] Apache Shiro :: ITs :: Support                                     [jar]
-[INFO] Apache Shiro :: ITs :: Guice 3                                     [war]
-[INFO] Apache Shiro :: ITs :: Guice 4                                     [war]
-[INFO] Apache Shiro :: Samples                                            [pom]
-[INFO] Apache Shiro :: Samples :: AspectJ                                 [jar]
-[INFO] Apache Shiro :: Samples :: Quick Start                             [jar]
-[INFO] Apache Shiro :: Samples :: Web                                     [war]
-[INFO] Apache Shiro :: Samples :: Spring Quickstart                       [jar]
-[INFO] Apache Shiro :: Samples :: Spring MVC                              [war]
-[INFO] Apache Shiro :: Samples :: Spring-Hibernate                        [war]
-
 =====================================================
 == File: compile.log
 =====================================================
