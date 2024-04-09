@@ -1,1 +1,2 @@
 com.wrapper.spotify.requests.data.player.StartResumeUsersPlaybackRequestTest.shouldComplyWithReference
+com.wrapper.spotify.requests.data.player.EvosuiteStartResumeUsersPlaybackRequest_ESTest

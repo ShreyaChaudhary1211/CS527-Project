@@ -19,7 +19,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(SpringRunner.class)
-public class ErrorTest0 {
+public class RandoopErrorTest0 {
 
     public static boolean debug = false;
     private User user;

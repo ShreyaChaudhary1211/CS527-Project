@@ -1,1 +1,2 @@
 edu.harvard.h2ms.controllers.PasswordControllerTests.test_register_passwordController_registerUserByEmail
+edu.harvard.h2ms.domain.core.EvosuiteUser_ESTest
