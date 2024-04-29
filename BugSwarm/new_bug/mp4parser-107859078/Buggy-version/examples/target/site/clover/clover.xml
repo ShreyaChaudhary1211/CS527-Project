@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1714413413596" clover="4.5.2">
+   <project name="ISO Parser Examples 1.1.18-SNAPSHOT" timestamp="0">
+      <metrics coveredelements="0" complexity="320" loc="3565" methods="119" classes="59" statements="1291" packages="6" coveredconditionals="0" coveredmethods="0" elements="1750" ncloc="2725" files="56" conditionals="340" coveredstatements="0"/>
+      <package name="com">
+         <metrics coveredelements="0" complexity="18" loc="235" methods="7" classes="6" statements="82" coveredconditionals="0" coveredmethods="0" elements="109" ncloc="184" files="6" conditionals="20" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/ChopSuey.java" name="ChopSuey.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="11" loc="95" coveredmethods="0" methods="1" elements="67" classes="1" ncloc="79" statements="48" conditionals="18" coveredstatements="0"/>
+            <class name="ChopSuey">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="11" coveredmethods="0" methods="1" elements="67" statements="48" conditionals="18" coveredstatements="0"/>
+            </class>
+            <line complexity="11" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="26" type="cond"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="30" type="cond"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="40" type="cond"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="52" count="0" type="stmt"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="58" type="cond"/>
+            <line num="59" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="59" type="cond"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="64" type="cond"/>
+            <line num="65" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="65" type="cond"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="76" type="cond"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="82" count="0" type="stmt"/>
+            <line num="84" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="84" type="cond"/>
+            <line num="85" count="0" type="stmt"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/Decrypt.java" name="Decrypt.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="3" loc="36" coveredmethods="0" methods="2" elements="15" classes="1" ncloc="29" statements="11" conditionals="2" coveredstatements="0"/>
+            <class name="Decrypt">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="3" coveredmethods="0" methods="2" elements="15" statements="11" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="encodeHex(byte[]) : String" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="22" type="cond"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="29" count="0" type="method"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/Inspect.java" name="Inspect.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="23" coveredmethods="0" methods="1" elements="7" classes="1" ncloc="16" statements="6" conditionals="0" coveredstatements="0"/>
+            <class name="Inspect">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="7" statements="6" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="13" count="0" type="method"/>
+            <line num="14" count="0" type="stmt"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/Mux.java" name="Mux.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="33" coveredmethods="0" methods="1" elements="7" classes="1" ncloc="24" statements="6" conditionals="0" coveredstatements="0"/>
+            <class name="Mux">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="7" statements="6" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/MuxTest.java" name="MuxTest.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="23" coveredmethods="0" methods="1" elements="6" classes="1" ncloc="17" statements="5" conditionals="0" coveredstatements="0"/>
+            <class name="MuxTest">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="6" statements="5" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="14" count="0" type="method"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/Repair.java" name="Repair.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="25" coveredmethods="0" methods="1" elements="7" classes="1" ncloc="19" statements="6" conditionals="0" coveredstatements="0"/>
+            <class name="Repair">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="7" statements="6" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="17" count="0" type="method"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="com.googlecode.mp4parser.stuff">
+         <metrics coveredelements="0" complexity="136" loc="1103" methods="52" classes="14" statements="442" coveredconditionals="0" coveredmethods="0" elements="642" ncloc="859" files="12" conditionals="148" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/Avc1ToAvc3Example.java" name="Avc1ToAvc3Example.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="42" coveredmethods="0" methods="1" elements="13" classes="1" ncloc="32" statements="10" conditionals="2" coveredstatements="0"/>
+            <class name="Avc1ToAvc3Example">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="13" statements="10" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="21" count="0" type="method"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="28" type="cond"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/ChangeInplaceExample.java" name="ChangeInplaceExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="31" coveredmethods="0" methods="1" elements="12" classes="1" ncloc="28" statements="11" conditionals="0" coveredstatements="0"/>
+            <class name="ChangeInplaceExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="12" statements="11" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/DavidAppend.java" name="DavidAppend.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="3" loc="63" coveredmethods="0" methods="1" elements="25" classes="1" ncloc="40" statements="20" conditionals="4" coveredstatements="0"/>
+            <class name="DavidAppend">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="3" coveredmethods="0" methods="1" elements="25" statements="20" conditionals="4" coveredstatements="0"/>
+            </class>
+            <line complexity="3" visibility="public" signature="main(String[]) : void" num="25" count="0" type="method"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="39" type="cond"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="42" type="cond"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/DumpAmf0TrackToPropertyFile.java" name="DumpAmf0TrackToPropertyFile.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="46" coveredmethods="0" methods="1" elements="20" classes="1" ncloc="37" statements="17" conditionals="2" coveredstatements="0"/>
+            <class name="DumpAmf0TrackToPropertyFile">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="20" statements="17" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="24" type="cond"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/MetaDataInsert.java" name="MetaDataInsert.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="25" loc="181" coveredmethods="0" methods="7" elements="133" classes="2" ncloc="144" statements="92" conditionals="34" coveredstatements="0"/>
+            <class name="MetaDataInsert">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="24" coveredmethods="0" methods="6" elements="131" statements="91" conditionals="34" coveredstatements="0"/>
+            </class>
+            <class name="MetaDataInsert.BetterByteArrayOutputStream">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="splitFileAndInsert(File,long,long) : FileChannel" num="29" count="0" type="method"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="40" type="cond"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="needsOffsetCorrection(IsoFile) : boolean" num="50" count="0" type="method"/>
+            <line num="51" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="51" type="cond"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line complexity="12" visibility="public" signature="writeRandomMetadata(String,String) : void" num="60" count="0" type="method"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="63" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="63" type="cond"/>
+            <line num="64" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="67" type="cond"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="81" type="cond"/>
+            <line num="82" count="0" type="stmt"/>
+            <line num="83" count="0" type="stmt"/>
+            <line num="85" count="0" type="stmt"/>
+            <line num="86" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="86" type="cond"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="89" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="93" count="0" type="stmt"/>
+            <line num="94" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="94" type="cond"/>
+            <line num="95" count="0" type="stmt"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="99" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="99" type="cond"/>
+            <line num="100" count="0" type="stmt"/>
+            <line num="101" count="0" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="106" type="cond"/>
+            <line num="107" count="0" type="stmt"/>
+            <line num="109" count="0" type="stmt"/>
+            <line num="110" count="0" type="stmt"/>
+            <line num="111" count="0" type="stmt"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="119" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="119" type="cond"/>
+            <line num="121" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="125" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="125" type="cond"/>
+            <line num="126" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line num="129" count="0" type="stmt"/>
+            <line num="130" count="0" type="stmt"/>
+            <line num="131" count="0" type="stmt"/>
+            <line num="132" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="132" type="cond"/>
+            <line num="135" count="0" type="stmt"/>
+            <line num="138" count="0" type="stmt"/>
+            <line num="140" count="0" type="stmt"/>
+            <line num="141" count="0" type="stmt"/>
+            <line num="142" count="0" type="stmt"/>
+            <line complexity="4" visibility="package" signature="findFreeBox(Container) : FreeBox" num="145" count="0" type="method"/>
+            <line num="146" count="0" type="stmt"/>
+            <line num="147" count="0" type="stmt"/>
+            <line num="148" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="148" type="cond"/>
+            <line num="149" count="0" type="stmt"/>
+            <line num="151" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="151" type="cond"/>
+            <line num="152" count="0" type="stmt"/>
+            <line num="153" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="153" type="cond"/>
+            <line num="154" count="0" type="stmt"/>
+            <line num="158" count="0" type="stmt"/>
+            <line complexity="3" visibility="private" signature="correctChunkOffsets(MovieBox,long) : void" num="161" count="0" type="method"/>
+            <line num="162" count="0" type="stmt"/>
+            <line num="163" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="163" type="cond"/>
+            <line num="164" count="0" type="stmt"/>
+            <line num="166" count="0" type="stmt"/>
+            <line num="167" count="0" type="stmt"/>
+            <line num="168" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="168" type="cond"/>
+            <line num="169" count="0" type="stmt"/>
+            <line complexity="1" visibility="package" signature="getBuffer() : byte[]" num="175" count="0" type="method"/>
+            <line num="176" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/MetaDataRead.java" name="MetaDataRead.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="4" loc="41" coveredmethods="0" methods="2" elements="19" classes="1" ncloc="29" statements="13" conditionals="4" coveredstatements="0"/>
+            <class name="MetaDataRead">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="4" coveredmethods="0" methods="2" elements="19" statements="13" conditionals="4" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="read(String) : String" num="24" count="0" type="method"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="27" type="cond"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="31" type="cond"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/MetaDataTool.java" name="MetaDataTool.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="90" loc="502" coveredmethods="0" methods="33" elements="370" classes="1" ncloc="441" statements="241" conditionals="96" coveredstatements="0"/>
+            <class name="MetaDataTool">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="90" coveredmethods="0" methods="33" elements="370" statements="241" conditionals="96" coveredstatements="0"/>
+            </class>
+            <line complexity="14" visibility="public" signature="main(String[]) : void" num="42" count="0" type="method"/>
+            <line num="43" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="43" type="cond"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="54" type="cond"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="69" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="74" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="78" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="78" type="cond"/>
+            <line num="79" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="81" type="cond"/>
+            <line num="82" count="0" type="stmt"/>
+            <line num="83" count="0" type="stmt"/>
+            <line num="84" count="0" type="stmt"/>
+            <line num="86" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="86" type="cond"/>
+            <line num="87" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="87" type="cond"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="94" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="94" type="cond"/>
+            <line num="95" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="95" type="cond"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="99" count="0" type="stmt"/>
+            <line num="100" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="103" type="cond"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="107" type="cond"/>
+            <line num="108" count="0" type="stmt"/>
+            <line num="109" count="0" type="stmt"/>
+            <line num="110" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line complexity="4" visibility="public" signature="MetaDataTool(String)" num="124" count="0" type="method"/>
+            <line num="129" count="0" type="stmt"/>
+            <line num="130" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="130" type="cond"/>
+            <line num="131" count="0" type="stmt"/>
+            <line num="133" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="133" type="cond"/>
+            <line num="134" count="0" type="stmt"/>
+            <line num="136" count="0" type="stmt"/>
+            <line num="137" count="0" type="stmt"/>
+            <line num="138" count="0" type="stmt"/>
+            <line num="140" count="0" type="stmt"/>
+            <line num="141" count="0" type="stmt"/>
+            <line num="142" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="142" type="cond"/>
+            <line num="143" count="0" type="stmt"/>
+            <line complexity="4" visibility="public" signature="setWindowsMediaRating(int) : void" num="150" count="0" type="method"/>
+            <line num="151" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="151" type="cond"/>
+            <line num="152" count="0" type="stmt"/>
+            <line num="155" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="155" type="cond"/>
+            <line num="156" count="0" type="stmt"/>
+            <line num="159" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="setWindowsMediaTags(String[]) : void" num="164" count="0" type="method"/>
+            <line num="165" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="165" type="cond"/>
+            <line num="166" count="0" type="stmt"/>
+            <line num="169" count="0" type="stmt"/>
+            <line complexity="8" visibility="private" signature="setMediaDate(Date,boolean) : void" num="173" count="0" type="method"/>
+            <line num="174" count="0" type="stmt"/>
+            <line num="175" count="0" type="stmt"/>
+            <line num="176" count="0" type="stmt"/>
+            <line num="177" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="177" type="cond"/>
+            <line num="178" count="0" type="stmt"/>
+            <line num="179" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="179" type="cond"/>
+            <line num="180" count="0" type="stmt"/>
+            <line num="183" count="0" type="stmt"/>
+            <line num="186" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="186" type="cond"/>
+            <line num="187" count="0" type="stmt"/>
+            <line num="188" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="188" type="cond"/>
+            <line num="189" count="0" type="stmt"/>
+            <line num="192" count="0" type="stmt"/>
+            <line num="195" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="195" type="cond"/>
+            <line num="196" count="0" type="stmt"/>
+            <line num="197" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="197" type="cond"/>
+            <line num="198" count="0" type="stmt"/>
+            <line num="201" count="0" type="stmt"/>
+            <line num="206" count="0" type="stmt"/>
+            <line num="207" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="207" type="cond"/>
+            <line num="208" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="setGpsCoordinates(String) : void" num="212" count="0" type="method"/>
+            <line num="213" count="0" type="stmt"/>
+            <line num="214" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="214" type="cond"/>
+            <line num="215" count="0" type="stmt"/>
+            <line num="216" count="0" type="stmt"/>
+            <line num="217" count="0" type="stmt"/>
+            <line num="219" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setMediaCreateDate(Date) : void" num="222" count="0" type="method"/>
+            <line num="223" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setMediaModificationDate(Date) : void" num="225" count="0" type="method"/>
+            <line num="226" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="setTitle(String) : void" num="229" count="0" type="method"/>
+            <line num="230" count="0" type="stmt"/>
+            <line num="231" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="231" type="cond"/>
+            <line num="232" count="0" type="stmt"/>
+            <line num="233" count="0" type="stmt"/>
+            <line num="234" count="0" type="stmt"/>
+            <line num="236" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="getItemListBox() : AppleItemListBox" num="239" count="0" type="method"/>
+            <line num="240" count="0" type="stmt"/>
+            <line num="241" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="241" type="cond"/>
+            <line num="242" count="0" type="stmt"/>
+            <line num="243" count="0" type="stmt"/>
+            <line num="244" count="0" type="stmt"/>
+            <line num="246" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setMediaModificationDate(String) : void" num="249" count="0" type="method"/>
+            <line num="251" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="setMediaCreateDate(String) : void" num="253" count="0" type="method"/>
+            <line num="255" count="0" type="stmt"/>
+            <line num="256" count="0" type="stmt"/>
+            <line num="258" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setWindowsMediaDate(String,Date) : void" num="262" count="0" type="method"/>
+            <line num="263" count="0" type="stmt"/>
+            <line num="264" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setWindowsMediaLong(String,long) : void" num="267" count="0" type="method"/>
+            <line num="268" count="0" type="stmt"/>
+            <line num="269" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setWindowsMediaStrings(String,String[]) : void" num="272" count="0" type="method"/>
+            <line num="273" count="0" type="stmt"/>
+            <line num="274" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeWindowsMediaTag(String) : void" num="277" count="0" type="method"/>
+            <line num="278" count="0" type="stmt"/>
+            <line num="279" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="getUserDataBox() : UserDataBox" num="283" count="0" type="method"/>
+            <line num="284" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="284" type="cond"/>
+            <line num="285" count="0" type="stmt"/>
+            <line num="286" count="0" type="stmt"/>
+            <line num="288" count="0" type="stmt"/>
+            <line complexity="3" visibility="private" signature="getMetaBox() : MetaBox" num="291" count="0" type="method"/>
+            <line num="292" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="292" type="cond"/>
+            <line num="293" count="0" type="stmt"/>
+            <line num="294" count="0" type="stmt"/>
+            <line num="295" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="295" type="cond"/>
+            <line num="296" count="0" type="stmt"/>
+            <line num="297" count="0" type="stmt"/>
+            <line num="300" count="0" type="stmt"/>
+            <line complexity="3" visibility="private" signature="getXtraBox() : XtraBox" num="303" count="0" type="method"/>
+            <line num="304" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="304" type="cond"/>
+            <line num="305" count="0" type="stmt"/>
+            <line num="306" count="0" type="stmt"/>
+            <line num="307" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="307" type="cond"/>
+            <line num="308" count="0" type="stmt"/>
+            <line num="309" count="0" type="stmt"/>
+            <line num="312" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="writeMp4(String) : void" num="315" count="0" type="method"/>
+            <line num="316" count="0" type="stmt"/>
+            <line num="317" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="317" type="cond"/>
+            <line num="318" count="0" type="stmt"/>
+            <line num="320" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="320" type="cond"/>
+            <line num="321" count="0" type="stmt"/>
+            <line num="323" count="0" type="stmt"/>
+            <line num="324" count="0" type="stmt"/>
+            <line num="325" count="0" type="stmt"/>
+            <line num="326" count="0" type="stmt"/>
+            <line num="329" count="0" type="stmt"/>
+            <line num="330" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="getIndentation(int) : String" num="334" count="0" type="method"/>
+            <line num="335" count="0" type="stmt"/>
+            <line num="336" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="336" type="cond"/>
+            <line num="337" count="0" type="stmt"/>
+            <line num="339" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="dumpBoxes() : void" num="342" count="0" type="method"/>
+            <line num="343" count="0" type="stmt"/>
+            <line complexity="5" visibility="private" signature="dumpBoxes(Container,int) : void" num="346" count="0" type="method"/>
+            <line num="347" count="0" type="stmt"/>
+            <line num="348" count="0" type="stmt"/>
+            <line num="349" count="0" type="stmt"/>
+            <line num="350" count="0" type="stmt"/>
+            <line num="351" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="351" type="cond"/>
+            <line num="352" count="0" type="stmt"/>
+            <line num="355" count="0" type="stmt"/>
+            <line num="356" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="356" type="cond"/>
+            <line num="357" count="0" type="stmt"/>
+            <line num="359" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="359" type="cond"/>
+            <line num="360" count="0" type="stmt"/>
+            <line num="363" count="0" type="stmt"/>
+            <line num="367" count="0" type="stmt"/>
+            <line num="368" count="0" type="stmt"/>
+            <line complexity="5" visibility="public" signature="needsOffsetCorrection(IsoFile) : boolean" num="374" count="0" type="method"/>
+            <line num="376" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="376" type="cond"/>
+            <line num="377" count="0" type="stmt"/>
+            <line num="382" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="382" type="cond"/>
+            <line num="383" count="0" type="stmt"/>
+            <line num="386" count="0" type="stmt"/>
+            <line num="387" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="387" type="cond"/>
+            <line num="388" count="0" type="stmt"/>
+            <line num="390" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="390" type="cond"/>
+            <line num="391" count="0" type="stmt"/>
+            <line num="394" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="correctChunkOffsets(IsoFile,long) : void" num="397" count="0" type="method"/>
+            <line num="398" count="0" type="stmt"/>
+            <line num="399" count="0" type="stmt"/>
+            <line num="401" count="0" type="stmt"/>
+            <line num="402" count="0" type="stmt"/>
+            <line num="404" count="0" type="stmt"/>
+            <line num="405" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="405" type="cond"/>
+            <line num="406" count="0" type="stmt"/>
+            <line num="409" count="0" type="stmt"/>
+            <line num="410" count="0" type="stmt"/>
+            <line num="411" count="0" type="stmt"/>
+            <line num="412" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="deleteQuietly(File) : void" num="415" count="0" type="method"/>
+            <line num="416" count="0" type="stmt"/>
+            <line num="417" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="closeQuietly(IsoFile) : void" num="423" count="0" type="method"/>
+            <line num="424" count="0" type="stmt"/>
+            <line num="425" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="425" type="cond"/>
+            <line num="426" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getBox(Container,String) : Box" num="432" count="0" type="method"/>
+            <line num="433" count="0" type="stmt"/>
+            <line num="434" count="0" type="stmt"/>
+            <line complexity="4" visibility="public" signature="getBoxes(Container,String[],List&lt;Box&gt;) : List&lt;Box&gt;" num="436" count="0" type="method"/>
+            <line num="437" count="0" type="stmt"/>
+            <line num="438" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="438" type="cond"/>
+            <line num="439" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="439" type="cond"/>
+            <line num="440" count="0" type="stmt"/>
+            <line num="443" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="443" type="cond"/>
+            <line num="444" count="0" type="stmt"/>
+            <line num="447" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getBoxes(Container,String[]) : List&lt;Box&gt;" num="450" count="0" type="method"/>
+            <line num="451" count="0" type="stmt"/>
+            <line num="452" count="0" type="stmt"/>
+            <line complexity="1" visibility="package" signature="&lt;init&gt;, line 458()" num="458" count="0" type="method"/>
+            <line num="459" count="0" type="stmt"/>
+            <line num="460" count="0" type="stmt"/>
+            <line num="461" count="0" type="stmt"/>
+            <line num="462" count="0" type="stmt"/>
+            <line num="463" count="0" type="stmt"/>
+            <line num="464" count="0" type="stmt"/>
+            <line num="465" count="0" type="stmt"/>
+            <line num="466" count="0" type="stmt"/>
+            <line num="467" count="0" type="stmt"/>
+            <line num="468" count="0" type="stmt"/>
+            <line num="469" count="0" type="stmt"/>
+            <line num="470" count="0" type="stmt"/>
+            <line num="471" count="0" type="stmt"/>
+            <line num="472" count="0" type="stmt"/>
+            <line num="473" count="0" type="stmt"/>
+            <line num="474" count="0" type="stmt"/>
+            <line num="475" count="0" type="stmt"/>
+            <line num="476" count="0" type="stmt"/>
+            <line num="477" count="0" type="stmt"/>
+            <line num="478" count="0" type="stmt"/>
+            <line num="479" count="0" type="stmt"/>
+            <line num="480" count="0" type="stmt"/>
+            <line num="481" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="determineDateFormat(String) : String" num="484" count="0" type="method"/>
+            <line num="485" count="0" type="stmt"/>
+            <line num="486" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="486" type="cond"/>
+            <line num="487" count="0" type="stmt"/>
+            <line num="490" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="parseDate(String) : Date" num="493" count="0" type="method"/>
+            <line num="494" count="0" type="stmt"/>
+            <line num="495" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="495" type="cond"/>
+            <line num="496" count="0" type="stmt"/>
+            <line num="498" count="0" type="stmt"/>
+            <line num="499" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/ReadExample.java" name="ReadExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="29" coveredmethods="0" methods="1" elements="6" classes="1" ncloc="17" statements="5" conditionals="0" coveredstatements="0"/>
+            <class name="ReadExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="6" statements="5" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="16" count="0" type="method"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/ReadWriteExample.java" name="ReadWriteExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="77" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="22" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="ReadWriteExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/RemoveVideo.java" name="RemoveVideo.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="28" coveredmethods="0" methods="1" elements="11" classes="1" ncloc="22" statements="8" conditionals="2" coveredstatements="0"/>
+            <class name="RemoveVideo">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="11" statements="8" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="16" count="0" type="method"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="20" type="cond"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/SetEdit.java" name="SetEdit.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="24" coveredmethods="0" methods="1" elements="7" classes="1" ncloc="18" statements="6" conditionals="0" coveredstatements="0"/>
+            <class name="SetEdit">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="7" statements="6" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="16" count="0" type="method"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/stuff/VideoAudioChecker.java" name="VideoAudioChecker.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="4" loc="39" coveredmethods="0" methods="2" elements="16" classes="2" ncloc="29" statements="10" conditionals="4" coveredstatements="0"/>
+            <class name="VideoAudioChecker">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="4" coveredmethods="0" methods="2" elements="16" statements="10" conditionals="4" coveredstatements="0"/>
+            </class>
+            <class name="VideoAudioChecker.TYPE">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="12" count="0" type="method"/>
+            <line num="13" count="0" type="stmt"/>
+            <line num="14" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="getType(IsoFile) : TYPE" num="17" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="22" type="cond"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="24" type="cond"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="com.googlecode.mp4parser">
+         <metrics coveredelements="0" complexity="134" loc="1739" methods="44" classes="28" statements="616" coveredconditionals="0" coveredmethods="0" elements="808" ncloc="1322" files="27" conditionals="148" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/AppendExample.java" name="AppendExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="5" loc="152" coveredmethods="0" methods="1" elements="30" classes="1" ncloc="131" statements="21" conditionals="8" coveredstatements="0"/>
+            <class name="AppendExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="5" coveredmethods="0" methods="1" elements="30" statements="21" conditionals="8" coveredstatements="0"/>
+            </class>
+            <line complexity="5" visibility="public" signature="main(String[]) : void" num="21" count="0" type="method"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="116" count="0" type="stmt"/>
+            <line num="119" count="0" type="stmt"/>
+            <line num="120" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="124" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="124" type="cond"/>
+            <line num="125" count="0" type="stmt"/>
+            <line num="127" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="127" type="cond"/>
+            <line num="128" count="0" type="stmt"/>
+            <line num="133" count="0" type="stmt"/>
+            <line num="135" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="135" type="cond"/>
+            <line num="136" count="0" type="stmt"/>
+            <line num="138" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="138" type="cond"/>
+            <line num="139" count="0" type="stmt"/>
+            <line num="142" count="0" type="stmt"/>
+            <line num="144" count="0" type="stmt"/>
+            <line num="145" count="0" type="stmt"/>
+            <line num="146" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/BitRate.java" name="BitRate.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="24" coveredmethods="0" methods="1" elements="6" classes="1" ncloc="17" statements="5" conditionals="0" coveredstatements="0"/>
+            <class name="BitRate">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="6" statements="5" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="14" count="0" type="method"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/CencEncryptDecrypt.java" name="CencEncryptDecrypt.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="59" coveredmethods="0" methods="1" elements="23" classes="1" ncloc="44" statements="20" conditionals="2" coveredstatements="0"/>
+            <class name="CencEncryptDecrypt">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="23" statements="20" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="24" count="0" type="method"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="47" type="cond"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/CheckGoPr1008Issue.java" name="CheckGoPr1008Issue.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="19" coveredmethods="0" methods="1" elements="4" classes="1" ncloc="13" statements="3" conditionals="0" coveredstatements="0"/>
+            <class name="CheckGoPr1008Issue">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="4" statements="3" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="13" count="0" type="method"/>
+            <line num="14" count="0" type="stmt"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/CheckSampleGroups.java" name="CheckSampleGroups.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="54" coveredmethods="0" methods="1" elements="20" classes="1" ncloc="43" statements="19" conditionals="0" coveredstatements="0"/>
+            <class name="CheckSampleGroups">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="20" statements="19" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="24" count="0" type="method"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ExportTTMLTrack.java" name="ExportTTMLTrack.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="17" loc="135" coveredmethods="0" methods="4" elements="101" classes="1" ncloc="120" statements="71" conditionals="26" coveredstatements="0"/>
+            <class name="ExportTTMLTrack">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="17" coveredmethods="0" methods="4" elements="101" statements="71" conditionals="26" coveredstatements="0"/>
+            </class>
+            <line complexity="10" visibility="public" signature="main(String[]) : void" num="28" count="0" type="method"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="32" type="cond"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="37" type="cond"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="42" type="cond"/>
+            <line num="43" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="43" type="cond"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="52" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="52" type="cond"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="56" type="cond"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="getNamespaceURI(String) : String" num="69" count="0" type="method"/>
+            <line num="70" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="70" type="cond"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="73" type="cond"/>
+            <line num="74" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getPrefixes(String) : Iterator" num="79" count="0" type="method"/>
+            <line num="80" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="getPrefix(String) : String" num="83" count="0" type="method"/>
+            <line num="84" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="84" type="cond"/>
+            <line num="85" count="0" type="stmt"/>
+            <line num="87" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="87" type="cond"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="93" count="0" type="stmt"/>
+            <line num="94" count="0" type="stmt"/>
+            <line num="95" count="0" type="stmt"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="98" type="cond"/>
+            <line num="99" count="0" type="stmt"/>
+            <line num="101" count="0" type="stmt"/>
+            <line num="102" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line num="108" count="0" type="stmt"/>
+            <line num="109" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="109" type="cond"/>
+            <line num="110" count="0" type="stmt"/>
+            <line num="111" count="0" type="stmt"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="117" count="0" type="stmt"/>
+            <line num="118" count="0" type="stmt"/>
+            <line num="119" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="126" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="126" type="cond"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ExtractRawH264.java" name="ExtractRawH264.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="61" coveredmethods="0" methods="1" elements="21" classes="1" ncloc="40" statements="18" conditionals="2" coveredstatements="0"/>
+            <class name="ExtractRawH264">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="21" statements="18" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="47" type="cond"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/FindCommonSync.java" name="FindCommonSync.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="6" loc="67" coveredmethods="0" methods="2" elements="45" classes="1" ncloc="57" statements="37" conditionals="6" coveredstatements="0"/>
+            <class name="FindCommonSync">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="6" coveredmethods="0" methods="2" elements="45" statements="37" conditionals="6" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="asSortedList(Collection&lt;T&gt;) : List&lt;T&gt;" num="14" count="0" type="method"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="17" count="0" type="stmt"/>
+            <line complexity="5" visibility="public" signature="main(String[]) : void" num="20" count="0" type="method"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="30" type="cond"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="40" type="cond"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="52" count="0" type="stmt"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="57" type="cond"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/GetDuration.java" name="GetDuration.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="21" coveredmethods="0" methods="1" elements="5" classes="1" ncloc="13" statements="4" conditionals="0" coveredstatements="0"/>
+            <class name="GetDuration">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="11" count="0" type="method"/>
+            <line num="12" count="0" type="stmt"/>
+            <line num="13" count="0" type="stmt"/>
+            <line num="14" count="0" type="stmt"/>
+            <line num="17" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/MakeTrackLonger.java" name="MakeTrackLonger.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="3" loc="40" coveredmethods="0" methods="2" elements="17" classes="1" ncloc="33" statements="13" conditionals="2" coveredstatements="0"/>
+            <class name="MakeTrackLonger">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="3" coveredmethods="0" methods="2" elements="17" statements="13" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="17" count="0" type="method"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="21" type="cond"/>
+            <line num="22" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getSampleDurations() : long[]" num="23" count="0" type="method"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ModifyBoxExample.java" name="ModifyBoxExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="17" coveredmethods="0" methods="1" elements="3" classes="1" ncloc="13" statements="2" conditionals="0" coveredstatements="0"/>
+            <class name="ModifyBoxExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="3" statements="2" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="12" count="0" type="method"/>
+            <line num="13" count="0" type="stmt"/>
+            <line num="14" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/MostSimpleDashExample.java" name="MostSimpleDashExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="46" coveredmethods="0" methods="1" elements="15" classes="1" ncloc="30" statements="12" conditionals="2" coveredstatements="0"/>
+            <class name="MostSimpleDashExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="15" statements="12" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="25" count="0" type="method"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="31" type="cond"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/MuxMp4SourcesExample.java" name="MuxMp4SourcesExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="54" coveredmethods="0" methods="1" elements="23" classes="1" ncloc="41" statements="22" conditionals="0" coveredstatements="0"/>
+            <class name="MuxMp4SourcesExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="23" statements="22" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/MuxVideoWithAmf0.java" name="MuxVideoWithAmf0.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="50" coveredmethods="0" methods="1" elements="18" classes="1" ncloc="37" statements="17" conditionals="0" coveredstatements="0"/>
+            <class name="MuxVideoWithAmf0">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="18" statements="17" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="23" count="0" type="method"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/MyCustomStringBox.java" name="MyCustomStringBox.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="4" loc="40" coveredmethods="0" methods="4" elements="14" classes="1" ncloc="31" statements="10" conditionals="0" coveredstatements="0"/>
+            <class name="MyCustomStringBox">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="4" coveredmethods="0" methods="4" elements="14" statements="10" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="MyCustomStringBox()" num="15" count="0" type="method"/>
+            <line num="16" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="_parseDetails(ByteBuffer) : void" num="20" count="0" type="method"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="getContent(ByteBuffer) : void" num="28" count="0" type="method"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="getContentSize() : long" num="36" count="0" type="method"/>
+            <line num="38" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ParseMdatByHand.java" name="ParseMdatByHand.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="7" loc="61" coveredmethods="0" methods="2" elements="34" classes="1" ncloc="48" statements="24" conditionals="8" coveredstatements="0"/>
+            <class name="ParseMdatByHand">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="7" coveredmethods="0" methods="2" elements="34" statements="24" conditionals="8" coveredstatements="0"/>
+            </class>
+            <line complexity="4" visibility="package" signature="findNextNal(AbstractH26XTrack.LookAhead) : ByteBuffer" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="20" type="cond"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="25" type="cond"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="main(String[]) : void" num="35" count="0" type="method"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="44" type="cond"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="49" type="cond"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/RemovePasp.java" name="RemovePasp.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="41" coveredmethods="0" methods="1" elements="11" classes="1" ncloc="31" statements="8" conditionals="2" coveredstatements="0"/>
+            <class name="RemovePasp">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="1" elements="11" statements="8" conditionals="2" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="25" count="0" type="method"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="31" type="cond"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/RemoveSomeSamplesExample.java" name="RemoveSomeSamplesExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="35" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="25" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="RemoveSomeSamplesExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="20" count="0" type="method"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ReplaceSomeSamples.java" name="ReplaceSomeSamples.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="43" coveredmethods="0" methods="1" elements="11" classes="1" ncloc="33" statements="10" conditionals="0" coveredstatements="0"/>
+            <class name="ReplaceSomeSamples">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="11" statements="10" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="21" count="0" type="method"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/Rotate.java" name="Rotate.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="24" coveredmethods="0" methods="1" elements="5" classes="1" ncloc="15" statements="4" conditionals="0" coveredstatements="0"/>
+            <class name="Rotate">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="15" count="0" type="method"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ServeMp4.java" name="ServeMp4.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="14" loc="139" coveredmethods="0" methods="4" elements="78" classes="1" ncloc="100" statements="56" conditionals="18" coveredstatements="0"/>
+            <class name="ServeMp4">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="14" coveredmethods="0" methods="4" elements="78" statements="56" conditionals="18" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="34" count="0" type="method"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ServeMp4(Movie)" num="44" count="0" type="method"/>
+            <line num="45" count="0" type="stmt"/>
+            <line complexity="7" visibility="public" signature="handle(String,Request,HttpServletRequest,HttpServletResponse) : void" num="48" count="0" type="method"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="63" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="63" type="cond"/>
+            <line num="64" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="64" type="cond"/>
+            <line num="69" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="78" count="0" type="stmt"/>
+            <line num="79" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line num="83" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="83" type="cond"/>
+            <line num="84" count="0" type="stmt"/>
+            <line num="86" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="86" type="cond"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="90" type="cond"/>
+            <line num="92" count="0" type="stmt"/>
+            <line num="95" count="0" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line num="100" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line complexity="5" visibility="private" signature="correctTimeToSyncSample(Track,double,boolean) : double" num="112" count="0" type="method"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="116" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="116" type="cond"/>
+            <line num="117" count="0" type="stmt"/>
+            <line num="118" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="118" type="cond"/>
+            <line num="120" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="125" count="0" type="stmt"/>
+            <line num="126" count="0" type="stmt"/>
+            <line num="127" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="127" type="cond"/>
+            <line num="128" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="128" type="cond"/>
+            <line num="129" count="0" type="stmt"/>
+            <line num="131" count="0" type="stmt"/>
+            <line num="134" count="0" type="stmt"/>
+            <line num="136" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/ShortenExample.java" name="ShortenExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="18" loc="141" coveredmethods="0" methods="2" elements="92" classes="1" ncloc="104" statements="68" conditionals="22" coveredstatements="0"/>
+            <class name="ShortenExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="18" coveredmethods="0" methods="2" elements="92" statements="68" conditionals="22" coveredstatements="0"/>
+            </class>
+            <line complexity="13" visibility="public" signature="main(String[]) : void" num="25" count="0" type="method"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="44" type="cond"/>
+            <line num="45" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="45" type="cond"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="52" count="0" type="stmt"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="69" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="69" type="cond"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="73" type="cond"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="77" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="77" type="cond"/>
+            <line num="79" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="81" type="cond"/>
+            <line num="83" count="0" type="stmt"/>
+            <line num="85" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="85" type="cond"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="89" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="93" count="0" type="stmt"/>
+            <line num="95" count="0" type="stmt"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line num="99" count="0" type="stmt"/>
+            <line num="100" count="0" type="stmt"/>
+            <line num="102" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line complexity="5" visibility="private" signature="correctTimeToSyncSample(Track,double,boolean) : double" num="111" count="0" type="method"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line num="115" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="115" type="cond"/>
+            <line num="116" count="0" type="stmt"/>
+            <line num="118" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="118" type="cond"/>
+            <line num="120" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="126" count="0" type="stmt"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="128" type="cond"/>
+            <line num="129" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="129" type="cond"/>
+            <line num="130" count="0" type="stmt"/>
+            <line num="132" count="0" type="stmt"/>
+            <line num="135" count="0" type="stmt"/>
+            <line num="137" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/SilencePrepender.java" name="SilencePrepender.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="38" coveredmethods="0" methods="1" elements="11" classes="1" ncloc="26" statements="10" conditionals="0" coveredstatements="0"/>
+            <class name="SilencePrepender">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="11" statements="10" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/SimpleParse.java" name="SimpleParse.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="21" coveredmethods="0" methods="1" elements="5" classes="1" ncloc="15" statements="4" conditionals="0" coveredstatements="0"/>
+            <class name="SimpleParse">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="14" count="0" type="method"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/SimpleShortenExample.java" name="SimpleShortenExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="14" loc="126" coveredmethods="0" methods="2" elements="77" classes="1" ncloc="90" statements="57" conditionals="18" coveredstatements="0"/>
+            <class name="SimpleShortenExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="14" coveredmethods="0" methods="2" elements="77" statements="57" conditionals="18" coveredstatements="0"/>
+            </class>
+            <line complexity="9" visibility="public" signature="main(String[]) : void" num="24" count="0" type="method"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="41" type="cond"/>
+            <line num="42" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="42" type="cond"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="62" type="cond"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="66" type="cond"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="70" type="cond"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="74" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line num="78" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line num="82" count="0" type="stmt"/>
+            <line num="83" count="0" type="stmt"/>
+            <line num="84" count="0" type="stmt"/>
+            <line num="85" count="0" type="stmt"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="89" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line complexity="5" visibility="private" signature="correctTimeToSyncSample(Track,double,boolean) : double" num="96" count="0" type="method"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line num="99" count="0" type="stmt"/>
+            <line num="100" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="100" type="cond"/>
+            <line num="101" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="103" type="cond"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line num="108" count="0" type="stmt"/>
+            <line num="111" count="0" type="stmt"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="113" type="cond"/>
+            <line num="114" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="114" type="cond"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="117" count="0" type="stmt"/>
+            <line num="120" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/SingleTrackShortenExample.java" name="SingleTrackShortenExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="8" loc="71" coveredmethods="0" methods="2" elements="34" classes="1" ncloc="50" statements="26" conditionals="6" coveredstatements="0"/>
+            <class name="SingleTrackShortenExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="8" coveredmethods="0" methods="2" elements="34" statements="26" conditionals="6" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="24" count="0" type="method"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="29" type="cond"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line num="48" count="0" type="stmt"/>
+            <line complexity="6" visibility="private" signature="findNextSyncSample(Track,double) : long" num="52" count="0" type="method"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="57" type="cond"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="60" type="cond"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/SubTitleExample.java" name="SubTitleExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="18" loc="160" coveredmethods="0" methods="3" elements="95" classes="2" ncloc="122" statements="66" conditionals="26" coveredstatements="0"/>
+            <class name="SubTitleExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="16" statements="15" conditionals="0" coveredstatements="0"/>
+            </class>
+            <class name="SubTitleExample.WebVttParser">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="17" coveredmethods="0" methods="2" elements="79" statements="51" conditionals="26" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line complexity="15" visibility="package" signature="parse(InputStream) : List&lt;TextTrackImpl.Line&gt;" num="64" count="0" type="method"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="71" type="cond"/>
+            <line num="72" count="0" type="stmt"/>
+            <line num="74" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="76" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="76" type="cond"/>
+            <line num="78" count="0" type="stmt"/>
+            <line num="79" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="79" type="cond"/>
+            <line num="81" count="0" type="stmt"/>
+            <line num="84" count="0" type="stmt"/>
+            <line num="85" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="85" type="cond"/>
+            <line num="86" count="0" type="stmt"/>
+            <line num="92" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="92" type="cond"/>
+            <line num="93" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="93" type="cond"/>
+            <line num="94" count="0" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="98" type="cond"/>
+            <line num="100" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line num="110" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="110" type="cond"/>
+            <line num="111" count="0" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="117" count="0" type="stmt"/>
+            <line num="118" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="118" type="cond"/>
+            <line num="119" count="0" type="stmt"/>
+            <line num="121" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="126" count="0" type="stmt"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line num="129" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="129" type="cond"/>
+            <line num="130" count="0" type="stmt"/>
+            <line num="132" count="0" type="stmt"/>
+            <line num="133" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="133" type="cond"/>
+            <line num="134" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="134" type="cond"/>
+            <line num="135" count="0" type="stmt"/>
+            <line num="137" count="0" type="stmt"/>
+            <line num="141" count="0" type="stmt"/>
+            <line num="143" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="parseTimestampUs(String) : long" num="146" count="0" type="method"/>
+            <line num="147" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="147" type="cond"/>
+            <line num="148" count="0" type="stmt"/>
+            <line num="151" count="0" type="stmt"/>
+            <line num="152" count="0" type="stmt"/>
+            <line num="153" count="0" type="stmt"/>
+            <line num="154" count="0" type="stmt"/>
+            <line num="156" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="com.googlecode.mp4parser.muxformats">
+         <metrics coveredelements="0" complexity="9" loc="280" methods="9" classes="8" statements="76" coveredconditionals="0" coveredmethods="0" elements="85" ncloc="202" files="8" conditionals="0" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/AacExample.java" name="AacExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="34" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="22" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="AacExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="21" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/Ac3Example.java" name="Ac3Example.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="30" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="23" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="Ac3Example">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/BillH264Example.java" name="BillH264Example.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="35" coveredmethods="0" methods="1" elements="12" classes="1" ncloc="25" statements="11" conditionals="0" coveredstatements="0"/>
+            <class name="BillH264Example">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="12" statements="11" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/DTSMuxExample.java" name="DTSMuxExample.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="31" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="24" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="DTSMuxExample">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/Ec3Example.java" name="Ec3Example.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="29" coveredmethods="0" methods="1" elements="10" classes="1" ncloc="23" statements="9" conditionals="0" coveredstatements="0"/>
+            <class name="Ec3Example">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="10" statements="9" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="18" count="0" type="method"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/H264Example.java" name="H264Example.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="38" coveredmethods="0" methods="1" elements="9" classes="1" ncloc="23" statements="8" conditionals="0" coveredstatements="0"/>
+            <class name="H264Example">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="9" statements="8" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/MjpegTest.java" name="MjpegTest.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="2" loc="46" coveredmethods="0" methods="2" elements="16" classes="1" ncloc="36" statements="14" conditionals="0" coveredstatements="0"/>
+            <class name="MjpegTest">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="2" coveredmethods="0" methods="2" elements="16" statements="14" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="23" count="0" type="method"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="accept(File,String) : boolean" num="35" count="0" type="method"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/muxformats/MuxAacH264SMPTE.java" name="MuxAacH264SMPTE.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="37" coveredmethods="0" methods="1" elements="8" classes="1" ncloc="26" statements="7" conditionals="0" coveredstatements="0"/>
+            <class name="MuxAacH264SMPTE">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="8" statements="7" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="com.google.code.mp4parser.example">
+         <metrics coveredelements="0" complexity="19" loc="158" methods="6" classes="2" statements="56" coveredconditionals="0" coveredmethods="0" elements="82" ncloc="115" files="2" conditionals="20" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/google/code/mp4parser/example/GetHeight.java" name="GetHeight.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="12" loc="70" coveredmethods="0" methods="4" elements="43" classes="1" ncloc="60" statements="29" conditionals="10" coveredstatements="0"/>
+            <class name="GetHeight">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="12" coveredmethods="0" methods="4" elements="43" statements="29" conditionals="10" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="readUint32(byte[],int) : long" num="26" count="0" type="method"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="readFixedPoint1616(byte[],int) : double" num="35" count="0" type="method"/>
+            <line num="36" count="0" type="stmt"/>
+            <line complexity="9" visibility="private" signature="find(InputStream) : void" num="39" count="0" type="method"/>
+            <line num="41" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="41" type="cond"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="45" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="47" type="cond"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="50" type="cond"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="52" count="0" type="stmt"/>
+            <line num="54" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="54" type="cond"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="57" type="cond"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/google/code/mp4parser/example/PrintStructure.java" name="PrintStructure.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="7" loc="88" coveredmethods="0" methods="2" elements="39" classes="1" ncloc="55" statements="27" conditionals="10" coveredstatements="0"/>
+            <class name="PrintStructure">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="7" coveredmethods="0" methods="2" elements="39" statements="27" conditionals="10" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="24" count="0" type="method"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line num="31" count="0" type="stmt"/>
+            <line complexity="6" visibility="private" signature="print(FileChannel,int,long,long) : void" num="47" count="0" type="method"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="49" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="49" type="cond"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="53" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="53" type="cond"/>
+            <line num="54" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="57" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="62" type="cond"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="67" type="cond"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="69" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="69" type="cond"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="com.googlecode.mp4parser.syncsamples">
+         <metrics coveredelements="0" complexity="4" loc="50" methods="1" classes="1" statements="19" coveredconditionals="0" coveredmethods="0" elements="24" ncloc="43" files="1" conditionals="4" coveredstatements="0"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/mp4parser-107859078/Buggy-version/examples/src/main/java/com/googlecode/mp4parser/syncsamples/ListSyncSamples.java" name="ListSyncSamples.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="4" loc="50" coveredmethods="0" methods="1" elements="24" classes="1" ncloc="43" statements="19" conditionals="4" coveredstatements="0"/>
+            <class name="ListSyncSamples">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="4" coveredmethods="0" methods="1" elements="24" statements="19" conditionals="4" coveredstatements="0"/>
+            </class>
+            <line complexity="4" visibility="public" signature="main(String[]) : void" num="19" count="0" type="method"/>
+            <line num="20" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="25" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="26" type="cond"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="37" type="cond"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="ISO Parser Examples 1.1.18-SNAPSHOT" timestamp="0">
+      <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
+   </testproject>
+</coverage>

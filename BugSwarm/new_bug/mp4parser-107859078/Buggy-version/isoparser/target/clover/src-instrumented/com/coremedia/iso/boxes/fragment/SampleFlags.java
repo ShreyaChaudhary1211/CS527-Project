@@ -1,0 +1,251 @@
+/* $$ This file has been instrumented by Clover 4.5.2#20240131180750 $$ *//*
+ * Copyright 2009 castLabs GmbH, Berlin
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.coremedia.iso.boxes.fragment;
+
+import com.coremedia.iso.IsoTypeReader;
+import com.coremedia.iso.IsoTypeWriter;
+
+import java.nio.ByteBuffer;
+
+/**
+ * bit(6) reserved=0;
+ * unsigned int(2) sample_depends_on;
+ * unsigned int(2) sample_is_depended_on;
+ * unsigned int(2) sample_has_redundancy;
+ * bit(3) sample_padding_value;
+ * bit(1) sample_is_difference_sample;
+ * // i.e. when 1 signals a non-key or non-sync sample
+ * unsigned int(16) sample_degradation_priority;
+ */
+public class SampleFlags {public static class __CLR4_5_22f32f3lvl9efio{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_5_2();if(20240131180750L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation shall match the runtime version.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.5.2#20240131180750,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0055\u0073\u0065\u0072\u0073\u002f\u0073\u0068\u0072\u0065\u0079\u0061\u0063\u0068\u0061\u0075\u0064\u0068\u0061\u0072\u0079\u002f\u0044\u0065\u0073\u006b\u0074\u006f\u0070\u002f\u0065\u0078\u0074\u0072\u0061\u002f\u0043\u0053\u0035\u0032\u0037\u002d\u0050\u0072\u006f\u006a\u0065\u0063\u0074\u002f\u0042\u0075\u0067\u0073\u002f\u0042\u0075\u0067\u0053\u0077\u0061\u0072\u006d\u002f\u0032\u006e\u0064\u005f\u0072\u006f\u0075\u006e\u0064\u002f\u006d\u0070\u0034\u0070\u0061\u0072\u0073\u0065\u0072\u002d\u0031\u0030\u0037\u0038\u0035\u0039\u0030\u0037\u0038\u002f\u0042\u0075\u0067\u0067\u0079\u002d\u0076\u0065\u0072\u0073\u0069\u006f\u006e\u002f\u0069\u0073\u006f\u0070\u0061\u0072\u0073\u0065\u0072\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1714413275835L,8589935092L,3248,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_5_2_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+    private byte reserved;
+    private byte isLeading;
+    private byte sampleDependsOn;
+    private byte sampleIsDependedOn;
+    private byte sampleHasRedundancy;
+    private byte samplePaddingValue;
+    private boolean sampleIsDifferenceSample;
+    private int sampleDegradationPriority;
+
+    public SampleFlags() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3135);
+
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public SampleFlags(ByteBuffer bb) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3136);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3137);long a = IsoTypeReader.readUInt32(bb);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3138);reserved = (byte) ((a & 0xF0000000) >> 28);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3139);isLeading = (byte) ((a & 0x0C000000) >> 26);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3140);sampleDependsOn = (byte) ((a & 0x03000000) >> 24);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3141);sampleIsDependedOn = (byte) ((a & 0x00C00000) >> 22);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3142);sampleHasRedundancy = (byte) ((a & 0x00300000) >> 20);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3143);samplePaddingValue = (byte) ((a & 0x000e0000) >> 17);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3144);sampleIsDifferenceSample = ((a & 0x00010000) >> 16) > 0;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3145);sampleDegradationPriority = (int) (a & 0x0000ffff);
+
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+
+    public void getContent(ByteBuffer os) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3146);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3147);long a = 0;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3148);a |= reserved << 28;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3149);a |= isLeading << 26;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3150);a |= sampleDependsOn << 24;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3151);a |= sampleIsDependedOn << 22;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3152);a |= sampleHasRedundancy << 20;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3153);a |= samplePaddingValue << 17;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3154);a |= ((((sampleIsDifferenceSample )&&(__CLR4_5_22f32f3lvl9efio.R.iget(3155)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3156)==0&false))? 1 : 0) << 16;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3157);a |= sampleDegradationPriority;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3158);IsoTypeWriter.writeUInt32(os, a);
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public int getReserved() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3159);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3160);return reserved;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public void setReserved(int reserved) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3161);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3162);this.reserved = (byte) reserved;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public byte getIsLeading() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3163);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3164);return isLeading;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public void setIsLeading(byte isLeading) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3165);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3166);this.isLeading = isLeading;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_depends_on takes one of the following four values:
+     * <pre>
+     * 0: the dependency of this sample is unknown;
+     * 1: this sample does depend on others (not an I picture);
+     * 2: this sample does not depend on others (I picture);
+     * 3: reserved
+     * </pre>
+     *
+     * @return current depends_on level
+     */
+    public int getSampleDependsOn() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3167);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3168);return sampleDependsOn;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_depends_on takes one of the following four values:
+     * <pre>
+     * 0: the dependency of this sample is unknown;
+     * 1: this sample does depend on others (not an I picture);
+     * 2: this sample does not depend on others (I picture);
+     * 3: reserved
+     * </pre>
+     *
+     * @param sampleDependsOn new depends on value
+     */
+    public void setSampleDependsOn(int sampleDependsOn) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3169);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3170);this.sampleDependsOn = (byte) sampleDependsOn;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_is_depended_on takes one of the following four values:
+     * <pre>
+     * 0: the dependency of other samples on this sample is unknown;
+     * 1: other samples may depend on this one (not disposable);
+     * 2: no other sample depends on this one (disposable);
+     * 3: reserved
+     * </pre>
+     *
+     * @return current is_dependend_on level
+     */
+    public int getSampleIsDependedOn() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3171);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3172);return sampleIsDependedOn;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_is_depended_on takes one of the following four values:
+     * <pre>
+     * 0: the dependency of other samples on this sample is unknown;
+     * 1: other samples may depend on this one (not disposable);
+     * 2: no other sample depends on this one (disposable);
+     * 3: reserved
+     * </pre>
+     *
+     * @param sampleIsDependedOn new is_depends on value
+     */
+    public void setSampleIsDependedOn(int sampleIsDependedOn) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3173);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3174);this.sampleIsDependedOn = (byte) sampleIsDependedOn;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_has_redundancy takes one of the following four values:
+     * <pre>
+     * 0: it is unknown whether there is redundant coding in this sample;
+     * 1: there is redundant coding in this sample;
+     * 2: there is no redundant coding in this sample;
+     * 3: reserved
+     * </pre>
+     *
+     * @return current redundancy level
+     */
+    public int getSampleHasRedundancy() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3175);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3176);return sampleHasRedundancy;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    /**
+     * sample_has_redundancy takes one of the following four values:
+     * <pre>
+     * 0: it is unknown whether there is redundant coding in this sample;
+     * 1: there is redundant coding in this sample;
+     * 2: there is no redundant coding in this sample;
+     * 3: reserved
+     * </pre>
+     *
+     * @param sampleHasRedundancy new redundancy level
+     */
+    public void setSampleHasRedundancy(int sampleHasRedundancy) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3177);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3178);this.sampleHasRedundancy = (byte) sampleHasRedundancy;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public int getSamplePaddingValue() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3179);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3180);return samplePaddingValue;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public void setSamplePaddingValue(int samplePaddingValue) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3181);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3182);this.samplePaddingValue = (byte) samplePaddingValue;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public boolean isSampleIsDifferenceSample() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3183);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3184);return sampleIsDifferenceSample;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+
+    public void setSampleIsDifferenceSample(boolean sampleIsDifferenceSample) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3185);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3186);this.sampleIsDifferenceSample = sampleIsDifferenceSample;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public int getSampleDegradationPriority() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3187);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3188);return sampleDegradationPriority;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    public void setSampleDegradationPriority(int sampleDegradationPriority) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3189);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3190);this.sampleDegradationPriority = sampleDegradationPriority;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    @Override
+    public String toString() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3191);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3192);return "SampleFlags{" +
+                "reserved=" + reserved +
+                ", isLeading=" + isLeading +
+                ", depOn=" + sampleDependsOn +
+                ", isDepOn=" + sampleIsDependedOn +
+                ", hasRedundancy=" + sampleHasRedundancy +
+                ", padValue=" + samplePaddingValue +
+                ", isDiffSample=" + sampleIsDifferenceSample +
+                ", degradPrio=" + sampleDegradationPriority +
+                '}';
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    @Override
+    public boolean equals(Object o) {try{__CLR4_5_22f32f3lvl9efio.R.inc(3193);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3194);if ((((this == o)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3195)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3196)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3197);return true;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3198);if ((((o == null || getClass() != o.getClass())&&(__CLR4_5_22f32f3lvl9efio.R.iget(3199)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3200)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3201);return false;
+
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3202);SampleFlags that = (SampleFlags) o;
+
+        __CLR4_5_22f32f3lvl9efio.R.inc(3203);if ((((isLeading != that.isLeading)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3204)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3205)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3206);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3207);if ((((reserved != that.reserved)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3208)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3209)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3210);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3211);if ((((sampleDegradationPriority != that.sampleDegradationPriority)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3212)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3213)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3214);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3215);if ((((sampleDependsOn != that.sampleDependsOn)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3216)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3217)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3218);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3219);if ((((sampleHasRedundancy != that.sampleHasRedundancy)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3220)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3221)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3222);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3223);if ((((sampleIsDependedOn != that.sampleIsDependedOn)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3224)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3225)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3226);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3227);if ((((sampleIsDifferenceSample != that.sampleIsDifferenceSample)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3228)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3229)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3230);return false;
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3231);if ((((samplePaddingValue != that.samplePaddingValue)&&(__CLR4_5_22f32f3lvl9efio.R.iget(3232)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3233)==0&false))) {__CLR4_5_22f32f3lvl9efio.R.inc(3234);return false;
+
+        }__CLR4_5_22f32f3lvl9efio.R.inc(3235);return true;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+
+    @Override
+    public int hashCode() {try{__CLR4_5_22f32f3lvl9efio.R.inc(3236);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3237);int result = (int) reserved;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3238);result = 31 * result + (int) isLeading;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3239);result = 31 * result + (int) sampleDependsOn;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3240);result = 31 * result + (int) sampleIsDependedOn;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3241);result = 31 * result + (int) sampleHasRedundancy;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3242);result = 31 * result + (int) samplePaddingValue;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3243);result = 31 * result + ((((sampleIsDifferenceSample )&&(__CLR4_5_22f32f3lvl9efio.R.iget(3244)!=0|true))||(__CLR4_5_22f32f3lvl9efio.R.iget(3245)==0&false))? 1 : 0);
+        __CLR4_5_22f32f3lvl9efio.R.inc(3246);result = 31 * result + sampleDegradationPriority;
+        __CLR4_5_22f32f3lvl9efio.R.inc(3247);return result;
+    }finally{__CLR4_5_22f32f3lvl9efio.R.flushNeeded();}}
+}
