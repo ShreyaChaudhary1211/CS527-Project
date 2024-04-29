@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.reflect.MethodUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.512 sec <<< FAILURE! - in org.apache.commons.lang3.reflect.MethodUtilsTest
+testGetMethodsWithAnnotationSearchSupersButNotIgnoreAccess(org.apache.commons.lang3.reflect.MethodUtilsTest)  Time elapsed: 0.404 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[PublicChild.publicAnnotatedMethod]> but was:<[Foo.doIt]>
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.__CLR4_5_2ulgzg212yi(MethodUtilsTest.java:727)
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.testGetMethodsWithAnnotationSearchSupersButNotIgnoreAccess(MethodUtilsTest.java:720)
+
+testGetMethodsWithAnnotationSearchSupersAndIgnoreAccess(org.apache.commons.lang3.reflect.MethodUtilsTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[PublicChild]> but was:<[Foo]>
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.__CLR4_5_2rq637z12y0(MethodUtilsTest.java:693)
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.testGetMethodsWithAnnotationSearchSupersAndIgnoreAccess(MethodUtilsTest.java:686)
+

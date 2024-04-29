@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>OWLAPI Default Implementation 4.2.5</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://owlcs.github.io/owlapi/owlapi-impl/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://owlcs.github.io/owlapi/owlapi-impl/" target="_top">
+                                        OWLAPI Default Implementation 4.2.5
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Apr 27 2024 12:00:46 CDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        204 classes,
+                        9,879 /
+                        13,445 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7347713</span>73.5%</div><div style="display: table-cell">
+ <div title="73.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.5%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        499 /
+                        499 tests
+                        0.7 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">2,308</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">8,027</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">3,110</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">204</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">179</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">5</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">33,422</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">24,262</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">4,379</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.55</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.58</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">15.25</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">40.8</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.41</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,15,310,206" title="41 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,80,285,206" title="27 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="238,38,260,206" title="36 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="213,38,235,206" title="36 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,127,210,206" title="17 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="163,146,185,206" title="13 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,197,160,206" title="2 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="113,178,135,206" title="6 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="63,188,85,206" title="4 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,155,60,206" title="11 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="269,173,267,175,264,173,267,170,269,173,269,173" title="Complexity: 50; Coverage: 88%; Class: SmallSet" alt="" href="uk/ac/manchester/cs/owl/owlapi/util/collections/SmallSet.html#SmallSet"/>
+<area shape="poly" coords="230,200,227,202,225,200,227,197,230,200,230,200" title="Complexity: 13; Coverage: 72%; Class: SWRLVariableImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLVariableImpl.html#SWRLVariableImpl"/>
+<area shape="poly" coords="164,205,161,208,159,205,161,203,164,205,164,205" title="Complexity: 5; Coverage: 45%; Class: SWRLUnaryAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLUnaryAtomImpl.html#SWRLUnaryAtomImpl"/>
+<area shape="poly" coords="213,202,210,205,208,202,210,200,213,202,213,202" title="Complexity: 9; Coverage: 65%; Class: SWRLSameIndividualAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLSameIndividualAtomImpl.html#SWRLSameIndividualAtomImpl"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 11; Coverage: 0%; Class: SWRLRuleImpl.AtomSimplifier" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLRuleImpl.html#SWRLRuleImpl.AtomSimplifier"/>
+<area shape="poly" coords="159,183,156,185,154,183,156,180,159,183,159,183" title="Complexity: 36; Coverage: 43%; Class: SWRLRuleImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLRuleImpl.html#SWRLRuleImpl"/>
+<area shape="poly" coords="169,200,166,202,164,200,166,197,169,200,169,200" title="Complexity: 13; Coverage: 47%; Class: SWRLObjectPropertyAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLObjectPropertyAtomImpl.html#SWRLObjectPropertyAtomImpl"/>
+<area shape="poly" coords="203,200,200,202,198,200,200,197,203,200,203,200" title="Complexity: 13; Coverage: 61%; Class: SWRLLiteralArgumentImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLLiteralArgumentImpl.html#SWRLLiteralArgumentImpl"/>
+<area shape="poly" coords="218,200,215,202,213,200,215,197,218,200,218,200" title="Complexity: 13; Coverage: 67%; Class: SWRLIndividualArgumentImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLIndividualArgumentImpl.html#SWRLIndividualArgumentImpl"/>
+<area shape="poly" coords="213,202,210,205,208,202,210,200,213,202,213,202" title="Complexity: 9; Coverage: 65%; Class: SWRLSameIndividualAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLSameIndividualAtomImpl.html#SWRLSameIndividualAtomImpl"/>
+<area shape="poly" coords="237,200,235,203,232,200,235,198,237,200,237,200" title="Complexity: 12; Coverage: 75%; Class: SWRLDataRangeAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLDataRangeAtomImpl.html#SWRLDataRangeAtomImpl"/>
+<area shape="poly" coords="220,202,218,204,215,202,218,199,220,202,220,202" title="Complexity: 10; Coverage: 68%; Class: SWRLDataPropertyAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLDataPropertyAtomImpl.html#SWRLDataPropertyAtomImpl"/>
+<area shape="poly" coords="237,200,235,203,232,200,235,198,237,200,237,200" title="Complexity: 12; Coverage: 75%; Class: SWRLDataRangeAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLDataRangeAtomImpl.html#SWRLDataRangeAtomImpl"/>
+<area shape="poly" coords="220,195,218,197,215,195,218,192,220,195,220,195" title="Complexity: 20; Coverage: 68%; Class: SWRLBuiltInAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLBuiltInAtomImpl.html#SWRLBuiltInAtomImpl"/>
+<area shape="poly" coords="237,202,235,205,232,202,235,200,237,202,237,202" title="Complexity: 9; Coverage: 75%; Class: SWRLBinaryAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLBinaryAtomImpl.html#SWRLBinaryAtomImpl"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: SWRLAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLAtomImpl.html#SWRLAtomImpl"/>
+<area shape="poly" coords="200,204,198,206,195,204,198,201,200,204,200,204" title="Complexity: 7; Coverage: 60%; Class: OWLValueRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLValueRestrictionImpl.html#OWLValueRestrictionImpl"/>
+<area shape="poly" coords="245,205,242,207,240,205,242,202,245,205,245,205" title="Complexity: 6; Coverage: 78%; Class: OWLUnaryPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLUnaryPropertyAxiomImpl.html#OWLUnaryPropertyAxiomImpl"/>
+<area shape="poly" coords="264,200,262,203,259,200,262,198,264,200,264,200" title="Complexity: 12; Coverage: 86%; Class: OWLTransitiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLTransitiveObjectPropertyAxiomImpl.html#OWLTransitiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="235,200,232,202,230,200,232,197,235,200,235,200" title="Complexity: 13; Coverage: 74%; Class: OWLSymmetricObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSymmetricObjectPropertyAxiomImpl.html#OWLSymmetricObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="259,193,257,196,254,193,257,191,259,193,259,193" title="Complexity: 22; Coverage: 84%; Class: OWLSubPropertyChainAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSubPropertyChainAxiomImpl.html#OWLSubPropertyChainAxiomImpl"/>
+<area shape="poly" coords="267,202,264,205,262,202,264,200,267,202,267,202" title="Complexity: 9; Coverage: 87%; Class: OWLSubPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSubPropertyAxiomImpl.html#OWLSubPropertyAxiomImpl"/>
+<area shape="poly" coords="281,200,279,203,276,200,279,198,281,200,281,200" title="Complexity: 12; Coverage: 93%; Class: OWLSubObjectPropertyOfAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSubObjectPropertyOfAxiomImpl.html#OWLSubObjectPropertyOfAxiomImpl"/>
+<area shape="poly" coords="264,200,262,203,259,200,262,198,264,200,264,200" title="Complexity: 12; Coverage: 86%; Class: OWLTransitiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLTransitiveObjectPropertyAxiomImpl.html#OWLTransitiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="289,196,286,198,284,196,286,193,289,196,289,196" title="Complexity: 18; Coverage: 96%; Class: OWLSubClassOfAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSubClassOfAxiomImpl.html#OWLSubClassOfAxiomImpl"/>
+<area shape="poly" coords="232,195,230,198,227,195,230,193,232,195,232,195" title="Complexity: 19; Coverage: 73%; Class: OWLSubAnnotationPropertyOfAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSubAnnotationPropertyOfAxiomImpl.html#OWLSubAnnotationPropertyOfAxiomImpl"/>
+<area shape="poly" coords="115,192,112,194,110,192,112,189,115,192,115,192" title="Complexity: 24; Coverage: 25%; Class: OWLSameIndividualAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLSameIndividualAxiomImpl.html#OWLSameIndividualAxiomImpl"/>
+<area shape="poly" coords="176,207,174,209,171,207,174,204,176,207,176,207" title="Complexity: 3; Coverage: 50%; Class: OWLRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLRestrictionImpl.html#OWLRestrictionImpl"/>
+<area shape="poly" coords="252,200,249,202,247,200,249,197,252,200,252,200" title="Complexity: 13; Coverage: 81%; Class: OWLReflexiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLReflexiveObjectPropertyAxiomImpl.html#OWLReflexiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="242,205,240,207,237,205,240,202,242,205,242,205" title="Complexity: 6; Coverage: 77%; Class: OWLQuantifiedRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLQuantifiedRestrictionImpl.html#OWLQuantifiedRestrictionImpl"/>
+<area shape="poly" coords="245,202,242,204,240,202,242,199,245,202,245,202" title="Complexity: 10; Coverage: 78%; Class: OWLQuantifiedObjectRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLQuantifiedObjectRestrictionImpl.html#OWLQuantifiedObjectRestrictionImpl"/>
+<area shape="poly" coords="193,201,191,204,188,201,191,199,193,201,193,201" title="Complexity: 11; Coverage: 57%; Class: OWLQuantifiedDataRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLQuantifiedDataRestrictionImpl.html#OWLQuantifiedDataRestrictionImpl"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 8; Coverage: 84%; Class: OWLPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyRangeAxiomImpl.html#OWLPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="215,208,213,210,210,208,213,205,215,208,215,208" title="Complexity: 2; Coverage: 66%; Class: OWLPropertyExpressionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyExpressionImpl.html#OWLPropertyExpressionImpl"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 8; Coverage: 85%; Class: OWLPropertyDomainAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyDomainAxiomImpl.html#OWLPropertyDomainAxiomImpl"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="264,18,262,20,259,18,262,15,264,18,264,18" title="Complexity: 265; Coverage: 86%; Class: OWLOntologyManagerImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyManagerImpl.html#OWLOntologyManagerImpl"/>
+<area shape="poly" coords="230,199,227,201,225,199,227,196,230,199,230,199" title="Complexity: 14; Coverage: 72%; Class: OWLOntologyImpl.OWLOntologyChangeFilter" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyImpl.html#OWLOntologyImpl.OWLOntologyChangeFilter"/>
+<area shape="poly" coords="117,205,115,207,112,205,115,202,117,205,117,205" title="Complexity: 6; Coverage: 26%; Class: OWLOntologyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyImpl.html#OWLOntologyImpl"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: OWLOntologyIRIMapperImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyIRIMapperImpl.html#OWLOntologyIRIMapperImpl"/>
+<area shape="poly" coords="235,184,232,186,230,184,232,181,235,184,235,184" title="Complexity: 35; Coverage: 74%; Class: OWLOntologyFactoryImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyFactoryImpl.html#OWLOntologyFactoryImpl"/>
+<area shape="poly" coords="205,201,203,204,200,201,203,199,205,201,205,201" title="Complexity: 11; Coverage: 62%; Class: OWLObjectUnionOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectUnionOfImpl.html#OWLObjectUnionOfImpl"/>
+<area shape="poly" coords="227,200,225,203,222,200,225,198,227,200,227,200" title="Complexity: 12; Coverage: 71%; Class: OWLObjectSomeValuesFromImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectSomeValuesFromImpl.html#OWLObjectSomeValuesFromImpl"/>
+<area shape="poly" coords="274,200,271,202,269,200,271,197,274,200,274,200" title="Complexity: 13; Coverage: 90%; Class: OWLObjectPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyRangeAxiomImpl.html#OWLObjectPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="230,178,227,180,225,178,227,175,230,178,230,178" title="Complexity: 43; Coverage: 72%; Class: OWLObjectPropertyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyImpl.html#OWLObjectPropertyImpl"/>
+<area shape="poly" coords="267,205,264,207,262,205,264,202,267,205,267,205" title="Complexity: 6; Coverage: 87%; Class: OWLObjectPropertyExpressionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyExpressionImpl.html#OWLObjectPropertyExpressionImpl"/>
+<area shape="poly" coords="274,200,271,202,269,200,271,197,274,200,274,200" title="Complexity: 13; Coverage: 90%; Class: OWLObjectPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyRangeAxiomImpl.html#OWLObjectPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="237,202,235,204,232,202,235,199,237,202,237,202" title="Complexity: 10; Coverage: 75%; Class: OWLObjectPropertyCharacteristicAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyCharacteristicAxiomImpl.html#OWLObjectPropertyCharacteristicAxiomImpl"/>
+<area shape="poly" coords="240,197,237,200,235,197,237,195,240,197,240,197" title="Complexity: 16; Coverage: 76%; Class: OWLObjectPropertyAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyAssertionAxiomImpl.html#OWLObjectPropertyAssertionAxiomImpl"/>
+<area shape="poly" coords="142,195,139,198,137,195,139,193,142,195,142,195" title="Complexity: 19; Coverage: 36%; Class: OWLObjectOneOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectOneOfImpl.html#OWLObjectOneOfImpl"/>
+<area shape="poly" coords="276,202,274,204,271,202,274,199,276,202,276,202" title="Complexity: 10; Coverage: 91%; Class: OWLObjectMinCardinalityImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectMinCardinalityImpl.html#OWLObjectMinCardinalityImpl"/>
+<area shape="poly" coords="237,202,235,204,232,202,235,199,237,202,237,202" title="Complexity: 10; Coverage: 75%; Class: OWLObjectPropertyCharacteristicAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyCharacteristicAxiomImpl.html#OWLObjectPropertyCharacteristicAxiomImpl"/>
+<area shape="poly" coords="171,192,169,195,166,192,169,190,171,192,171,192" title="Complexity: 23; Coverage: 48%; Class: OWLObjectInverseOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectInverseOfImpl.html#OWLObjectInverseOfImpl"/>
+<area shape="poly" coords="262,199,259,201,257,199,259,196,262,199,262,199" title="Complexity: 14; Coverage: 85%; Class: OWLObjectIntersectionOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectIntersectionOfImpl.html#OWLObjectIntersectionOfImpl"/>
+<area shape="poly" coords="225,171,222,174,220,171,222,169,225,171,225,171" title="Complexity: 52; Coverage: 70%; Class: OWLObjectImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectImplWithoutEntityAndAnonCaching.html#OWLObjectImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="215,174,213,177,210,174,213,172,215,174,215,174" title="Complexity: 48; Coverage: 66%; Class: OWLObjectImplWithEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectImplWithEntityAndAnonCaching.html#OWLObjectImplWithEntityAndAnonCaching"/>
+<area shape="poly" coords="210,195,208,198,205,195,208,193,210,195,210,195" title="Complexity: 19; Coverage: 64%; Class: OWLObjectHasValueImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectHasValueImpl.html#OWLObjectHasValueImpl"/>
+<area shape="poly" coords="176,197,174,199,171,197,174,194,176,197,176,197" title="Complexity: 17; Coverage: 50%; Class: OWLObjectHasSelfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectHasSelfImpl.html#OWLObjectHasSelfImpl"/>
+<area shape="poly" coords="259,201,257,204,254,201,257,199,259,201,259,201" title="Complexity: 11; Coverage: 84%; Class: OWLObjectExactCardinalityImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectExactCardinalityImpl.html#OWLObjectExactCardinalityImpl"/>
+<area shape="poly" coords="203,199,200,201,198,199,200,196,203,199,203,199" title="Complexity: 14; Coverage: 61%; Class: OWLObjectComplementOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectComplementOfImpl.html#OWLObjectComplementOfImpl"/>
+<area shape="poly" coords="230,199,227,201,225,199,227,196,230,199,230,199" title="Complexity: 14; Coverage: 72%; Class: OWLOntologyImpl.OWLOntologyChangeFilter" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyImpl.html#OWLOntologyImpl.OWLOntologyChangeFilter"/>
+<area shape="poly" coords="227,200,225,203,222,200,225,198,227,200,227,200" title="Complexity: 12; Coverage: 71%; Class: OWLObjectSomeValuesFromImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectSomeValuesFromImpl.html#OWLObjectSomeValuesFromImpl"/>
+<area shape="poly" coords="210,199,208,201,205,199,208,196,210,199,210,199" title="Complexity: 14; Coverage: 64%; Class: OWLNegativeObjectPropertyAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNegativeObjectPropertyAssertionAxiomImpl.html#OWLNegativeObjectPropertyAssertionAxiomImpl"/>
+<area shape="poly" coords="210,199,208,201,205,199,208,196,210,199,210,199" title="Complexity: 14; Coverage: 64%; Class: OWLNegativeObjectPropertyAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNegativeObjectPropertyAssertionAxiomImpl.html#OWLNegativeObjectPropertyAssertionAxiomImpl"/>
+<area shape="poly" coords="196,197,193,200,191,197,193,195,196,197,196,197" title="Complexity: 16; Coverage: 58%; Class: OWLNaryPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryPropertyAxiomImpl.html#OWLNaryPropertyAxiomImpl"/>
+<area shape="poly" coords="166,197,164,199,161,197,164,194,166,197,166,197" title="Complexity: 17; Coverage: 46%; Class: OWLNaryIndividualAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryIndividualAxiomImpl.html#OWLNaryIndividualAxiomImpl"/>
+<area shape="poly" coords="196,204,193,206,191,204,193,201,196,204,196,204" title="Complexity: 7; Coverage: 58%; Class: OWLNaryDataRangeImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryDataRangeImpl.html#OWLNaryDataRangeImpl"/>
+<area shape="poly" coords="178,198,176,201,173,198,176,196,178,198,178,198" title="Complexity: 15; Coverage: 51%; Class: OWLNaryClassAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryClassAxiomImpl.html#OWLNaryClassAxiomImpl"/>
+<area shape="poly" coords="205,202,203,204,200,202,203,199,205,202,205,202" title="Complexity: 10; Coverage: 62%; Class: OWLNaryBooleanClassExpressionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryBooleanClassExpressionImpl.html#OWLNaryBooleanClassExpressionImpl"/>
+<area shape="poly" coords="215,182,213,185,210,182,213,180,215,182,215,182" title="Complexity: 37; Coverage: 66%; Class: OWLNamedIndividualImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLNamedIndividualImpl.html#OWLNamedIndividualImpl"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: OWLLogicalAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLogicalAxiomImplWithoutEntityAndAnonCaching.html#OWLLogicalAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: OWLLogicalAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLogicalAxiomImplWithoutEntityAndAnonCaching.html#OWLLogicalAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="176,174,174,177,171,174,174,172,176,174,176,174" title="Complexity: 48; Coverage: 50%; Class: OWLLiteralImplString" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplString.html#OWLLiteralImplString"/>
+<area shape="poly" coords="220,175,218,178,215,175,218,173,220,175,220,175" title="Complexity: 47; Coverage: 68%; Class: OWLLiteralImplPlain" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplPlain.html#OWLLiteralImplPlain"/>
+<area shape="poly" coords="237,169,235,171,232,169,235,166,237,169,237,169" title="Complexity: 56; Coverage: 75%; Class: OWLLiteralImplNoCompression" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplNoCompression.html#OWLLiteralImplNoCompression"/>
+<area shape="poly" coords="218,182,215,185,213,182,215,180,218,182,218,182" title="Complexity: 37; Coverage: 67%; Class: OWLLiteralImplInteger" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplInteger.html#OWLLiteralImplInteger"/>
+<area shape="poly" coords="196,182,193,185,191,182,193,180,196,182,196,182" title="Complexity: 37; Coverage: 58%; Class: OWLLiteralImplFloat" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplFloat.html#OWLLiteralImplFloat"/>
+<area shape="poly" coords="200,182,198,185,195,182,198,180,200,182,200,182" title="Complexity: 37; Coverage: 60%; Class: OWLLiteralImplDouble" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplDouble.html#OWLLiteralImplDouble"/>
+<area shape="poly" coords="218,182,215,184,213,182,215,179,218,182,218,182" title="Complexity: 38; Coverage: 67%; Class: OWLLiteralImplBoolean" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImplBoolean.html#OWLLiteralImplBoolean"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 9; Coverage: 0%; Class: OWLLiteralImpl.LiteralWrapper" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImpl.html#OWLLiteralImpl.LiteralWrapper"/>
+<area shape="poly" coords="54,174,51,177,49,174,51,172,54,174,54,174" title="Complexity: 48; Coverage: 0%; Class: OWLLiteralImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImpl.html#OWLLiteralImpl"/>
+<area shape="poly" coords="252,200,249,202,247,200,249,197,252,200,252,200" title="Complexity: 13; Coverage: 81%; Class: OWLReflexiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLReflexiveObjectPropertyAxiomImpl.html#OWLReflexiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="191,195,188,198,186,195,188,193,191,195,191,195" title="Complexity: 19; Coverage: 56%; Class: OWLInverseObjectPropertiesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLInverseObjectPropertiesAxiomImpl.html#OWLInverseObjectPropertiesAxiomImpl"/>
+<area shape="poly" coords="252,200,249,202,247,200,249,197,252,200,252,200" title="Complexity: 13; Coverage: 81%; Class: OWLReflexiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLReflexiveObjectPropertyAxiomImpl.html#OWLReflexiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="242,198,240,201,237,198,240,196,242,198,242,198" title="Complexity: 15; Coverage: 77%; Class: OWLIndividualRelationshipAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLIndividualRelationshipAxiomImpl.html#OWLIndividualRelationshipAxiomImpl"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="205,202,203,205,200,202,203,200,205,202,205,202" title="Complexity: 9; Coverage: 62%; Class: OWLImportsDeclarationImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLImportsDeclarationImpl.html#OWLImportsDeclarationImpl"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 8; Coverage: 100%; Class: OWLImmutableOntologyImpl.OWLEntityReferenceChecker" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLImmutableOntologyImpl.html#OWLImmutableOntologyImpl.OWLEntityReferenceChecker"/>
+<area shape="poly" coords="200,27,198,29,195,27,198,24,200,27,200,27" title="Complexity: 252; Coverage: 60%; Class: OWLImmutableOntologyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLImmutableOntologyImpl.html#OWLImmutableOntologyImpl"/>
+<area shape="poly" coords="232,192,230,194,227,192,230,189,232,192,232,192" title="Complexity: 24; Coverage: 73%; Class: OWLHasKeyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLHasKeyAxiomImpl.html#OWLHasKeyAxiomImpl"/>
+<area shape="poly" coords="281,200,279,202,276,200,279,197,281,200,281,200" title="Complexity: 13; Coverage: 93%; Class: OWLFunctionalObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLFunctionalObjectPropertyAxiomImpl.html#OWLFunctionalObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="284,199,281,201,279,199,281,196,284,199,284,199" title="Complexity: 14; Coverage: 94%; Class: OWLFunctionalDataPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLFunctionalDataPropertyAxiomImpl.html#OWLFunctionalDataPropertyAxiomImpl"/>
+<area shape="poly" coords="230,197,227,200,225,197,227,195,230,197,230,197" title="Complexity: 16; Coverage: 72%; Class: OWLFacetRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLFacetRestrictionImpl.html#OWLFacetRestrictionImpl"/>
+<area shape="poly" coords="245,193,242,196,240,193,242,191,245,193,245,193" title="Complexity: 22; Coverage: 78%; Class: OWLEquivalentObjectPropertiesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLEquivalentObjectPropertiesAxiomImpl.html#OWLEquivalentObjectPropertiesAxiomImpl"/>
+<area shape="poly" coords="237,193,235,196,232,193,235,191,237,193,237,193" title="Complexity: 22; Coverage: 75%; Class: OWLEquivalentDataPropertiesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLEquivalentDataPropertiesAxiomImpl.html#OWLEquivalentDataPropertiesAxiomImpl"/>
+<area shape="poly" coords="262,185,259,188,257,185,259,183,262,185,262,185" title="Complexity: 33; Coverage: 85%; Class: OWLEquivalentClassesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLEquivalentClassesAxiomImpl.html#OWLEquivalentClassesAxiomImpl"/>
+<area shape="poly" coords="178,192,176,195,173,192,176,190,178,192,178,192" title="Complexity: 23; Coverage: 51%; Class: OWLEntityCollectionContainerCollector" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLEntityCollectionContainerCollector.html#OWLEntityCollectionContainerCollector"/>
+<area shape="poly" coords="210,195,208,197,205,195,208,192,210,195,210,195" title="Complexity: 20; Coverage: 64%; Class: OWLDisjointUnionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDisjointUnionAxiomImpl.html#OWLDisjointUnionAxiomImpl"/>
+<area shape="poly" coords="169,196,166,198,164,196,166,193,169,196,169,196" title="Complexity: 18; Coverage: 47%; Class: OWLDisjointObjectPropertiesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDisjointObjectPropertiesAxiomImpl.html#OWLDisjointObjectPropertiesAxiomImpl"/>
+<area shape="poly" coords="169,196,166,198,164,196,166,193,169,196,169,196" title="Complexity: 18; Coverage: 47%; Class: OWLDisjointObjectPropertiesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDisjointObjectPropertiesAxiomImpl.html#OWLDisjointObjectPropertiesAxiomImpl"/>
+<area shape="poly" coords="164,194,161,196,159,194,161,191,164,194,164,194" title="Complexity: 21; Coverage: 45%; Class: OWLDisjointClassesAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDisjointClassesAxiomImpl.html#OWLDisjointClassesAxiomImpl"/>
+<area shape="poly" coords="110,190,107,193,105,190,107,188,110,190,110,190" title="Complexity: 26; Coverage: 23%; Class: OWLDifferentIndividualsAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDifferentIndividualsAxiomImpl.html#OWLDifferentIndividualsAxiomImpl"/>
+<area shape="poly" coords="276,195,274,198,271,195,274,193,276,195,276,195" title="Complexity: 19; Coverage: 91%; Class: OWLDeclarationAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDeclarationAxiomImpl.html#OWLDeclarationAxiomImpl"/>
+<area shape="poly" coords="186,193,183,196,181,193,183,191,186,193,186,193" title="Complexity: 22; Coverage: 54%; Class: OWLDatatypeRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDatatypeRestrictionImpl.html#OWLDatatypeRestrictionImpl"/>
+<area shape="poly" coords="259,175,257,178,254,175,257,173,259,175,259,175" title="Complexity: 47; Coverage: 84%; Class: OWLDatatypeImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDatatypeImpl.html#OWLDatatypeImpl"/>
+<area shape="poly" coords="225,194,222,196,220,194,222,191,225,194,225,194" title="Complexity: 21; Coverage: 70%; Class: OWLDatatypeDefinitionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDatatypeDefinitionAxiomImpl.html#OWLDatatypeDefinitionAxiomImpl"/>
+<area shape="poly" coords="176,200,174,202,171,200,174,197,176,200,176,200" title="Complexity: 13; Coverage: 50%; Class: OWLDataUnionOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataUnionOfImpl.html#OWLDataUnionOfImpl"/>
+<area shape="poly" coords="193,200,191,203,188,200,191,198,193,200,193,200" title="Complexity: 12; Coverage: 57%; Class: OWLDataSomeValuesFromImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataSomeValuesFromImpl.html#OWLDataSomeValuesFromImpl"/>
+<area shape="poly" coords="274,200,271,202,269,200,271,197,274,200,274,200" title="Complexity: 13; Coverage: 90%; Class: OWLObjectPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyRangeAxiomImpl.html#OWLObjectPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="220,178,218,180,215,178,218,175,220,178,220,178" title="Complexity: 43; Coverage: 68%; Class: OWLDataPropertyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataPropertyImpl.html#OWLDataPropertyImpl"/>
+<area shape="poly" coords="274,200,271,202,269,200,271,197,274,200,274,200" title="Complexity: 13; Coverage: 90%; Class: OWLObjectPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyRangeAxiomImpl.html#OWLObjectPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="245,205,242,207,240,205,242,202,245,205,245,205" title="Complexity: 6; Coverage: 78%; Class: OWLUnaryPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLUnaryPropertyAxiomImpl.html#OWLUnaryPropertyAxiomImpl"/>
+<area shape="poly" coords="240,197,237,199,235,197,237,194,240,197,240,197" title="Complexity: 17; Coverage: 76%; Class: OWLDataPropertyAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataPropertyAssertionAxiomImpl.html#OWLDataPropertyAssertionAxiomImpl"/>
+<area shape="poly" coords="178,195,176,197,173,195,176,192,178,195,178,195" title="Complexity: 20; Coverage: 51%; Class: OWLDataOneOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataOneOfImpl.html#OWLDataOneOfImpl"/>
+<area shape="poly" coords="237,202,235,204,232,202,235,199,237,202,237,202" title="Complexity: 10; Coverage: 75%; Class: OWLObjectPropertyCharacteristicAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyCharacteristicAxiomImpl.html#OWLObjectPropertyCharacteristicAxiomImpl"/>
+<area shape="poly" coords="237,202,235,204,232,202,235,199,237,202,237,202" title="Complexity: 10; Coverage: 75%; Class: OWLObjectPropertyCharacteristicAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectPropertyCharacteristicAxiomImpl.html#OWLObjectPropertyCharacteristicAxiomImpl"/>
+<area shape="poly" coords="176,200,174,202,171,200,174,197,176,200,176,200" title="Complexity: 13; Coverage: 50%; Class: OWLDataUnionOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataUnionOfImpl.html#OWLDataUnionOfImpl"/>
+<area shape="poly" coords="210,195,208,198,205,195,208,193,210,195,210,195" title="Complexity: 19; Coverage: 64%; Class: OWLObjectHasValueImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectHasValueImpl.html#OWLObjectHasValueImpl"/>
+<area shape="poly" coords="269,176,267,179,264,176,267,174,269,176,269,176" title="Complexity: 45; Coverage: 88%; Class: OWLDataFactoryInternalsImplNoCache" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryInternalsImplNoCache.html#OWLDataFactoryInternalsImplNoCache"/>
+<area shape="poly" coords="298,205,296,207,293,205,296,202,298,205,298,205" title="Complexity: 6; Coverage: 100%; Class: OWLDataFactoryInternalsImpl.Buildable" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryInternalsImpl.html#OWLDataFactoryInternalsImpl.Buildable"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: OWLLogicalAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLogicalAxiomImplWithoutEntityAndAnonCaching.html#OWLLogicalAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="227,197,225,199,222,197,225,194,227,197,227,197" title="Complexity: 17; Coverage: 71%; Class: OWLDataFactoryInternalsImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryInternalsImpl.html#OWLDataFactoryInternalsImpl"/>
+<area shape="poly" coords="284,42,281,45,279,42,281,40,284,42,284,42" title="Complexity: 231; Coverage: 94%; Class: OWLDataFactoryImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryImpl.html#OWLDataFactoryImpl"/>
+<area shape="poly" coords="223,201,220,204,218,201,220,199,223,201,223,201" title="Complexity: 11; Coverage: 69%; Class: OWLDataExactCardinalityImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataExactCardinalityImpl.html#OWLDataExactCardinalityImpl"/>
+<area shape="poly" coords="183,195,181,198,178,195,181,193,183,195,183,195" title="Complexity: 19; Coverage: 53%; Class: OWLDataComplementOfImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataComplementOfImpl.html#OWLDataComplementOfImpl"/>
+<area shape="poly" coords="205,199,203,201,200,199,203,196,205,199,205,199" title="Complexity: 14; Coverage: 62%; Class: OWLDataCardinalityRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataCardinalityRestrictionImpl.html#OWLDataCardinalityRestrictionImpl"/>
+<area shape="poly" coords="210,200,208,203,205,200,208,198,210,200,210,200" title="Complexity: 12; Coverage: 64%; Class: OWLDataAllValuesFromImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLDataAllValuesFromImpl.html#OWLDataAllValuesFromImpl"/>
+<area shape="poly" coords="225,176,222,178,220,176,222,173,225,176,225,176" title="Complexity: 46; Coverage: 70%; Class: OWLClassImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLClassImpl.html#OWLClassImpl"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: OWLPropertyAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyAxiomImplWithoutEntityAndAnonCaching.html#OWLPropertyAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="279,196,276,198,274,196,276,193,279,196,279,196" title="Complexity: 18; Coverage: 92%; Class: OWLClassAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLClassAssertionAxiomImpl.html#OWLClassAssertionAxiomImpl"/>
+<area shape="poly" coords="230,204,227,206,225,204,227,201,230,204,230,204" title="Complexity: 7; Coverage: 72%; Class: OWLCardinalityRestrictionImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLCardinalityRestrictionImpl.html#OWLCardinalityRestrictionImpl"/>
+<area shape="poly" coords="298,179,296,181,293,179,296,176,298,179,298,179" title="Complexity: 42; Coverage: 100%; Class: OWLAxiomIndexImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAxiomIndexImpl.html#OWLAxiomIndexImpl"/>
+<area shape="poly" coords="235,190,232,193,230,190,232,188,235,190,235,190" title="Complexity: 26; Coverage: 74%; Class: OWLAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAxiomImplWithoutEntityAndAnonCaching.html#OWLAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="227,192,225,194,222,192,225,189,227,192,227,192" title="Complexity: 24; Coverage: 71%; Class: OWLAxiomImplWithEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAxiomImplWithEntityAndAnonCaching.html#OWLAxiomImplWithEntityAndAnonCaching"/>
+<area shape="poly" coords="264,200,262,203,259,200,262,198,264,200,264,200" title="Complexity: 12; Coverage: 86%; Class: OWLTransitiveObjectPropertyAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLTransitiveObjectPropertyAxiomImpl.html#OWLTransitiveObjectPropertyAxiomImpl"/>
+<area shape="poly" coords="196,190,193,193,191,190,193,188,196,190,196,190" title="Complexity: 26; Coverage: 58%; Class: OWLAnonymousIndividualImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnonymousIndividualImpl.html#OWLAnonymousIndividualImpl"/>
+<area shape="poly" coords="220,202,218,204,215,202,218,199,220,202,220,202" title="Complexity: 10; Coverage: 68%; Class: SWRLDataPropertyAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLDataPropertyAtomImpl.html#SWRLDataPropertyAtomImpl"/>
+<area shape="poly" coords="205,194,203,196,200,194,203,191,205,194,205,194" title="Complexity: 21; Coverage: 62%; Class: OWLAnnotationPropertyRangeAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationPropertyRangeAxiomImpl.html#OWLAnnotationPropertyRangeAxiomImpl"/>
+<area shape="poly" coords="191,178,188,180,186,178,188,175,191,178,191,178" title="Complexity: 43; Coverage: 56%; Class: OWLAnnotationPropertyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationPropertyImpl.html#OWLAnnotationPropertyImpl"/>
+<area shape="poly" coords="215,194,213,196,210,194,213,191,215,194,215,194" title="Complexity: 21; Coverage: 66%; Class: OWLAnnotationPropertyDomainAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationPropertyDomainAxiomImpl.html#OWLAnnotationPropertyDomainAxiomImpl"/>
+<area shape="poly" coords="223,194,220,196,218,194,220,191,223,194,223,194" title="Complexity: 21; Coverage: 69%; Class: OWLAnnotationImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationImpl.html#OWLAnnotationImpl"/>
+<area shape="poly" coords="257,189,254,192,252,189,254,187,257,189,257,189" title="Complexity: 27; Coverage: 83%; Class: OWLAnnotationAssertionAxiomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationAssertionAxiomImpl.html#OWLAnnotationAssertionAxiomImpl"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 4; Coverage: 100%; Class: OWLAPIImplModule" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule.html#OWLAPIImplModule"/>
+<area shape="poly" coords="191,168,188,170,186,168,188,165,191,168,191,168" title="Complexity: 57; Coverage: 56%; Class: OWL2DatatypeImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWL2DatatypeImpl.html#OWL2DatatypeImpl"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: OWLLogicalAxiomImplWithoutEntityAndAnonCaching" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLLogicalAxiomImplWithoutEntityAndAnonCaching.html#OWLLogicalAxiomImplWithoutEntityAndAnonCaching"/>
+<area shape="poly" coords="276,164,274,167,271,164,274,162,276,164,276,164" title="Complexity: 62; Coverage: 91%; Class: MapPointer" alt="" href="uk/ac/manchester/cs/owl/owlapi/MapPointer.html#MapPointer"/>
+<area shape="poly" coords="298,204,296,206,293,204,296,201,298,204,298,204" title="Complexity: 7; Coverage: 100%; Class: Internals.ReferencedAxiomsCollector" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals.ReferencedAxiomsCollector"/>
+<area shape="poly" coords="294,178,291,180,289,178,291,175,294,178,294,178" title="Complexity: 43; Coverage: 98%; Class: Internals.RemoveAxiomVisitor" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals.RemoveAxiomVisitor"/>
+<area shape="poly" coords="298,178,296,180,293,178,296,175,298,178,298,178" title="Complexity: 43; Coverage: 100%; Class: Internals.AddAxiomVisitor" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals.AddAxiomVisitor"/>
+<area shape="poly" coords="257,205,254,207,252,205,254,202,257,205,257,205" title="Complexity: 6; Coverage: 83%; Class: Internals.SetPointer" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals.SetPointer"/>
+<area shape="poly" coords="71,204,68,206,66,204,68,201,71,204,71,204" title="Complexity: 7; Coverage: 7%; Class: Internals.ReferenceChecker" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals.ReferenceChecker"/>
+<area shape="poly" coords="279,114,276,117,274,114,276,112,279,114,279,114" title="Complexity: 131; Coverage: 92%; Class: Internals" alt="" href="uk/ac/manchester/cs/owl/owlapi/Internals.html#Internals"/>
+<area shape="poly" coords="286,197,284,200,281,197,284,195,286,197,286,197" title="Complexity: 16; Coverage: 95%; Class: InitVisitorFactory.InitCollectionVisitor" alt="" href="uk/ac/manchester/cs/owl/owlapi/InitVisitorFactory.html#InitVisitorFactory.InitCollectionVisitor"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: SWRLAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLAtomImpl.html#SWRLAtomImpl"/>
+<area shape="poly" coords="291,186,289,188,286,186,289,183,291,186,291,186" title="Complexity: 32; Coverage: 97%; Class: InitVisitorFactory.InitVisitor" alt="" href="uk/ac/manchester/cs/owl/owlapi/InitVisitorFactory.html#InitVisitorFactory.InitVisitor"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: InitVisitorFactory" alt="" href="uk/ac/manchester/cs/owl/owlapi/InitVisitorFactory.html#InitVisitorFactory"/>
+<area shape="poly" coords="279,207,276,209,274,207,276,204,279,207,279,207" title="Complexity: 3; Coverage: 92%; Class: ClassAxiomByClassPointer" alt="" href="uk/ac/manchester/cs/owl/owlapi/ClassAxiomByClassPointer.html#ClassAxiomByClassPointer"/>
+<area shape="poly" coords="294,153,291,155,289,153,291,150,294,153,294,153" title="Complexity: 78; Coverage: 98%; Class: AbstractEntityRegistrationManager" alt="" href="uk/ac/manchester/cs/owl/owlapi/AbstractEntityRegistrationManager.html#AbstractEntityRegistrationManager"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: SWRLAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLAtomImpl.html#SWRLAtomImpl"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: SWRLAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLAtomImpl.html#SWRLAtomImpl"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NoOpLock.NoOpCondition" alt="" href="uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpLock.html#NoOpLock.NoOpCondition"/>
+<area shape="poly" coords="269,205,267,207,264,205,267,202,269,205,269,205" title="Complexity: 6; Coverage: 88%; Class: NoOpLock" alt="" href="uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpLock.html#NoOpLock"/>
+<area shape="poly" coords="279,199,276,201,274,199,276,196,279,199,279,199" title="Complexity: 14; Coverage: 92%; Class: ConcurrentPriorityCollection" alt="" href="uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentPriorityCollection.html#ConcurrentPriorityCollection"/>
+<area shape="poly" coords="294,72,291,74,289,72,291,69,294,72,294,72" title="Complexity: 190; Coverage: 98%; Class: ConcurrentOWLOntologyImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyImpl.html#ConcurrentOWLOntologyImpl"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: SWRLAtomImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/SWRLAtomImpl.html#SWRLAtomImpl"/>
+<area shape="poly" coords="249,205,247,208,244,205,247,203,249,205,249,205" title="Complexity: 5; Coverage: 80%; Class: StructuralReasonerFactory" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasonerFactory.html#StructuralReasonerFactory"/>
+<area shape="poly" coords="262,207,259,209,257,207,259,204,262,207,262,207" title="Complexity: 3; Coverage: 85%; Class: StructuralReasoner.RawDataPropertyHierarchyProvider" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.RawDataPropertyHierarchyProvider"/>
+<area shape="poly" coords="284,202,281,205,279,202,281,200,284,202,284,202" title="Complexity: 9; Coverage: 94%; Class: StructuralReasoner.RawObjectPropertyHierarchyProvider" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.RawObjectPropertyHierarchyProvider"/>
+<area shape="poly" coords="267,197,264,200,262,197,264,195,267,197,267,197" title="Complexity: 16; Coverage: 87%; Class: StructuralReasoner.RawClassHierarchyProvider" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.RawClassHierarchyProvider"/>
+<area shape="poly" coords="249,205,247,208,244,205,247,203,249,205,249,205" title="Complexity: 5; Coverage: 80%; Class: StructuralReasonerFactory" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasonerFactory.html#StructuralReasonerFactory"/>
+<area shape="poly" coords="218,202,215,204,213,202,215,199,218,202,218,202" title="Complexity: 10; Coverage: 67%; Class: StructuralReasoner.ObjectPropertyHierarchyInfo" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.ObjectPropertyHierarchyInfo"/>
+<area shape="poly" coords="249,205,247,208,244,205,247,203,249,205,249,205" title="Complexity: 5; Coverage: 80%; Class: StructuralReasonerFactory" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasonerFactory.html#StructuralReasonerFactory"/>
+<area shape="poly" coords="294,197,291,199,289,197,291,194,294,197,294,197" title="Complexity: 17; Coverage: 98%; Class: StructuralReasoner.NodeCache" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.NodeCache"/>
+<area shape="poly" coords="279,171,276,174,274,171,276,169,279,171,279,171" title="Complexity: 52; Coverage: 92%; Class: StructuralReasoner.AbstractHierarchyInfo" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner.AbstractHierarchyInfo"/>
+<area shape="poly" coords="117,129,115,131,112,129,115,126,117,129,117,129" title="Complexity: 111; Coverage: 26%; Class: StructuralReasoner" alt="" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html#StructuralReasoner"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 16; Coverage: 0%; Class: SatisfiabilityReducer" alt="" href="org/semanticweb/owlapi/reasoner/impl/SatisfiabilityReducer.html#SatisfiabilityReducer"/>
+<area shape="poly" coords="208,191,205,193,203,191,205,188,208,191,208,191" title="Complexity: 25; Coverage: 63%; Class: OWLReasonerBase" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLReasonerBase.html#OWLReasonerBase"/>
+<area shape="poly" coords="76,205,73,207,71,205,73,202,76,205,76,205" title="Complexity: 6; Coverage: 9%; Class: OWLObjectPropertyNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLObjectPropertyNodeSet.html#OWLObjectPropertyNodeSet"/>
+<area shape="poly" coords="203,204,200,206,198,204,200,201,203,204,203,204" title="Complexity: 7; Coverage: 61%; Class: OWLObjectPropertyNode" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLObjectPropertyNode.html#OWLObjectPropertyNode"/>
+<area shape="poly" coords="76,205,73,207,71,205,73,202,76,205,76,205" title="Complexity: 6; Coverage: 9%; Class: OWLObjectPropertyNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLObjectPropertyNodeSet.html#OWLObjectPropertyNodeSet"/>
+<area shape="poly" coords="107,205,105,208,102,205,105,203,107,205,107,205" title="Complexity: 5; Coverage: 22%; Class: OWLNamedIndividualNode" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLNamedIndividualNode.html#OWLNamedIndividualNode"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: OWLDatatypeNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLDatatypeNodeSet.html#OWLDatatypeNodeSet"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 5; Coverage: 0%; Class: OWLDatatypeNode" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLDatatypeNode.html#OWLDatatypeNode"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: OWLDatatypeNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLDatatypeNodeSet.html#OWLDatatypeNodeSet"/>
+<area shape="poly" coords="127,204,125,206,122,204,125,201,127,204,127,204" title="Complexity: 7; Coverage: 30%; Class: OWLDataPropertyNode" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLDataPropertyNode.html#OWLDataPropertyNode"/>
+<area shape="poly" coords="76,205,73,207,71,205,73,202,76,205,76,205" title="Complexity: 6; Coverage: 9%; Class: OWLObjectPropertyNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLObjectPropertyNodeSet.html#OWLObjectPropertyNodeSet"/>
+<area shape="poly" coords="240,204,237,206,235,204,237,201,240,204,240,204" title="Complexity: 7; Coverage: 76%; Class: OWLClassNode" alt="" href="org/semanticweb/owlapi/reasoner/impl/OWLClassNode.html#OWLClassNode"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 19; Coverage: 0%; Class: NodeFactory" alt="" href="org/semanticweb/owlapi/reasoner/impl/NodeFactory.html#NodeFactory"/>
+<area shape="poly" coords="134,190,132,193,129,190,132,188,134,190,134,190" title="Complexity: 26; Coverage: 33%; Class: DefaultNodeSet" alt="" href="org/semanticweb/owlapi/reasoner/impl/DefaultNodeSet.html#DefaultNodeSet"/>
+<area shape="poly" coords="223,194,220,196,218,194,220,191,223,194,223,194" title="Complexity: 21; Coverage: 69%; Class: OWLAnnotationImpl" alt="" href="uk/ac/manchester/cs/owl/owlapi/OWLAnnotationImpl.html#OWLAnnotationImpl"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 2.25 , Coverage - 94.6% ">StructuralReasoner.RawObjectPropertyHierarchyProvider</a>
+                                    
+                                                                <a class="tag" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html"
+                            style="font-size: 27px;color:#14892c"
+                            title="Average Method Complexity - 5.2 , Coverage - 92.8% ">StructuralReasoner.AbstractHierarchyInfo</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/Internals.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 2.113 , Coverage - 92.4% ">Internals</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/MapPointer.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 2.214 , Coverage - 91.5% ">MapPointer</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/util/collections/SmallSet.html"
+                            style="font-size: 25px;color:#14892c"
+                            title="Average Method Complexity - 4.545 , Coverage - 88.5% ">SmallSet</a>
+                                    
+                                                                <a class="tag" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html"
+                            style="font-size: 28px;color:#14892c"
+                            title="Average Method Complexity - 5.333 , Coverage - 87.5% ">StructuralReasoner.RawClassHierarchyProvider</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyManagerImpl.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 2.227 , Coverage - 86.3% ">OWLOntologyManagerImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyDomainAxiomImpl.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 85.2% ">OWLPropertyDomainAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLPropertyRangeAxiomImpl.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 84.6% ">OWLPropertyRangeAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryInternalsImplNoCache.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 1.8 , Coverage - 88.2% ">OWLDataFactoryInternalsImplNoCache</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLEquivalentClassesAxiomImpl.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 1.941 , Coverage - 85.7% ">OWLEquivalentClassesAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLSubPropertyAxiomImpl.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 1.8 , Coverage - 87.1% ">OWLSubPropertyAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 1.417 , Coverage - 98.2% ">StructuralReasoner.NodeCache</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/ClassAxiomByClassPointer.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 1.5 , Coverage - 92% ">ClassAxiomByClassPointer</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLDataPropertyCharacteristicAxiomImpl.html"
+                            style="font-size: 18px;color:#fae1a0"
+                            title="Average Method Complexity - 2 , Coverage - 78.9% ">OWLDataPropertyCharacteristicAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLUnaryPropertyAxiomImpl.html"
+                            style="font-size: 18px;color:#fae1a0"
+                            title="Average Method Complexity - 2 , Coverage - 78.9% ">OWLUnaryPropertyAxiomImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/InitVisitorFactory.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 1.391 , Coverage - 97.2% ">InitVisitorFactory.InitVisitor</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLQuantifiedRestrictionImpl.html"
+                            style="font-size: 18px;color:#fae1a0"
+                            title="Average Method Complexity - 2 , Coverage - 77.8% ">OWLQuantifiedRestrictionImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyFactoryImpl.html"
+                            style="font-size: 25px;color:#fae1a0"
+                            title="Average Method Complexity - 4.375 , Coverage - 74.3% ">OWLOntologyFactoryImpl</a>
+                                    
+                                                                <a class="tag" href="uk/ac/manchester/cs/owl/owlapi/OWLSubClassOfAxiomImpl.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 1.385 , Coverage - 96.1% ">OWLSubClassOfAxiomImpl</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.73448277</span>73.4%</div><div style="display: table-cell">
+ <div title="73.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.4%"></div></div></div></div></td>
+                            <td>
+                                <a href="uk/ac/manchester/cs/owl/owlapi/pkg-summary.html">uk.ac.manchester.cs.owl.owlapi</a>
+                                <span class="aui-badge" title="Package complexity">3705</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.60366553</span>60.4%</div><div style="display: table-cell">
+ <div title="60.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.4%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/semanticweb/owlapi/reasoner/structural/pkg-summary.html">org.semanticweb.owlapi.reasoner.structural</a>
+                                <span class="aui-badge" title="Package complexity">233</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9681159</span>96.8%</div><div style="display: table-cell">
+ <div title="96.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="uk/ac/manchester/cs/owl/owlapi/concurrent/pkg-summary.html">uk.ac.manchester.cs.owl.owlapi.concurrent</a>
+                                <span class="aui-badge" title="Package complexity">223</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.36434108</span>36.4%</div><div style="display: table-cell">
+ <div title="36.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:36.4%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/semanticweb/owlapi/reasoner/impl/pkg-summary.html">org.semanticweb.owlapi.reasoner.impl</a>
+                                <span class="aui-badge" title="Package complexity">168</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88461536</span>88.5%</div><div style="display: table-cell">
+ <div title="88.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.5%"></div></div></div></div></td>
+                            <td>
+                                <a href="uk/ac/manchester/cs/owl/owlapi/util/collections/pkg-summary.html">uk.ac.manchester.cs.owl.owlapi.util.collections</a>
+                                <span class="aui-badge" title="Package complexity">50</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.86251146</span>86.3%</div><div style="display: table-cell">
+ <div title="86.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.3%"></div></div></div></div></td>
+                            <td>
+                                <a  href="uk/ac/manchester/cs/owl/owlapi/OWLOntologyManagerImpl.html"  title="uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl">OWLOntologyManagerImpl</a>
+                                <span class="aui-badge" title="Class complexity">265</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.60602677</span>60.6%</div><div style="display: table-cell">
+ <div title="60.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.6%"></div></div></div></div></td>
+                            <td>
+                                <a  href="uk/ac/manchester/cs/owl/owlapi/OWLImmutableOntologyImpl.html"  title="uk.ac.manchester.cs.owl.owlapi.OWLImmutableOntologyImpl">OWLImmutableOntologyImpl</a>
+                                <span class="aui-badge" title="Class complexity">252</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9451138</span>94.5%</div><div style="display: table-cell">
+ <div title="94.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.5%"></div></div></div></div></td>
+                            <td>
+                                <a  href="uk/ac/manchester/cs/owl/owlapi/OWLDataFactoryImpl.html"  title="uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl">OWLDataFactoryImpl</a>
+                                <span class="aui-badge" title="Class complexity">231</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9817987</span>98.2%</div><div style="display: table-cell">
+ <div title="98.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.2%"></div></div></div></div></td>
+                            <td>
+                                <a  href="uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyImpl.html"  title="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl">ConcurrentOWLOntologyImpl</a>
+                                <span class="aui-badge" title="Class complexity">190</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9240506</span>92.4%</div><div style="display: table-cell">
+ <div title="92.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.4%"></div></div></div></div></td>
+                            <td>
+                                <a  href="uk/ac/manchester/cs/owl/owlapi/Internals.html"  title="uk.ac.manchester.cs.owl.owlapi.Internals">Internals</a>
+                                <span class="aui-badge" title="Class complexity">131</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getDifferentIndividuals(OWLNamedIndividual)&#160;:&#160;NodeSet&lt;OWLNamedIndividual&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=557#src-557">StructuralReasoner.getDifferentIndividuals(OWLNamedIndividual)&#160;:&#160;NodeSet&lt;OWLNamedIndividual&gt;</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getSameIndividuals(OWLNamedIndividual)&#160;:&#160;Node&lt;OWLNamedIndividual&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=524#src-524">StructuralReasoner.getSameIndividuals(OWLNamedIndividual)&#160;:&#160;Node&lt;OWLNamedIndividual&gt;</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SWRLRuleImpl.getClassAtomPredicates()&#160;:&#160;Set&lt;OWLClassExpression&gt;" href="uk/ac/manchester/cs/owl/owlapi/SWRLRuleImpl.html?line=156#src-156">SWRLRuleImpl.getClassAtomPredicates()&#160;:&#160;Set&lt;OWLClassExpression&gt;</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLDifferentIndividualsAxiomImpl.asOWLSubClassOfAxioms()&#160;:&#160;Set&lt;OWLSubClassOfAxiom&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLDifferentIndividualsAxiomImpl.html?line=126#src-126">OWLDifferentIndividualsAxiomImpl.asOWLSubClassOfAxioms()&#160;:&#160;Set&lt;OWLSubClassOfAxiom&gt;</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getObjectPropertyDomains(OWLObjectPropertyExpression,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=304#src-304">StructuralReasoner.getObjectPropertyDomains(OWLObjectPropertyExpression,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getObjectPropertyRanges(OWLObjectPropertyExpression,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=329#src-329">StructuralReasoner.getObjectPropertyRanges(OWLObjectPropertyExpression,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLObjectImplWithEntityAndAnonCaching.compareAnnotations(List&lt;OWLAnnotation&gt;,List&lt;OWLAnnotation&gt;)&#160;:&#160;int" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectImplWithEntityAndAnonCaching.html?line=200#src-200">OWLObjectImplWithEntityAndAnonCaching.compareAnnotations(List&lt;OWLAnnotation&gt;,List&lt;OWLAnnotation&gt;)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLObjectImplWithoutEntityAndAnonCaching.compareAnnotations(List&lt;OWLAnnotation&gt;,List&lt;OWLAnnotation&gt;)&#160;:&#160;int" href="uk/ac/manchester/cs/owl/owlapi/OWLObjectImplWithoutEntityAndAnonCaching.html?line=227#src-227">OWLObjectImplWithoutEntityAndAnonCaching.compareAnnotations(List&lt;OWLAnnotation&gt;,List&lt;OWLAnnotation&gt;)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLSameIndividualAxiomImpl.asOWLSubClassOfAxioms()&#160;:&#160;Set&lt;OWLSubClassOfAxiom&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLSameIndividualAxiomImpl.html?line=112#src-112">OWLSameIndividualAxiomImpl.asOWLSubClassOfAxioms()&#160;:&#160;Set&lt;OWLSubClassOfAxiom&gt;</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLLiteralImpl.OWLLiteralImpl(String,String,OWLDatatype)" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImpl.html?line=68#src-68">OWLLiteralImpl.OWLLiteralImpl(String,String,OWLDatatype)</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLLiteralImpl.parseBoolean()&#160;:&#160;boolean" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImpl.html?line=128#src-128">OWLLiteralImpl.parseBoolean()&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DefaultNodeSet.equals(Object)&#160;:&#160;boolean" href="org/semanticweb/owlapi/reasoner/impl/DefaultNodeSet.html?line=196#src-196">DefaultNodeSet.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLLiteralImpl.equals(Object)&#160;:&#160;boolean" href="uk/ac/manchester/cs/owl/owlapi/OWLLiteralImpl.html?line=203#src-203">OWLLiteralImpl.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getTypes(OWLNamedIndividual,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=423#src-423">StructuralReasoner.getTypes(OWLNamedIndividual,boolean)&#160;:&#160;NodeSet&lt;OWLClass&gt;</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SWRLRuleImpl.getVariables()&#160;:&#160;Set&lt;SWRLVariable&gt;" href="uk/ac/manchester/cs/owl/owlapi/SWRLRuleImpl.html?line=118#src-118">SWRLRuleImpl.getVariables()&#160;:&#160;Set&lt;SWRLVariable&gt;</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLNaryClassAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;OWLClassExpression&gt;)&#160;:&#160;Collection&lt;T&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryClassAxiomImpl.html?line=108#src-108">OWLNaryClassAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;OWLClassExpression&gt;)&#160;:&#160;Collection&lt;T&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLNaryIndividualAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;OWLIndividual&gt;)&#160;:&#160;Collection&lt;T&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryIndividualAxiomImpl.html?line=113#src-113">OWLNaryIndividualAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;OWLIndividual&gt;)&#160;:&#160;Collection&lt;T&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLNaryPropertyAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;P&gt;)&#160;:&#160;Collection&lt;T&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLNaryPropertyAxiomImpl.html?line=128#src-128">OWLNaryPropertyAxiomImpl.walkPairwise(OWLPairwiseVisitor&lt;T,&#160;P&gt;)&#160;:&#160;Collection&lt;T&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StructuralReasoner.getDisjointClasses(OWLClassExpression)&#160;:&#160;NodeSet&lt;OWLClass&gt;" href="org/semanticweb/owlapi/reasoner/structural/StructuralReasoner.html?line=237#src-237">StructuralReasoner.getDisjointClasses(OWLClassExpression)&#160;:&#160;NodeSet&lt;OWLClass&gt;</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OWLDifferentIndividualsAxiomImpl.splitToAnnotatedPairs()&#160;:&#160;Set&lt;OWLDifferentIndividualsAxiom&gt;" href="uk/ac/manchester/cs/owl/owlapi/OWLDifferentIndividualsAxiomImpl.html?line=89#src-89">OWLDifferentIndividualsAxiomImpl.splitToAnnotatedPairs()&#160;:&#160;Set&lt;OWLDifferentIndividualsAxiom&gt;</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Sat Apr 27 2024 12:16:27 CDT using coverage data from Sat Apr 27 2024 12:05:38 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

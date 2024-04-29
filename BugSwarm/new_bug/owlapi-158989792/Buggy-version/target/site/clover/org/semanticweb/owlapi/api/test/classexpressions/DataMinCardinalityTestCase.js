@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":53,"id":101565,"methods":[{"el":46,"sc":5,"sl":38},{"el":52,"sc":5,"sl":48}],"name":"DataMinCardinalityTestCase","sl":35}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1040":{"methods":[{"sl":48}],"name":"testRDFJSON","pass":true,"statements":[{"sl":51}]},"test_1396":{"methods":[{"sl":48}],"name":"testRDFXML","pass":true,"statements":[{"sl":51}]},"test_1499":{"methods":[{"sl":48}],"name":"testOWLXML","pass":true,"statements":[{"sl":51}]},"test_1725":{"methods":[{"sl":38},{"sl":48}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":51}]},"test_2027":{"methods":[{"sl":48}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":51}]},"test_2396":{"methods":[{"sl":48}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":51}]},"test_2404":{"methods":[{"sl":48}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":51}]},"test_2582":{"methods":[{"sl":48}],"name":"testTurtle","pass":true,"statements":[{"sl":51}]},"test_64":{"methods":[{"sl":48}],"name":"testNQuads","pass":true,"statements":[{"sl":51}]},"test_811":{"methods":[{"sl":48}],"name":"testTrig","pass":true,"statements":[{"sl":51}]},"test_812":{"methods":[{"sl":48}],"name":"testJSONLD","pass":true,"statements":[{"sl":51}]},"test_984":{"methods":[{"sl":48}],"name":"testNTriples","pass":true,"statements":[{"sl":51}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1725], [], [1725], [1725], [1725], [1725], [1725], [1725], [], [], [2582, 64, 1396, 812, 984, 1725, 2396, 1040, 2027, 811, 1499, 2404], [], [], [2582, 64, 1396, 812, 984, 1725, 2396, 1040, 2027, 811, 1499, 2404], [], []]

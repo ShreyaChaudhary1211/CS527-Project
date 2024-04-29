@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":50,"id":8622,"methods":[{"el":41,"sc":5,"sl":34},{"el":49,"sc":5,"sl":43}],"name":"SymmetricObjectPropertyInverseTestCase","sl":31}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1398":{"methods":[{"sl":34}],"name":"testRDFXML","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_1630":{"methods":[{"sl":34}],"name":"testNQuads","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_1654":{"methods":[{"sl":34}],"name":"testNTriples","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_19":{"methods":[{"sl":34}],"name":"testOWLXML","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_1973":{"methods":[{"sl":34}],"name":"testTurtle","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_2138":{"methods":[{"sl":34}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_2382":{"methods":[{"sl":43}],"name":"testManchesterOWLSyntax","pass":true,"statements":[]},"test_2601":{"methods":[{"sl":34}],"name":"testRDFJSON","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_2637":{"methods":[{"sl":34}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_510":{"methods":[{"sl":34}],"name":"testTrig","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]},"test_713":{"methods":[{"sl":34}],"name":"testJSONLD","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":40}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [713, 2138, 2601, 2637, 1973, 19, 1630, 1654, 510, 1398], [], [], [713, 2138, 2601, 2637, 1973, 19, 1630, 1654, 510, 1398], [713, 2138, 2601, 2637, 1973, 19, 1630, 1654, 510, 1398], [], [713, 2138, 2601, 2637, 1973, 19, 1630, 1654, 510, 1398], [], [], [2382], [], [], [], [], [], [], []]

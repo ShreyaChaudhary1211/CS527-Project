@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":52,"id":101812,"methods":[{"el":45,"sc":5,"sl":37},{"el":51,"sc":5,"sl":47}],"name":"ObjectIntersectionOfTestCase","sl":34}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":47}],"name":"testNQuads","pass":true,"statements":[{"sl":50}]},"test_189":{"methods":[{"sl":47}],"name":"testJSONLD","pass":true,"statements":[{"sl":50}]},"test_21":{"methods":[{"sl":47}],"name":"testTrig","pass":true,"statements":[{"sl":50}]},"test_240":{"methods":[{"sl":47}],"name":"testRDFJSON","pass":true,"statements":[{"sl":50}]},"test_3015":{"methods":[{"sl":47}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":50}]},"test_3040":{"methods":[{"sl":47}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":50}]},"test_3080":{"methods":[{"sl":47}],"name":"testOWLXML","pass":true,"statements":[{"sl":50}]},"test_3172":{"methods":[{"sl":37},{"sl":47}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":50}]},"test_3237":{"methods":[{"sl":47}],"name":"testRDFXML","pass":true,"statements":[{"sl":50}]},"test_3466":{"methods":[{"sl":47}],"name":"testTurtle","pass":true,"statements":[{"sl":50}]},"test_3586":{"methods":[{"sl":47}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":50}]},"test_651":{"methods":[{"sl":47}],"name":"testNTriples","pass":true,"statements":[{"sl":50}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3172], [], [3172], [3172], [3172], [3172], [3172], [3172], [], [], [3080, 240, 0, 3015, 3466, 189, 651, 21, 3172, 3040, 3237, 3586], [], [], [3080, 240, 0, 3015, 3466, 189, 651, 21, 3172, 3040, 3237, 3586], [], []]

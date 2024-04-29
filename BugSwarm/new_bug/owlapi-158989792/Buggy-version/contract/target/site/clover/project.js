@@ -1,0 +1,2 @@
+processClover (  {"children":["uk/ac/manchester/owl/owlapi/tutorialowled2011/"],"name":"Clover database Sat Apr 27 2024 12:02:43 CDT","stats":{"AvgMethodComplexity":1.2110091,"Complexity":132,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":1,"TotalPercentageCovered":50.873787,"TotalStatements":370,"UncoveredElements":253},"title":"tests and tutorials 4.2.5"}
+ ); 

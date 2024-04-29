@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":100,"id":7252,"methods":[{"el":47,"sc":5,"sl":36},{"el":59,"sc":5,"sl":49},{"el":71,"sc":5,"sl":61},{"el":83,"sc":5,"sl":73},{"el":99,"sc":5,"sl":85}],"name":"EquivalentClassesAxiomTestCase","sl":34}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1475":{"methods":[{"sl":49}],"name":"testGetNamedClasses","pass":true,"statements":[{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]},"test_1585":{"methods":[{"sl":85}],"name":"testSplit","pass":true,"statements":[{"sl":87},{"sl":88},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":97},{"sl":98}]},"test_2742":{"methods":[{"sl":61}],"name":"testGetNamedClassesWithNothing","pass":true,"statements":[{"sl":63},{"sl":64},{"sl":65},{"sl":66},{"sl":67},{"sl":68},{"sl":69},{"sl":70}]},"test_602":{"methods":[{"sl":36}],"name":"testContainsNamedClass","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46}]},"test_658":{"methods":[{"sl":73}],"name":"testGetNamedClassesWithThing","pass":true,"statements":[{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":79},{"sl":80},{"sl":81},{"sl":82}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [602], [], [602], [602], [602], [602], [602], [602], [602], [602], [602], [], [], [1475], [], [1475], [1475], [1475], [1475], [1475], [1475], [1475], [1475], [], [], [2742], [], [2742], [2742], [2742], [2742], [2742], [2742], [2742], [2742], [], [], [658], [], [658], [658], [658], [658], [658], [658], [658], [658], [], [], [1585], [], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [1585], [], []]

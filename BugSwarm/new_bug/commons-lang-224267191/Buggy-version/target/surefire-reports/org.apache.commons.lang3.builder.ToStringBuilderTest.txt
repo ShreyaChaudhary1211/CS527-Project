@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.builder.ToStringBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 74, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec <<< FAILURE! - in org.apache.commons.lang3.builder.ToStringBuilderTest
+testReflectionHierarchyArrayList(org.apache.commons.lang3.builder.ToStringBuilderTest)  Time elapsed: 0.498 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...89f2c0[elementData={[<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>]},size=0,modCount=0]> but was:<...89f2c0[elementData={[]},size=0,modCount=0]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.__CLR4_5_2hlhll2xxj(ToStringBuilderTest.java:323)
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testReflectionHierarchyArrayList(ToStringBuilderTest.java:313)
+

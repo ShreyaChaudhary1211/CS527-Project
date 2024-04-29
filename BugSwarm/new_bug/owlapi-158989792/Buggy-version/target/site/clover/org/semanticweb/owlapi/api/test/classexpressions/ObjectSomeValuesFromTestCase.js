@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":55,"id":101885,"methods":[{"el":48,"sc":5,"sl":38},{"el":54,"sc":5,"sl":50}],"name":"ObjectSomeValuesFromTestCase","sl":35}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1593":{"methods":[{"sl":50}],"name":"testOWLXML","pass":true,"statements":[{"sl":53}]},"test_164":{"methods":[{"sl":50}],"name":"testTrig","pass":true,"statements":[{"sl":53}]},"test_220":{"methods":[{"sl":50}],"name":"testNQuads","pass":true,"statements":[{"sl":53}]},"test_2347":{"methods":[{"sl":50}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":53}]},"test_2497":{"methods":[{"sl":50}],"name":"testRDFXML","pass":true,"statements":[{"sl":53}]},"test_3017":{"methods":[{"sl":38},{"sl":50}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":53}]},"test_3341":{"methods":[{"sl":50}],"name":"testTurtle","pass":true,"statements":[{"sl":53}]},"test_3739":{"methods":[{"sl":50}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":53}]},"test_3850":{"methods":[{"sl":50}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":53}]},"test_57":{"methods":[{"sl":50}],"name":"testNTriples","pass":true,"statements":[{"sl":53}]},"test_753":{"methods":[{"sl":50}],"name":"testJSONLD","pass":true,"statements":[{"sl":53}]},"test_934":{"methods":[{"sl":50}],"name":"testRDFJSON","pass":true,"statements":[{"sl":53}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3017], [], [3017], [3017], [3017], [3017], [3017], [3017], [3017], [3017], [], [], [164, 220, 2347, 934, 3017, 753, 3341, 1593, 57, 2497, 3739, 3850], [], [], [164, 220, 2347, 934, 3017, 753, 3341, 1593, 57, 2497, 3739, 3850], [], []]
