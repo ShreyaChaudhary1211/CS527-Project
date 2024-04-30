@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.reflect.FieldUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 64, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec <<< FAILURE! - in org.apache.commons.lang3.reflect.FieldUtilsTest
+testGetAllFieldsList(org.apache.commons.lang3.reflect.FieldUtilsTest)  Time elapsed: 0.099 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<5> but was:<7>
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.__CLR4_5_21u2r7f125q(FieldUtilsTest.java:180)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testGetAllFieldsList(FieldUtilsTest.java:172)
+
+testGetAllFields(org.apache.commons.lang3.reflect.FieldUtilsTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<5> but was:<7>
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.__CLR4_5_23gy5dv125j(FieldUtilsTest.java:168)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testGetAllFields(FieldUtilsTest.java:162)
+

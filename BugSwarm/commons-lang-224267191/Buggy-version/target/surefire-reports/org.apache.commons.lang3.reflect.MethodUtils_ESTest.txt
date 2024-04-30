@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.reflect.MethodUtils_ESTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.283 sec <<< FAILURE! - in org.apache.commons.lang3.reflect.MethodUtils_ESTest
+org.apache.commons.lang3.reflect.MethodUtils_ESTest  Time elapsed: 0.276 sec  <<< ERROR!
+java.lang.IllegalAccessError: tried to access class org.apache.commons.lang3.reflect.MethodUtils_ESTest_scaffolding$__CLR4_5_2wiawialvha7hel from class org.apache.commons.lang3.reflect.MethodUtils_ESTest_scaffolding
+
+org.apache.commons.lang3.reflect.MethodUtils_ESTest  Time elapsed: 0.282 sec  <<< ERROR!
+java.lang.IllegalAccessError: tried to access class org.apache.commons.lang3.reflect.MethodUtils_ESTest_scaffolding$__CLR4_5_2wiawialvha7hel from class org.apache.commons.lang3.reflect.MethodUtils_ESTest_scaffolding
+
