@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.353" tests="216" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.402-b06"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Temurin"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version"/>
+    <property name="java.runtime.version" value="1.8.0_402-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/70/9z8mmtr153x2znr25_zb57mr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shreyachaudhary/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shreyachaudhary"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shreyachaudhary"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/boot/plexus-classworlds-2.7.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean clover:setup test -Dmaven.test.failure.ignore=true clover:aggregate clover:clover"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_402"/>
+    <property name="java.ext.dirs" value="/Users/shreyachaudhary/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.9.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testHashCodeDataExact" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.029"/>
+  <testcase name="testHashCodeDataOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.028"/>
+  <testcase name="testHashCodeDataRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.012"/>
+  <testcase name="testHashCodeExactCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testEqualsNegativeOWLLiteral" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectInverseFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.007"/>
+  <testcase name="testCreationMinCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testEqualsPositiveObjectIrreflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeObjectTransitive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testCreationObject" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeAxiomSameIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.005"/>
+  <testcase name="testCreationClassAssertion" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testHashCodeData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeClass" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationNotDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testCreationObjectAsymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveOWLLiteral" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeNamedIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectUnionOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeEquivalentDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testEqualsPositiveIntersection" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testCreationObjectReflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testEqualsPositiveObjectUnionOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.005"/>
+  <testcase name="testEqualsPositiveEquivalentClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testCreationData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataMax" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataMin" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testEqualsPositiveObjectHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveObjectSymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeDataComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataFunctionalData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeAxiomSameIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectTransitive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeNotDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeNotObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeObjectUnionOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveAnnotationProperty" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectInverseFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeMaxCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeSubObjectPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveObjectAsymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testCreationAnnotationProperty" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeDataSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeDatatype" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeEquivalentDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testHashCodeMinCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeSubDataPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testCreationObjectSymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveObjectTransitive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationEquivalentDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeSubObjectPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeSubDataPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeDisjointDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeNotObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveEquivalentDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeDisjointObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectReflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectHasSelf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataMax" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataMin" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDataPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectHasSelf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeOWLLiteralLang" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testAsSubAxiomsEquivalentDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataFunctionalData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDataPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataExact" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDisjointClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationClass" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveExactCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationSubDataPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectHasSelf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveEquivalentObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeObjectAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeObjectHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeAxiomDifferentFrom" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testHashCodeObjectFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeObjectComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectIrreflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDisjointObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectSymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveMaxCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeObjectIrreflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDisjointObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObject" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeDataComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectReflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeNotDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObject" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDisjointClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeEquivalentClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveDisjointObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveMinCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsNegativeMaxCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testCreationObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeIntersection" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationObjectFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveClass" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectInverseFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeEquivalentClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeClassAssertion" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveNotDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveObjectPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectUnionOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeMinCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveObject" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectIrreflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDataComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveNamedIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveOWLLiteralLang" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testCreationEquivalentObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDisjointDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDataSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDatatype" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testEqualsPositiveObjectOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationDatatype" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveDataHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataMax" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataMin" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeObjectPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationNotObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectAsymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testCreationObjectOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectSymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveObjectFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeAnnotationProperty" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeAxiomDifferentFrom" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveAxiomSameIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeIntersection" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testAsSubAxiomsEquivalentClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.004"/>
+  <testcase name="testCreationEquivalentClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDataHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataMax" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDataMin" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataExact" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDataOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDataRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveDataFunctionalData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeExactCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.005"/>
+  <testcase name="testHashCodeOWLLiteral" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeObjectTransitive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeObjectSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveDataComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataFunctionalData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationNamedIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeDisjointClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveNotObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveObjectComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.003"/>
+  <testcase name="testHashCodeObjectOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectAll" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeObjectHas" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectRel" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeClass" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationAxiomSameIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.002"/>
+  <testcase name="testEqualsPositiveObjectSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeOWLLiteralLang" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectInverseFunctional" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDataPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationObjectComplementOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataExact" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveSubObjectPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataOneOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationDataRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationExactCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationObjectHasSelf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveClassAssertion" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationObjectPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataPropertyRange" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveSubDataPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationOWLLiteralLang" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeAnnotationProperty" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testCreationSubObjectPropertyOf" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeDisjointClasses" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeDisjointDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDataSome" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveDatatype" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeNamedIndividual" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testHashCodeEquivalentObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testAsSubAxiomsEquivalentObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveAxiomDifferentFrom" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.025"/>
+  <testcase name="testEqualsNegativeData" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsNegativeClassAssertion" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeEquivalentObjectProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationMaxCard" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testEqualsPositiveObjectReflexive" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testHashCodeObjectAsymmetric" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsPositiveDisjointDataProperties" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0"/>
+  <testcase name="testCreationIntersection" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+  <testcase name="testEqualsNegativeDataPropertyDomain" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.008"/>
+  <testcase name="testCreationAxiomDifferentFrom" classname="org.semanticweb.owlapi.datafactory.OWLDataFactoryTestCase" time="0.001"/>
+</testsuite>

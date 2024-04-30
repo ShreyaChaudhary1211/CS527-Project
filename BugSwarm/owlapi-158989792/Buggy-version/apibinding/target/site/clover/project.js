@@ -1,0 +1,2 @@
+processClover (  {"children":["org/semanticweb/owlapi/apibinding/"],"name":"Clover database Sat Apr 27 2024 12:02:21 CDT","stats":{"AvgMethodComplexity":1.0068493,"Complexity":147,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":1,"TotalPercentageCovered":93.91892,"TotalStatements":150,"UncoveredElements":18},"title":"OWLAPI Binding and Config 4.2.5"}
+ ); 

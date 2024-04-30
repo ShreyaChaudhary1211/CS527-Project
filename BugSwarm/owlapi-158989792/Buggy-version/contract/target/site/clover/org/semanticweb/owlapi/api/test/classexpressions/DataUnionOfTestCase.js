@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":56,"id":7187,"methods":[{"el":49,"sc":5,"sl":38},{"el":55,"sc":5,"sl":51}],"name":"DataUnionOfTestCase","sl":36}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1012":{"methods":[{"sl":51}],"name":"testTurtle","pass":true,"statements":[{"sl":54}]},"test_1451":{"methods":[{"sl":51}],"name":"testNTriples","pass":true,"statements":[{"sl":54}]},"test_1759":{"methods":[{"sl":51}],"name":"testOWLXML","pass":true,"statements":[{"sl":54}]},"test_2044":{"methods":[{"sl":51}],"name":"testTrig","pass":true,"statements":[{"sl":54}]},"test_2692":{"methods":[{"sl":51}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":54}]},"test_3240":{"methods":[{"sl":38},{"sl":51}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":54}]},"test_384":{"methods":[{"sl":51}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":54}]},"test_424":{"methods":[{"sl":51}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":54}]},"test_541":{"methods":[{"sl":51}],"name":"testJSONLD","pass":true,"statements":[{"sl":54}]},"test_694":{"methods":[{"sl":51}],"name":"testRDFXML","pass":true,"statements":[{"sl":54}]},"test_764":{"methods":[{"sl":51}],"name":"testNQuads","pass":true,"statements":[{"sl":54}]},"test_820":{"methods":[{"sl":51}],"name":"testRDFJSON","pass":true,"statements":[{"sl":54}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3240], [], [3240], [3240], [3240], [3240], [3240], [3240], [3240], [3240], [3240], [], [], [424, 1451, 764, 2044, 384, 1759, 541, 3240, 820, 694, 1012, 2692], [], [], [424, 1451, 764, 2044, 384, 1759, 541, 3240, 820, 694, 1012, 2692], [], []]

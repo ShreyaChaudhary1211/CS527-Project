@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.14" tests="254" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.402-b06"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Temurin"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version"/>
+    <property name="java.runtime.version" value="1.8.0_402-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/70/9z8mmtr153x2znr25_zb57mr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shreyachaudhary/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shreyachaudhary"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shreyachaudhary"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/boot/plexus-classworlds-2.7.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean clover:setup test -Dmaven.test.failure.ignore=true clover:aggregate clover:clover"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_402"/>
+    <property name="java.ext.dirs" value="/Users/shreyachaudhary/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.9.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[0]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[0]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[1]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[1]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[2]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.026"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[2]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.004"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[3]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[3]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[4]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[4]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[5]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[5]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[6]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[6]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[7]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[7]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[8]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[8]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[9]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[9]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[10]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[10]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[11]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[11]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[12]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[12]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[13]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[13]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[14]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[14]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[15]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[15]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[16]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[16]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[17]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[17]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[18]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.005"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[18]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[19]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[19]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[20]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[20]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[21]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[21]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[22]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[22]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[23]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[23]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[24]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[24]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[25]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[25]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[26]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[26]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[27]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[27]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[28]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[28]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[29]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[29]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[30]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[30]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[31]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[31]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[32]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[32]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[33]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[33]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[34]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[34]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[35]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[35]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[36]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[36]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[37]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[37]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[38]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[38]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[39]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[39]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[40]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[40]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[41]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[41]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[42]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[42]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[43]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[43]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[44]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[44]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[45]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[45]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[46]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[46]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[47]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[47]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[48]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[48]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[49]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[49]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[50]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[50]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[51]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[51]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[52]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[52]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[53]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[53]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[54]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[54]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[55]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[55]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.002"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[56]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[56]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[57]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[57]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[58]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[58]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[59]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.018"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[59]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[60]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[60]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[61]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[61]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[62]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[62]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[63]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[63]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[64]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[64]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[65]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[65]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[66]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[66]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[67]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[67]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[68]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[68]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[69]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[69]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[70]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[70]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[71]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[71]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[72]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[72]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[73]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[73]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[74]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[74]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[75]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[75]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[76]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[76]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[77]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[77]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[78]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[78]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[79]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[79]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[80]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[80]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[81]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[81]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[82]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[82]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[83]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[83]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[84]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[84]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[85]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[85]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[86]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[86]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[87]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[87]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[88]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[88]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[89]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[89]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[90]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[90]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[91]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[91]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[92]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[92]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[93]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[93]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[94]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[94]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[95]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[95]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[96]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[96]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[97]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[97]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[98]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[98]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[99]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[99]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[100]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[100]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[101]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[101]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[102]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[102]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[103]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[103]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[104]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[104]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[105]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[105]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[106]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[106]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[107]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[107]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[108]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[108]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[109]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[109]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[110]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[110]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[111]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[111]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[112]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[112]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[113]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[113]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[114]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[114]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[115]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[115]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[116]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[116]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[117]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[117]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[118]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[118]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[119]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[119]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[120]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[120]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[121]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[121]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[122]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[122]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[123]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[123]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[124]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[124]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.002"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[125]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.002"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[125]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+  <testcase name="getIRIShouldReturnAnIRIThatStartsWithOWLRDFPrefix[126]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedNameShouldStartWithOWLRDFPrefixName[126]" classname="org.semanticweb.owlapi.model.OWLRDFVocabularyTestCase" time="0"/>
+</testsuite>

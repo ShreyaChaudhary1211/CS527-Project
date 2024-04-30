@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../../style.css');
+        @import url('../../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>OWLAPI Default Implementation 4.2.5</title>
+    </head>
+
+<body  onload="onLoad('OWLAPI Default Implementation 4.2.5: uk.ac.manchester.cs.owl.owlapi.OWLDatatypeDefinitionAxiomImpl.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://owlcs.github.io/owlapi/owlapi-impl/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://owlcs.github.io/owlapi/owlapi-impl/" target="_top">
+                                        OWLAPI Default Implementation 4.2.5
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../../" data-package-name="uk.ac.manchester.cs.owl.owlapi">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../../dashboard.html">Project Clover database Sat Apr 27 2024 12:00:46 CDT</a></li> 
+        <li><a href="pkg-summary.html">        Package uk.ac.manchester.cs.owl.owlapi</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File OWLDatatypeDefinitionAxiomImpl.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../../img/srcFileCovDistChart7.png" alt="../../../../../../img/srcFileCovDistChart7.png"
+                         usemap="#srcFileCovDistChart7.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart7.png" name="srcFileCovDistChart7.png">
+<area shape="rect" coords="100,20,107,66" title="29 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,29,98,66" title="23 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,13,89,66" title="33 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,8,80,65" title="36 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,37,71,65" title="18 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,45,63,65" title="13 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,62,54,66" title="3 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,60,45,66" title="4 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="0 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,62,27,66" title="3 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,55,18,66" title="7 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>50% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">32</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">166</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">117</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">21</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.66</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.31</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">32</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">166</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">117</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">21</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.66</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.31</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="OWLDatatypeDefinitionAxiomImpl">
+        <span><a href="#41" title="OWLDatatypeDefinitionAxiomImpl" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '41');">OWLDatatypeDefinitionAxiomImpl</a></span>
+</td>
+<td>41<a name="sl-41"></a></td>
+    <td class="">32</td>
+    <td class="">0%</td>
+    <td class="">21</td>
+    <td class="">17</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.70689654</span>70.7%</div><div style="display: table-cell">
+ <div title="70.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.7%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-OWLDatatypeDefinitionAxiomImpl" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-OWLDatatypeDefinitionAxiomImpl" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class OWLDatatypeDefinitionAxiomImpl</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-OWLDatatypeDefinitionAxiomImpl-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-OWLDatatypeDefinitionAxiomImpl-methods-body', 'dialog-OWLDatatypeDefinitionAxiomImpl-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <thead>
+                                                 <tr> <th id="OWLDatatypeDefinitionAxiomImpl">
+    Class<br/>    <span><a href="#41" title="OWLDatatypeDefinitionAxiomImpl" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '41');">OWLDatatypeDefinitionAxiomImpl</a></span>
+</th>
+<th>Line #<br/>41<a name="sl-41"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>32</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>21</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>17</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.70689654</span>70.7%</div><div style="display: table-cell">
+ <div title="70.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.7%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-OWLDatatypeDefinitionAxiomImpl-methods-body">
+                                                                                                            <tr id="OWLDatatypeDefinitionAxiomImpl-1">
+<td id="summary-59-5">
+ <span class="sortValue">OWLDatatypeDefinitionAxiomImpl(OWLDatatype,OWLDataRange,Collection&lt;?&#160;extends&#160;OWLAnnotation&gt;)</span>
+&#160;&#160;<a href="?line=29#59" title="OWLDatatypeDefinitionAxiomImpl(OWLDatatype,OWLDataRange,Collection&lt;?&#160;extends&#160;OWLAnnotation&gt;)" name="sl-59" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '59');">OWLDatatypeDefinitionAxiomImpl(OWLDatatype,OWLDataRange,Collection&lt;?&#160;extends&#160;OWLAnnotation&gt;)</a>
+</td>
+<td align="right"><span class="sortValue">59</span>59</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-2">
+<td id="summary-67-5">
+ <span class="sortValue">addSignatureEntitiesToSet(Set&lt;OWLEntity&gt;)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#67" title="addSignatureEntitiesToSet(Set&lt;OWLEntity&gt;)&#160;:&#160;void" name="sl-67" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '67');">addSignatureEntitiesToSet(Set&lt;OWLEntity&gt;)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">67</span>67</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-3">
+<td id="summary-73-5">
+ <span class="sortValue">addAnonymousIndividualsToSet(Set&lt;OWLAnonymousIndividual&gt;)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#73" title="addAnonymousIndividualsToSet(Set&lt;OWLAnonymousIndividual&gt;)&#160;:&#160;void" name="sl-73" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '73');">addAnonymousIndividualsToSet(Set&lt;OWLAnonymousIndividual&gt;)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">73</span>73</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-4">
+<td id="summary-78-5">
+ <span class="sortValue">getAxiomWithoutAnnotations()&#160;:&#160;OWLAxiom</span>
+&#160;&#160;<a href="?line=29#78" title="getAxiomWithoutAnnotations()&#160;:&#160;OWLAxiom" name="sl-78" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '78');">getAxiomWithoutAnnotations()&#160;:&#160;OWLAxiom</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.6</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6</span>60%</div><div style="display: table-cell">
+ <div title="60% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-5">
+<td id="summary-87-5">
+ <span class="sortValue">getAnnotatedAxiom(Set&lt;OWLAnnotation&gt;)&#160;:&#160;OWLDatatypeDefinitionAxiom</span>
+&#160;&#160;<a href="?line=29#87" title="getAnnotatedAxiom(Set&lt;OWLAnnotation&gt;)&#160;:&#160;OWLDatatypeDefinitionAxiom" name="sl-87" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '87');">getAnnotatedAxiom(Set&lt;OWLAnnotation&gt;)&#160;:&#160;OWLDatatypeDefinitionAxiom</a>
+</td>
+<td align="right"><span class="sortValue">87</span>87</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-6">
+<td id="summary-94-5">
+ <span class="sortValue">getDatatype()&#160;:&#160;OWLDatatype</span>
+&#160;&#160;<a href="?line=29#94" title="getDatatype()&#160;:&#160;OWLDatatype" name="sl-94" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '94');">getDatatype()&#160;:&#160;OWLDatatype</a>
+</td>
+<td align="right"><span class="sortValue">94</span>94</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-7">
+<td id="summary-99-5">
+ <span class="sortValue">getDataRange()&#160;:&#160;OWLDataRange</span>
+&#160;&#160;<a href="?line=29#99" title="getDataRange()&#160;:&#160;OWLDataRange" name="sl-99" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '99');">getDataRange()&#160;:&#160;OWLDataRange</a>
+</td>
+<td align="right"><span class="sortValue">99</span>99</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-8">
+<td id="summary-104-5">
+ <span class="sortValue">accept(OWLAxiomVisitor)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#104" title="accept(OWLAxiomVisitor)&#160;:&#160;void" name="sl-104" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '104');">accept(OWLAxiomVisitor)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">104</span>104</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-9">
+<td id="summary-109-5">
+ <span class="sortValue">accept(OWLAxiomVisitorEx&lt;O&gt;)&#160;:&#160;O</span>
+&#160;&#160;<a href="?line=29#109" title="accept(OWLAxiomVisitorEx&lt;O&gt;)&#160;:&#160;O" name="sl-109" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '109');">accept(OWLAxiomVisitorEx&lt;O&gt;)&#160;:&#160;O</a>
+</td>
+<td align="right"><span class="sortValue">109</span>109</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-10">
+<td id="summary-114-5">
+ <span class="sortValue">isLogicalAxiom()&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#114" title="isLogicalAxiom()&#160;:&#160;boolean" name="sl-114" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '114');">isLogicalAxiom()&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">114</span>114</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-11">
+<td id="summary-119-5">
+ <span class="sortValue">isAnnotationAxiom()&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#119" title="isAnnotationAxiom()&#160;:&#160;boolean" name="sl-119" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '119');">isAnnotationAxiom()&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">119</span>119</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-12">
+<td id="summary-124-5">
+ <span class="sortValue">getAxiomType()&#160;:&#160;AxiomType&lt;?&gt;</span>
+&#160;&#160;<a href="?line=29#124" title="getAxiomType()&#160;:&#160;AxiomType&lt;?&gt;" name="sl-124" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '124');">getAxiomType()&#160;:&#160;AxiomType&lt;?&gt;</a>
+</td>
+<td align="right"><span class="sortValue">124</span>124</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-13">
+<td id="summary-129-5">
+ <span class="sortValue">accept(OWLObjectVisitor)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#129" title="accept(OWLObjectVisitor)&#160;:&#160;void" name="sl-129" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '129');">accept(OWLObjectVisitor)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">129</span>129</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-14">
+<td id="summary-134-5">
+ <span class="sortValue">accept(OWLObjectVisitorEx&lt;O&gt;)&#160;:&#160;O</span>
+&#160;&#160;<a href="?line=29#134" title="accept(OWLObjectVisitorEx&lt;O&gt;)&#160;:&#160;O" name="sl-134" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '134');">accept(OWLObjectVisitorEx&lt;O&gt;)&#160;:&#160;O</a>
+</td>
+<td align="right"><span class="sortValue">134</span>134</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-15">
+<td id="summary-139-5">
+ <span class="sortValue">compareObjectOfSameType(OWLObject)&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#139" title="compareObjectOfSameType(OWLObject)&#160;:&#160;int" name="sl-139" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '139');">compareObjectOfSameType(OWLObject)&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">139</span>139</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="OWLDatatypeDefinitionAxiomImpl-16">
+<td id="summary-149-5">
+ <span class="sortValue">equals(Object)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#149" title="equals(Object)&#160;:&#160;boolean" name="sl-149" onclick="closeDialogAndScrollTo('dialog-OWLDatatypeDefinitionAxiomImpl', '149');">equals(Object)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">149</span>149</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.85714287</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85714287</span>85.7%</div><div style="display: table-cell">
+ <div title="85.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.7%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-OWLDatatypeDefinitionAxiomImpl">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 72 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-1370">
+<td><a name="testA-1370"></a><input type="checkbox" id="cb-1370" value="1370" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.67241377</span>
+<div>
+<div title="67.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:67.2%"></div></div></div></td>
+<td id="tc-1370">  <span class="sortValue">shouldDoCompleteRoundtripWithAnnotationsTurtle</span>shouldDoCompleteRoundtripWithAnnotationsTurtle
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-96">
+<td><a name="testA-96"></a><input type="checkbox" id="cb-96" value="96" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.67241377</span>
+<div>
+<div title="67.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:67.2%"></div></div></div></td>
+<td id="tc-96">  <span class="sortValue">shouldDoCompleteRoundtripWithAnnotationsDatatypeRDFXML</span>shouldDoCompleteRoundtripWithAnnotationsDatatypeRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-999">
+<td><a name="testA-999"></a><input type="checkbox" id="cb-999" value="999" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.67241377</span>
+<div>
+<div title="67.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:67.2%"></div></div></div></td>
+<td id="tc-999">  <span class="sortValue">shouldDoCompleteRoundtripWithAnnotationsRDFXML</span>shouldDoCompleteRoundtripWithAnnotationsRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2588">
+<td><a name="testA-2588"></a><input type="checkbox" id="cb-2588" value="2588" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.63793105</span>
+<div>
+<div title="63.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.8%"></div></div></div></td>
+<td id="tc-2588">  <span class="sortValue">roundTripRDFXMLAndFunctionalShouldBeSame</span>roundTripRDFXMLAndFunctionalShouldBeSame
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-328">
+<td><a name="testA-328"></a><input type="checkbox" id="cb-328" value="328" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6034483</span>
+<div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div></td>
+<td id="tc-328">  <span class="sortValue">testParsePrimer</span>testParsePrimer
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-620">
+<td><a name="testA-620"></a><input type="checkbox" id="cb-620" value="620" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6034483</span>
+<div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div></td>
+<td id="tc-620">  <span class="sortValue">testParsePrimerSubset</span>testParsePrimerSubset
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1658">
+<td><a name="testA-1658"></a><input type="checkbox" id="cb-1658" value="1658" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6034483</span>
+<div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div></td>
+<td id="tc-1658">  <span class="sortValue">testParsePrimerMinimalSubset</span>testParsePrimerMinimalSubset
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2112">
+<td><a name="testA-2112"></a><input type="checkbox" id="cb-2112" value="2112" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6034483</span>
+<div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div></td>
+<td id="tc-2112">  <span class="sortValue">roundTripRDFXMLAndFunctionalShouldBeSame</span>roundTripRDFXMLAndFunctionalShouldBeSame
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2309">
+<td><a name="testA-2309"></a><input type="checkbox" id="cb-2309" value="2309" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6034483</span>
+<div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div></td>
+<td id="tc-2309">  <span class="sortValue">roundTripRDFXMLAndFunctionalShouldBeSame</span>roundTripRDFXMLAndFunctionalShouldBeSame
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3195">
+<td><a name="testA-3195"></a><input type="checkbox" id="cb-3195" value="3195" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-3195">  <span class="sortValue">testJSONLD</span>testJSONLD
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1717">
+<td><a name="testA-1717"></a><input type="checkbox" id="cb-1717" value="1717" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-1717">  <span class="sortValue">testNQuads</span>testNQuads
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-826">
+<td><a name="testA-826"></a><input type="checkbox" id="cb-826" value="826" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-826">  <span class="sortValue">testTrig</span>testTrig
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2852">
+<td><a name="testA-2852"></a><input type="checkbox" id="cb-2852" value="2852" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-2852">  <span class="sortValue">testRDFXML</span>testRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2774">
+<td><a name="testA-2774"></a><input type="checkbox" id="cb-2774" value="2774" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-2774">  <span class="sortValue">testTurtle</span>testTurtle
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1826">
+<td><a name="testA-1826"></a><input type="checkbox" id="cb-1826" value="1826" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-1826">  <span class="sortValue">testNTriples</span>testNTriples
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2313">
+<td><a name="testA-2313"></a><input type="checkbox" id="cb-2313" value="2313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.55172414</span>
+<div>
+<div title="55.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.2%"></div></div></div></td>
+<td id="tc-2313">  <span class="sortValue">testRDFJSON</span>testRDFJSON
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2601">
+<td><a name="testA-2601"></a><input type="checkbox" id="cb-2601" value="2601" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.5344828</span>
+<div>
+<div title="53.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:53.4%"></div></div></div></td>
+<td id="tc-2601">  <span class="sortValue">testMove</span>testMove
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-677">
+<td><a name="testA-677"></a><input type="checkbox" id="cb-677" value="677" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.5344828</span>
+<div>
+<div title="53.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:53.4%"></div></div></div></td>
+<td id="tc-677">  <span class="sortValue">shouldParse</span>shouldParse
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2910">
+<td><a name="testA-2910"></a><input type="checkbox" id="cb-2910" value="2910" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.5344828</span>
+<div>
+<div title="53.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:53.4%"></div></div></div></td>
+<td id="tc-2910">  <span class="sortValue">testDeep</span>testDeep
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3687">
+<td><a name="testA-3687"></a><input type="checkbox" id="cb-3687" value="3687" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.5344828</span>
+<div>
+<div title="53.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:53.4%"></div></div></div></td>
+<td id="tc-3687">  <span class="sortValue">testShallow</span>testShallow
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2582">
+<td><a name="testA-2582"></a><input type="checkbox" id="cb-2582" value="2582" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2582">  <span class="sortValue">testOWLXML</span>testOWLXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2430">
+<td><a name="testA-2430"></a><input type="checkbox" id="cb-2430" value="2430" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2430">  <span class="sortValue">testJSONLD</span>testJSONLD
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1852">
+<td><a name="testA-1852"></a><input type="checkbox" id="cb-1852" value="1852" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1852">  <span class="sortValue">testRDFXML</span>testRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-194">
+<td><a name="testA-194"></a><input type="checkbox" id="cb-194" value="194" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-194">  <span class="sortValue">testTurtle</span>testTurtle
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1920">
+<td><a name="testA-1920"></a><input type="checkbox" id="cb-1920" value="1920" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1920">  <span class="sortValue">testRDFXML</span>testRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1076">
+<td><a name="testA-1076"></a><input type="checkbox" id="cb-1076" value="1076" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1076">  <span class="sortValue">testRDFJSON</span>testRDFJSON
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3637">
+<td><a name="testA-3637"></a><input type="checkbox" id="cb-3637" value="3637" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-3637">  <span class="sortValue">testNTriples</span>testNTriples
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2268">
+<td><a name="testA-2268"></a><input type="checkbox" id="cb-2268" value="2268" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2268">  <span class="sortValue">testNTriples</span>testNTriples
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3674">
+<td><a name="testA-3674"></a><input type="checkbox" id="cb-3674" value="3674" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-3674">  <span class="sortValue">testJSONLD</span>testJSONLD
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3841">
+<td><a name="testA-3841"></a><input type="checkbox" id="cb-3841" value="3841" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-3841">  <span class="sortValue">testFunctionalSyntax</span>testFunctionalSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2701">
+<td><a name="testA-2701"></a><input type="checkbox" id="cb-2701" value="2701" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2701">  <span class="sortValue">testOWLXML</span>testOWLXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1794">
+<td><a name="testA-1794"></a><input type="checkbox" id="cb-1794" value="1794" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1794">  <span class="sortValue">testTrig</span>testTrig
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-240">
+<td><a name="testA-240"></a><input type="checkbox" id="cb-240" value="240" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-240">  <span class="sortValue">testManchesterOWLSyntax</span>testManchesterOWLSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2099">
+<td><a name="testA-2099"></a><input type="checkbox" id="cb-2099" value="2099" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2099">  <span class="sortValue">testNQuads</span>testNQuads
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-438">
+<td><a name="testA-438"></a><input type="checkbox" id="cb-438" value="438" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-438">  <span class="sortValue">shouldTURTLEBeEquivalent</span>shouldTURTLEBeEquivalent
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2106">
+<td><a name="testA-2106"></a><input type="checkbox" id="cb-2106" value="2106" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2106">  <span class="sortValue">shouldRDFXMLBeEquivalent</span>shouldRDFXMLBeEquivalent
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3698">
+<td><a name="testA-3698"></a><input type="checkbox" id="cb-3698" value="3698" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-3698">  <span class="sortValue">shouldOWLXMLBeEquivalent</span>shouldOWLXMLBeEquivalent
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-597">
+<td><a name="testA-597"></a><input type="checkbox" id="cb-597" value="597" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-597">  <span class="sortValue">testFunctionalSyntax</span>testFunctionalSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1371">
+<td><a name="testA-1371"></a><input type="checkbox" id="cb-1371" value="1371" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1371">  <span class="sortValue">testOWLXML</span>testOWLXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2790">
+<td><a name="testA-2790"></a><input type="checkbox" id="cb-2790" value="2790" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2790">  <span class="sortValue">testNQuads</span>testNQuads
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3096">
+<td><a name="testA-3096"></a><input type="checkbox" id="cb-3096" value="3096" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-3096">  <span class="sortValue">testManchesterOWLSyntax</span>testManchesterOWLSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2080">
+<td><a name="testA-2080"></a><input type="checkbox" id="cb-2080" value="2080" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2080">  <span class="sortValue">testRDFJSON</span>testRDFJSON
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2340">
+<td><a name="testA-2340"></a><input type="checkbox" id="cb-2340" value="2340" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-2340">  <span class="sortValue">testTrig</span>testTrig
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1701">
+<td><a name="testA-1701"></a><input type="checkbox" id="cb-1701" value="1701" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.51724136</span>
+<div>
+<div title="51.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.7%"></div></div></div></td>
+<td id="tc-1701">  <span class="sortValue">testTurtle</span>testTurtle
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-873">
+<td><a name="testA-873"></a><input type="checkbox" id="cb-873" value="873" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.4827586</span>
+<div>
+<div title="48.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.3%"></div></div></div></td>
+<td id="tc-873">  <span class="sortValue">testDataRanges</span>testDataRanges
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-316">
+<td><a name="testA-316"></a><input type="checkbox" id="cb-316" value="316" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.4827586</span>
+<div>
+<div title="48.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.3%"></div></div></div></td>
+<td id="tc-316">  <span class="sortValue">testManchesterOWLSyntax</span>testManchesterOWLSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1786">
+<td><a name="testA-1786"></a><input type="checkbox" id="cb-1786" value="1786" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.4827586</span>
+<div>
+<div title="48.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.3%"></div></div></div></td>
+<td id="tc-1786">  <span class="sortValue">testFunctionalSyntax</span>testFunctionalSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3735">
+<td><a name="testA-3735"></a><input type="checkbox" id="cb-3735" value="3735" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.4827586</span>
+<div>
+<div title="48.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.3%"></div></div></div></td>
+<td id="tc-3735">  <span class="sortValue">shouldManchBeEquivalent</span>shouldManchBeEquivalent
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2067">
+<td><a name="testA-2067"></a><input type="checkbox" id="cb-2067" value="2067" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-2067">  <span class="sortValue">roundTripRDFXMLAndFunctionalShouldBeSame</span>roundTripRDFXMLAndFunctionalShouldBeSame
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1075">
+<td><a name="testA-1075"></a><input type="checkbox" id="cb-1075" value="1075" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-1075">  <span class="sortValue">shouldRoundTripAReadableVersion</span>shouldRoundTripAReadableVersion
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3668">
+<td><a name="testA-3668"></a><input type="checkbox" id="cb-3668" value="3668" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-3668">  <span class="sortValue">testrun</span>testrun
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-525">
+<td><a name="testA-525"></a><input type="checkbox" id="cb-525" value="525" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-525">  <span class="sortValue">testRDFXML</span>testRDFXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-3275">
+<td><a name="testA-3275"></a><input type="checkbox" id="cb-3275" value="3275" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-3275">  <span class="sortValue">testNTriples</span>testNTriples
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2567">
+<td><a name="testA-2567"></a><input type="checkbox" id="cb-2567" value="2567" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-2567">  <span class="sortValue">testNQuads</span>testNQuads
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1782">
+<td><a name="testA-1782"></a><input type="checkbox" id="cb-1782" value="1782" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-1782">  <span class="sortValue">testTurtle</span>testTurtle
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1510">
+<td><a name="testA-1510"></a><input type="checkbox" id="cb-1510" value="1510" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-1510">  <span class="sortValue">testRDFJSON</span>testRDFJSON
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1573">
+<td><a name="testA-1573"></a><input type="checkbox" id="cb-1573" value="1573" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-1573">  <span class="sortValue">testTrig</span>testTrig
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1448">
+<td><a name="testA-1448"></a><input type="checkbox" id="cb-1448" value="1448" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-1448">  <span class="sortValue">testJSONLD</span>testJSONLD
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2058">
+<td><a name="testA-2058"></a><input type="checkbox" id="cb-2058" value="2058" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46551725</span>
+<div>
+<div title="46.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.6%"></div></div></div></td>
+<td id="tc-2058">  <span class="sortValue">testOWLXML</span>testOWLXML
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1425">
+<td><a name="testA-1425"></a><input type="checkbox" id="cb-1425" value="1425" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.43103448</span>
+<div>
+<div title="43.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.1%"></div></div></div></td>
+<td id="tc-1425">  <span class="sortValue">testFunctionalSyntax</span>testFunctionalSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1213">
+<td><a name="testA-1213"></a><input type="checkbox" id="cb-1213" value="1213" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.41379312</span>
+<div>
+<div title="41.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:41.4%"></div></div></div></td>
+<td id="tc-1213">  <span class="sortValue">shouldDoCompleteRoundtripWithAnnotationsOWLXML</span>shouldDoCompleteRoundtripWithAnnotationsOWLXML
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2791">
+<td><a name="testA-2791"></a><input type="checkbox" id="cb-2791" value="2791" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.39655173</span>
+<div>
+<div title="39.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:39.7%"></div></div></div></td>
+<td id="tc-2791">  <span class="sortValue">shouldBuildDatatypeDefinition</span>shouldBuildDatatypeDefinition
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-727">
+<td><a name="testA-727"></a><input type="checkbox" id="cb-727" value="727" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.37931034</span>
+<div>
+<div title="37.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.9%"></div></div></div></td>
+<td id="tc-727">  <span class="sortValue">shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile</span>shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-744">
+<td><a name="testA-744"></a><input type="checkbox" id="cb-744" value="744" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.37931034</span>
+<div>
+<div title="37.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.9%"></div></div></div></td>
+<td id="tc-744">  <span class="sortValue">shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfileCycles</span>shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfileCycles
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1276">
+<td><a name="testA-1276"></a><input type="checkbox" id="cb-1276" value="1276" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.37931034</span>
+<div>
+<div title="37.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.9%"></div></div></div></td>
+<td id="tc-1276">  <span class="sortValue">shouldDoCompleteRoundtripWithAnnotationsFunctional</span>shouldDoCompleteRoundtripWithAnnotationsFunctional
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1812">
+<td><a name="testA-1812"></a><input type="checkbox" id="cb-1812" value="1812" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.37931034</span>
+<div>
+<div title="37.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.9%"></div></div></div></td>
+<td id="tc-1812">  <span class="sortValue">shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2RLProfile</span>shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2RLProfile
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2731">
+<td><a name="testA-2731"></a><input type="checkbox" id="cb-2731" value="2731" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.3448276</span>
+<div>
+<div title="34.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:34.5%"></div></div></div></td>
+<td id="tc-2731">  <span class="sortValue">testManchesterOWLSyntax</span>testManchesterOWLSyntax
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-515">
+<td><a name="testA-515"></a><input type="checkbox" id="cb-515" value="515" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.3448276</span>
+<div>
+<div title="34.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:34.5%"></div></div></div></td>
+<td id="tc-515">  <span class="sortValue">testAssertion</span>testAssertion
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-607">
+<td><a name="testA-607"></a><input type="checkbox" id="cb-607" value="607" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.3275862</span>
+<div>
+<div title="32.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.8%"></div></div></div></td>
+<td id="tc-607">  <span class="sortValue">shouldBuildDatatypeDefinition</span>shouldBuildDatatypeDefinition
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-84">
+<td><a name="testA-84"></a><input type="checkbox" id="cb-84" value="84" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.3275862</span>
+<div>
+<div title="32.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.8%"></div></div></div></td>
+<td id="tc-84">  <span class="sortValue">shouldBuildDatatypeDefinition</span>shouldBuildDatatypeDefinition
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1584">
+<td><a name="testA-1584"></a><input type="checkbox" id="cb-1584" value="1584" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.2413793</span>
+<div>
+<div title="24.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:24.1%"></div></div></div></td>
+<td id="tc-1584">  <span class="sortValue">shouldCreateViolationForOWLDatatypeRestrictionInOWL2Profile</span>shouldCreateViolationForOWLDatatypeRestrictionInOWL2Profile
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-2780">
+<td><a name="testA-2780"></a><input type="checkbox" id="cb-2780" value="2780" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.2413793</span>
+<div>
+<div title="24.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:24.1%"></div></div></div></td>
+<td id="tc-2780">  <span class="sortValue">shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2Profile</span>shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2Profile
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/* This file is part of the OWL API.</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * The contents of this file are subject to the LGPL License, Version 3.0.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * Copyright 2014, The University of Manchester</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> * Alternatively, the contents of this file may be used under the terms of the Apache License, Version 2.0 in which case, the provisions of the Apache License Version 2.0 are applicable instead of those above.</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. */</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="keyword">package</span> uk.ac.manchester.cs.owl.<a href="../owlapi/pkg-summary.html">owlapi</a>;</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> org.semanticweb.owlapi.util.OWLAPIPreconditions.checkNotNull;</span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">import</span> java.util.Collection;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="keyword">import</span> java.util.Set;</span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> javax.annotation.Nonnull;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.AxiomType;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLAnnotation;</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLAnonymousIndividual;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLAxiom;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLAxiomVisitor;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLAxiomVisitorEx;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLDataRange;</span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLDatatype;</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLDatatypeDefinitionAxiom;</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLEntity;</span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLObject;</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLObjectVisitor;</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="keyword">import</span> org.semanticweb.owlapi.model.OWLObjectVisitorEx;</span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Matthew Horridge, The University of Manchester, Information</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment"> *         Management Group</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment"> * </span><span class="javadoc">@since</span><span class="comment"> 3.0.0</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="41" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-41' onclick="toggleInlineStats(this, 'inlinestats-41');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-41" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-41'), 'inlinestats-41');return true;">
+                <td><div>
+<div title="70.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:70.7%"></div></div></div></td><td>70.7%</td>
+                <td class="inlineStat">Uncovered Elements: 17 (58)</td>
+                <td class="inlineStat">Complexity: 21</td>
+                <td class="inlineStat">Complexity Density: 0.66</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 41, 'Tests that hit OWLDatatypeDefinitionAxiomImpl');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-41"><span class="spacer"></span><span id="src-41" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../../../../uk/ac/manchester/cs/owl/owlapi/OWLDatatypeDefinitionAxiomImpl.html#OWLDatatypeDefinitionAxiomImpl">OWLDatatypeDefinitionAxiomImpl</a> <span class="keyword">extends</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">        <a href="../../../../../../uk/ac/manchester/cs/owl/owlapi/OWLAxiomImplWithoutEntityAndAnonCaching.html#OWLAxiomImplWithoutEntityAndAnonCaching">OWLAxiomImplWithoutEntityAndAnonCaching</a> <span class="keyword">implements</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">        OWLDatatypeDefinitionAxiom {</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = 40000L;</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine">    @Nonnull</span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> OWLDatatype datatype;</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine">    @Nonnull</span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> OWLDataRange dataRange;</span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> datatype</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="comment">     *        datatype</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> dataRange</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="comment">     *        datarange</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> annotations</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="comment">     *        annotations on the axiom</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="59" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-59' onclick="toggleInlineStats(this, 'inlinestats-59');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-59" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-59'), 'inlinestats-59');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l59">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 59, 'Tests that hit OWLDatatypeDefinitionAxiomImpl(OWLDatatype,OWLDataRange,Collection&lt;?&#160;extends&#160;OWLAnnotation&gt;)');" ><span title="Line 59, Col 5: method entered 772 times." class="nolink">&#160;772</span></td>
+<td class=" methodStart  srcCell" id="id-59"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 59,65);" id="img-59" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-59" class="srcLine"><span class="nolink" title="Line 59, Col 5: method entered 772 times.">    <span class="keyword">public</span> <a href="../../../../../../uk/ac/manchester/cs/owl/owlapi/OWLDatatypeDefinitionAxiomImpl.html#OWLDatatypeDefinitionAxiomImpl">OWLDatatypeDefinitionAxiomImpl</a>(@Nonnull OWLDatatype datatype,</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-59'), 59,65);" id="e59" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">            @Nonnull OWLDataRange dataRange,</span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">            @Nonnull Collection&lt;? <span class="keyword">extends</span> OWLAnnotation&gt; annotations) {</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 62, 'Tests that hit line # 62');" ><span title="Line 62, Col 9: statement executed 772 times." class="nolink">&#160;772</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="nolink" title="Line 62, Col 9: statement executed 772 times.">        <span class="keyword">super</span>(annotations);</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 63, 'Tests that hit line # 63');" ><span title="Line 63, Col 9: statement executed 772 times." class="nolink">&#160;772</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="nolink" title="Line 63, Col 9: statement executed 772 times.">        <span class="keyword">this</span>.datatype = checkNotNull(datatype, <span class="string">&quot;datatype cannot be null&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 9: statement executed 772 times." class="nolink">&#160;772</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 9: statement executed 772 times.">        <span class="keyword">this</span>.dataRange = checkNotNull(dataRange, <span class="string">&quot;dataRange cannot be null&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="67" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-67' onclick="toggleInlineStats(this, 'inlinestats-67');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-67" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-67'), 'inlinestats-67');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l67">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 67, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-67"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 67,71);" id="img-67" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-67" class="srcLineHilight"><span class="nolink" title="Line 67, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-67'), 67,71);" id="e67" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> addSignatureEntitiesToSet(Set&lt;OWLEntity&gt; entities) {</span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 69, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLineHilight"><span class="nolink" title="Line 69, Col 9: statement not executed.">        entities.add(datatype);</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 70, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLineHilight"><span class="nolink" title="Line 70, Col 9: statement not executed.">        addSignatureEntitiesToSetForValue(entities, dataRange);</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="73" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-73' onclick="toggleInlineStats(this, 'inlinestats-73');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-73" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-73'), 'inlinestats-73');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l73">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 73, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-73"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 73,76);" id="img-73" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-73" class="srcLineHilight"><span class="nolink" title="Line 73, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-73'), 73,76);" id="e73" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> addAnonymousIndividualsToSet(Set&lt;OWLAnonymousIndividual&gt; anons) {</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 75, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLineHilight"><span class="nolink" title="Line 75, Col 9: statement not executed.">        addAnonymousIndividualsToSetForValue(anons, dataRange);</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="60% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:60%"></div></div></div></td><td>60%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (5)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit getAxiomWithoutAnnotations()&#160;:&#160;OWLAxiom');" ><span title="Line 78, Col 5: method entered 7 times." class="nolink">&#160;7</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,85);" id="img-78" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: method entered 7 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,85);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine">    <span class="keyword">public</span> OWLAxiom getAxiomWithoutAnnotations() {</span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 12: true branch executed 0 times, false branch executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLineHilight"><span class="nolink" title="Line 80, Col 12: true branch executed 0 times, false branch executed 7 times.">        <span class="keyword">if</span> (!isAnnotated()) {</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 81, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLineHilight"><span class="nolink" title="Line 81, Col 13: statement not executed.">            <span class="keyword">return</span> <span class="keyword">this</span>;</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 83, 'Tests that hit line # 83');" ><span title="Line 83, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 9: statement executed 7 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../../uk/ac/manchester/cs/owl/owlapi/OWLDatatypeDefinitionAxiomImpl.html#OWLDatatypeDefinitionAxiomImpl">OWLDatatypeDefinitionAxiomImpl</a>(getDatatype(),</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">                getDataRange(), NO_ANNOTATIONS);</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="87" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-87' onclick="toggleInlineStats(this, 'inlinestats-87');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-87" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-87'), 'inlinestats-87');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l87">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 87, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-87"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 87,92);" id="img-87" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-87" class="srcLineHilight"><span class="nolink" title="Line 87, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-87'), 87,92);" id="e87" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine">    <span class="keyword">public</span> OWLDatatypeDefinitionAxiom getAnnotatedAxiom(</span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">            Set&lt;OWLAnnotation&gt; annotations) {</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 90, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLineHilight"><span class="nolink" title="Line 90, Col 9: statement not executed.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../../uk/ac/manchester/cs/owl/owlapi/OWLDatatypeDefinitionAxiomImpl.html#OWLDatatypeDefinitionAxiomImpl">OWLDatatypeDefinitionAxiomImpl</a>(getDatatype(),</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine">                getDataRange(), mergeAnnos(annotations));</span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="94" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-94' onclick="toggleInlineStats(this, 'inlinestats-94');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-94" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-94'), 'inlinestats-94');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit getDatatype()&#160;:&#160;OWLDatatype');" ><span title="Line 94, Col 5: method entered 5,988 times." class="nolink">&#160;5988</span></td>
+<td class=" methodStart  srcCell" id="id-94"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 94,97);" id="img-94" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 5: method entered 5,988 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-94'), 94,97);" id="e94" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine">    <span class="keyword">public</span> OWLDatatype getDatatype() {</span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 9: statement executed 5,988 times." class="nolink">&#160;5988</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 9: statement executed 5,988 times.">        <span class="keyword">return</span> datatype;</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="99" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-99' onclick="toggleInlineStats(this, 'inlinestats-99');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-99" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-99'), 'inlinestats-99');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit getDataRange()&#160;:&#160;OWLDataRange');" ><span title="Line 99, Col 5: method entered 3,626 times." class="nolink">&#160;3626</span></td>
+<td class=" methodStart  srcCell" id="id-99"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 99,102);" id="img-99" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 5: method entered 3,626 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-99'), 99,102);" id="e99" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine">    <span class="keyword">public</span> OWLDataRange getDataRange() {</span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit line # 101');" ><span title="Line 101, Col 9: statement executed 3,626 times." class="nolink">&#160;3626</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 9: statement executed 3,626 times.">        <span class="keyword">return</span> dataRange;</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="104" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-104' onclick="toggleInlineStats(this, 'inlinestats-104');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-104" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-104'), 'inlinestats-104');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit accept(OWLAxiomVisitor)&#160;:&#160;void');" ><span title="Line 104, Col 5: method entered 407 times." class="nolink">&#160;407</span></td>
+<td class=" methodStart  srcCell" id="id-104"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 104,107);" id="img-104" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 5: method entered 407 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-104'), 104,107);" id="e104" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> accept(OWLAxiomVisitor visitor) {</span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 9: statement executed 407 times." class="nolink">&#160;407</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 9: statement executed 407 times.">        visitor.visit(<span class="keyword">this</span>);</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="109" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-109' onclick="toggleInlineStats(this, 'inlinestats-109');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-109" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-109'), 'inlinestats-109');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l109">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 109, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-109"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 109,112);" id="img-109" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-109" class="srcLineHilight"><span class="nolink" title="Line 109, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-109'), 109,112);" id="e109" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine">    <span class="keyword">public</span> &lt;O&gt; O accept(OWLAxiomVisitorEx&lt;O&gt; visitor) {</span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 111, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLineHilight"><span class="nolink" title="Line 111, Col 9: statement not executed.">        <span class="keyword">return</span> visitor.visit(<span class="keyword">this</span>);</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="114" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-114' onclick="toggleInlineStats(this, 'inlinestats-114');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-114" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-114'), 'inlinestats-114');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l114">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 114, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-114"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 114,117);" id="img-114" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-114" class="srcLineHilight"><span class="nolink" title="Line 114, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-114'), 114,117);" id="e114" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> isLogicalAxiom() {</span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 116, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLineHilight"><span class="nolink" title="Line 116, Col 9: statement not executed.">        <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="119" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-119' onclick="toggleInlineStats(this, 'inlinestats-119');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-119" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-119'), 'inlinestats-119');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l119">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 119, 'Tests that hit isAnnotationAxiom()&#160;:&#160;boolean');" ><span title="Line 119, Col 5: method entered 248 times." class="nolink">&#160;248</span></td>
+<td class=" methodStart  srcCell" id="id-119"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 119,122);" id="img-119" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-119" class="srcLine"><span class="nolink" title="Line 119, Col 5: method entered 248 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-119'), 119,122);" id="e119" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> isAnnotationAxiom() {</span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 121, 'Tests that hit line # 121');" ><span title="Line 121, Col 9: statement executed 248 times." class="nolink">&#160;248</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine"><span class="nolink" title="Line 121, Col 9: statement executed 248 times.">        <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="124" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-124' onclick="toggleInlineStats(this, 'inlinestats-124');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-124" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-124'), 'inlinestats-124');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l124">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 124, 'Tests that hit getAxiomType()&#160;:&#160;AxiomType&lt;?&gt;');" ><span title="Line 124, Col 5: method entered 3,119 times." class="nolink">&#160;3119</span></td>
+<td class=" methodStart  srcCell" id="id-124"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 124,127);" id="img-124" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-124" class="srcLine"><span class="nolink" title="Line 124, Col 5: method entered 3,119 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-124'), 124,127);" id="e124" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">    <span class="keyword">public</span> AxiomType&lt;?&gt; getAxiomType() {</span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 126, 'Tests that hit line # 126');" ><span title="Line 126, Col 9: statement executed 3,119 times." class="nolink">&#160;3119</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine"><span class="nolink" title="Line 126, Col 9: statement executed 3,119 times.">        <span class="keyword">return</span> AxiomType.DATATYPE_DEFINITION;</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="129" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-129' onclick="toggleInlineStats(this, 'inlinestats-129');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-129" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-129'), 'inlinestats-129');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l129">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 129, 'Tests that hit accept(OWLObjectVisitor)&#160;:&#160;void');" ><span title="Line 129, Col 5: method entered 2,929 times." class="nolink">&#160;2929</span></td>
+<td class=" methodStart  srcCell" id="id-129"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 129,132);" id="img-129" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-129" class="srcLine"><span class="nolink" title="Line 129, Col 5: method entered 2,929 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-129'), 129,132);" id="e129" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> accept(OWLObjectVisitor visitor) {</span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 131, 'Tests that hit line # 131');" ><span title="Line 131, Col 9: statement executed 2,929 times." class="nolink">&#160;2929</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine"><span class="nolink" title="Line 131, Col 9: statement executed 2,929 times.">        visitor.visit(<span class="keyword">this</span>);</span></span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="134" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-134' onclick="toggleInlineStats(this, 'inlinestats-134');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-134" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-134'), 'inlinestats-134');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l134">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 134, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-134"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 134,137);" id="img-134" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-134" class="srcLineHilight"><span class="nolink" title="Line 134, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-134'), 134,137);" id="e134" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine">    <span class="keyword">public</span> &lt;O&gt; O accept(OWLObjectVisitorEx&lt;O&gt; visitor) {</span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 136, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLineHilight"><span class="nolink" title="Line 136, Col 9: statement not executed.">        <span class="keyword">return</span> visitor.visit(<span class="keyword">this</span>);</span></span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l138">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-138" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="139" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-139' onclick="toggleInlineStats(this, 'inlinestats-139');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-139" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-139'), 'inlinestats-139');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.4</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l139">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 139, 'Tests that hit compareObjectOfSameType(OWLObject)&#160;:&#160;int');" ><span title="Line 139, Col 5: method entered 518 times." class="nolink">&#160;518</span></td>
+<td class=" methodStart  srcCell" id="id-139"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 139,147);" id="img-139" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-139" class="srcLine"><span class="nolink" title="Line 139, Col 5: method entered 518 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-139'), 139,147);" id="e139" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine">    <span class="keyword">protected</span> <span class="keyword">int</span> compareObjectOfSameType(OWLObject object) {</span></td>
+</tr>
+ <tr id="l141">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 141, 'Tests that hit line # 141');" ><span title="Line 141, Col 9: statement executed 518 times." class="nolink">&#160;518</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-141" class="srcLine"><span class="nolink" title="Line 141, Col 9: statement executed 518 times.">        OWLDatatypeDefinitionAxiom other = (OWLDatatypeDefinitionAxiom) object;</span></span></td>
+</tr>
+ <tr id="l142">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 142, 'Tests that hit line # 142');" ><span title="Line 142, Col 9: statement executed 518 times." class="nolink">&#160;518</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-142" class="srcLine"><span class="nolink" title="Line 142, Col 9: statement executed 518 times.">        <span class="keyword">int</span> diff = getDatatype().compareTo(other.getDatatype());</span></span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 143, 'Tests that hit line # 143');" ><span title="Line 143, Col 12: true branch executed 482 times, false branch executed 36 times." class="nolink">&#160;518</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLine"><span class="nolink" title="Line 143, Col 12: true branch executed 482 times, false branch executed 36 times.">        <span class="keyword">if</span> (diff != 0) {</span></span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 144, 'Tests that hit line # 144');" ><span title="Line 144, Col 13: statement executed 482 times." class="nolink">&#160;482</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLine"><span class="nolink" title="Line 144, Col 13: statement executed 482 times.">            <span class="keyword">return</span> diff;</span></span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l146">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 146, 'Tests that hit line # 146');" ><span title="Line 146, Col 9: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-146" class="srcLine"><span class="nolink" title="Line 146, Col 9: statement executed 36 times.">        <span class="keyword">return</span> getDataRange().compareTo(other.getDataRange());</span></span></td>
+</tr>
+ <tr id="l147">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=147#src-147">147</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-147" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l148">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=148#src-148">148</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-148" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="149" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-149' onclick="toggleInlineStats(this, 'inlinestats-149');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-149" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-149'), 'inlinestats-149');return true;">
+                <td><div>
+<div title="85.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:85.7%"></div></div></div></td><td>85.7%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (14)</td>
+                <td class="inlineStat">Complexity: 4</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l149">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=149#src-149">149</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 149, 'Tests that hit equals(Object)&#160;:&#160;boolean');" ><span title="Line 149, Col 5: method entered 1,268 times." class="nolink">&#160;1268</span></td>
+<td class=" methodStart  srcCell" id="id-149"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 149,165);" id="img-149" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-149" class="srcLine"><span class="nolink" title="Line 149, Col 5: method entered 1,268 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-149'), 149,165);" id="e149" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l150">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=150#src-150">150</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-150" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> equals(Object obj) {</span></td>
+</tr>
+ <tr id="l151">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=151#src-151">151</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 151, 'Tests that hit line # 151');" ><span title="Line 151, Col 12: true branch executed 285 times, false branch executed 983 times." class="nolink">&#160;1268</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-151" class="srcLine"><span class="nolink" title="Line 151, Col 12: true branch executed 285 times, false branch executed 983 times.">        <span class="keyword">if</span> (<span class="keyword">this</span> == obj) {</span></span></td>
+</tr>
+ <tr id="l152">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=152#src-152">152</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 152, 'Tests that hit line # 152');" ><span title="Line 152, Col 13: statement executed 285 times." class="nolink">&#160;285</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-152" class="srcLine"><span class="nolink" title="Line 152, Col 13: statement executed 285 times.">            <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l153">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=153#src-153">153</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-153" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l154">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=154#src-154">154</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 154, 'Tests that hit line # 154');" ><span title="Line 154, Col 12: true branch executed 925 times, false branch executed 58 times." class="nolink">&#160;983</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-154" class="srcLine"><span class="nolink" title="Line 154, Col 12: true branch executed 925 times, false branch executed 58 times.">        <span class="keyword">if</span> (!<span class="keyword">super</span>.equals(obj)) {</span></span></td>
+</tr>
+ <tr id="l155">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=155#src-155">155</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 155, 'Tests that hit line # 155');" ><span title="Line 155, Col 13: statement executed 925 times." class="nolink">&#160;925</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-155" class="srcLine"><span class="nolink" title="Line 155, Col 13: statement executed 925 times.">            <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l156">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=156#src-156">156</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-156" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l157">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=157#src-157">157</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-157" class="srcLine">        <span class="comment">// superclass is responsible for null, identity, owlaxiom type and</span></span></td>
+</tr>
+ <tr id="l158">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=158#src-158">158</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-158" class="srcLine">        <span class="comment">// annotations</span></span></td>
+</tr>
+ <tr id="l159">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=159#src-159">159</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 159, 'Tests that hit line # 159');" ><span title="Line 159, Col 12: true branch executed 0 times, false branch executed 58 times." class="nolink">&#160;58</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-159" class="srcLineHilight"><span class="nolink" title="Line 159, Col 12: true branch executed 0 times, false branch executed 58 times.">        <span class="keyword">if</span> (!(obj <span class="keyword">instanceof</span> OWLDatatypeDefinitionAxiom)) {</span></span></td>
+</tr>
+ <tr id="l160">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=160#src-160">160</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 160, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-160" class="srcLineHilight"><span class="nolink" title="Line 160, Col 13: statement not executed.">            <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l161">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=161#src-161">161</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-161" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l162">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=162#src-162">162</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 162, 'Tests that hit line # 162');" ><span title="Line 162, Col 9: statement executed 58 times." class="nolink">&#160;58</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-162" class="srcLine"><span class="nolink" title="Line 162, Col 9: statement executed 58 times.">        OWLDatatypeDefinitionAxiom other = (OWLDatatypeDefinitionAxiom) obj;</span></span></td>
+</tr>
+ <tr id="l163">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=163#src-163">163</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 163, 'Tests that hit line # 163');" ><span title="Line 163, Col 9: statement executed 58 times." class="nolink">&#160;58</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-163" class="srcLine"><span class="nolink" title="Line 163, Col 9: statement executed 58 times.">        <span class="keyword">return</span> datatype.equals(other.getDatatype())</span></span></td>
+</tr>
+ <tr id="l164">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=164#src-164">164</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-164" class="srcLine">                &amp;&amp; dataRange.equals(other.getDataRange());</span></td>
+</tr>
+ <tr id="l165">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=165#src-165">165</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-165" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l166">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=166#src-166">166</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-166" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="OWLDatatypeDefinitionAxiomImpl.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Sat Apr 27 2024 12:16:27 CDT using coverage data from Sat Apr 27 2024 12:05:38 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

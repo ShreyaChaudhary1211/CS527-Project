@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":55,"id":7915,"methods":[{"el":48,"sc":5,"sl":38},{"el":54,"sc":5,"sl":50}],"name":"DataComplementOfTestCase","sl":36}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_171":{"methods":[{"sl":50}],"name":"testNTriples","pass":true,"statements":[{"sl":53}]},"test_1784":{"methods":[{"sl":38},{"sl":50}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":53}]},"test_1880":{"methods":[{"sl":50}],"name":"testRDFJSON","pass":true,"statements":[{"sl":53}]},"test_2083":{"methods":[{"sl":50}],"name":"testTrig","pass":true,"statements":[{"sl":53}]},"test_2373":{"methods":[{"sl":50}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":53}]},"test_242":{"methods":[{"sl":50}],"name":"testJSONLD","pass":true,"statements":[{"sl":53}]},"test_2802":{"methods":[{"sl":50}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":53}]},"test_3035":{"methods":[{"sl":50}],"name":"testRDFXML","pass":true,"statements":[{"sl":53}]},"test_3127":{"methods":[{"sl":50}],"name":"testTurtle","pass":true,"statements":[{"sl":53}]},"test_3265":{"methods":[{"sl":50}],"name":"testNQuads","pass":true,"statements":[{"sl":53}]},"test_5":{"methods":[{"sl":50}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":53}]},"test_990":{"methods":[{"sl":50}],"name":"testOWLXML","pass":true,"statements":[{"sl":53}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1784], [], [1784], [1784], [1784], [1784], [1784], [1784], [1784], [1784], [], [], [3265, 5, 990, 1784, 171, 1880, 3035, 2083, 242, 2373, 2802, 3127], [], [], [3265, 5, 990, 1784, 171, 1880, 3035, 2083, 242, 2373, 2802, 3127], [], []]

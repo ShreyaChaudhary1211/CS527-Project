@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":40,"id":8409,"methods":[{"el":39,"sc":5,"sl":33}],"name":"FunctionalObjectPropertyTestCase","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1537":{"methods":[{"sl":33}],"name":"testJSONLD","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1609":{"methods":[{"sl":33}],"name":"testNQuads","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1941":{"methods":[{"sl":33}],"name":"testTrig","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_198":{"methods":[{"sl":33}],"name":"testOWLXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_2012":{"methods":[{"sl":33}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_2074":{"methods":[{"sl":33}],"name":"testRDFXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_2644":{"methods":[{"sl":33}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_3089":{"methods":[{"sl":33}],"name":"testRDFJSON","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_52":{"methods":[{"sl":33}],"name":"testNTriples","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_526":{"methods":[{"sl":33}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_580":{"methods":[{"sl":33}],"name":"testTurtle","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1941, 1609, 526, 1537, 52, 3089, 198, 580, 2074, 2644, 2012], [], [], [1941, 1609, 526, 1537, 52, 3089, 198, 580, 2074, 2644, 2012], [1941, 1609, 526, 1537, 52, 3089, 198, 580, 2074, 2644, 2012], [1941, 1609, 526, 1537, 52, 3089, 198, 580, 2074, 2644, 2012], [], []]

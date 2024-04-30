@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":40,"id":7512,"methods":[{"el":39,"sc":5,"sl":33}],"name":"DataPropertyRangeTestCase","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":33}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1460":{"methods":[{"sl":33}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1704":{"methods":[{"sl":33}],"name":"testOWLXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1796":{"methods":[{"sl":33}],"name":"testTrig","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_1802":{"methods":[{"sl":33}],"name":"testJSONLD","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_2020":{"methods":[{"sl":33}],"name":"testNQuads","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_2859":{"methods":[{"sl":33}],"name":"testTurtle","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_3204":{"methods":[{"sl":33}],"name":"testRDFXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_326":{"methods":[{"sl":33}],"name":"testNTriples","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_578":{"methods":[{"sl":33}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]},"test_860":{"methods":[{"sl":33}],"name":"testRDFJSON","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [578, 1802, 1704, 3204, 2859, 0, 2020, 860, 326, 1460, 1796], [], [], [578, 1802, 1704, 3204, 2859, 0, 2020, 860, 326, 1460, 1796], [578, 1802, 1704, 3204, 2859, 0, 2020, 860, 326, 1460, 1796], [578, 1802, 1704, 3204, 2859, 0, 2020, 860, 326, 1460, 1796], [], []]

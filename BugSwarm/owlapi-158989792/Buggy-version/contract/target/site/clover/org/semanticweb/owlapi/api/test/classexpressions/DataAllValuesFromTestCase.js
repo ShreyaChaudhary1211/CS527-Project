@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":56,"id":7089,"methods":[{"el":49,"sc":5,"sl":39},{"el":55,"sc":5,"sl":51}],"name":"DataAllValuesFromTestCase","sl":36}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1080":{"methods":[{"sl":51}],"name":"testOWLXML","pass":true,"statements":[{"sl":54}]},"test_1208":{"methods":[{"sl":51}],"name":"testTrig","pass":true,"statements":[{"sl":54}]},"test_129":{"methods":[{"sl":51}],"name":"testRDFJSON","pass":true,"statements":[{"sl":54}]},"test_2477":{"methods":[{"sl":51}],"name":"testTurtle","pass":true,"statements":[{"sl":54}]},"test_274":{"methods":[{"sl":51}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":54}]},"test_2865":{"methods":[{"sl":51}],"name":"testRDFXML","pass":true,"statements":[{"sl":54}]},"test_399":{"methods":[{"sl":51}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":54}]},"test_579":{"methods":[{"sl":51}],"name":"testNTriples","pass":true,"statements":[{"sl":54}]},"test_75":{"methods":[{"sl":51}],"name":"testNQuads","pass":true,"statements":[{"sl":54}]},"test_752":{"methods":[{"sl":39},{"sl":51}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":54}]},"test_846":{"methods":[{"sl":51}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":54}]},"test_867":{"methods":[{"sl":51}],"name":"testJSONLD","pass":true,"statements":[{"sl":54}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [752], [], [752], [752], [752], [752], [752], [752], [752], [752], [], [], [399, 75, 129, 1208, 867, 1080, 752, 2477, 274, 579, 2865, 846], [], [], [399, 75, 129, 1208, 867, 1080, 752, 2477, 274, 579, 2865, 846], [], []]

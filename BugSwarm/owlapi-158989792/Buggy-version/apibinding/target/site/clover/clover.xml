@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1714238386349" clover="4.5.2">
+   <project name="OWLAPI Binding and Config 4.2.5" timestamp="1714237538052">
+      <metrics coveredelements="278" complexity="147" loc="1125" methods="146" classes="2" statements="150" packages="1" coveredconditionals="0" coveredmethods="137" elements="296" ncloc="896" files="2" conditionals="0" coveredstatements="141"/>
+      <package name="org.semanticweb.owlapi.apibinding">
+         <metrics coveredelements="278" complexity="147" loc="1125" methods="146" classes="2" statements="150" coveredconditionals="0" coveredmethods="137" elements="296" ncloc="896" files="2" conditionals="0" coveredstatements="141"/>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version/apibinding/src/main/java/org/semanticweb/owlapi/apibinding/OWLFunctionalSyntaxFactory.java" name="OWLFunctionalSyntaxFactory.java">
+            <metrics coveredelements="261" coveredconditionals="0" complexity="140" loc="1022" coveredmethods="130" methods="139" elements="279" classes="1" ncloc="849" statements="140" conditionals="0" coveredstatements="131"/>
+            <class name="OWLFunctionalSyntaxFactory">
+               <metrics coveredelements="261" coveredconditionals="0" complexity="140" coveredmethods="130" methods="139" elements="279" statements="140" conditionals="0" coveredstatements="131"/>
+            </class>
+            <line complexity="1" visibility="private" signature="OWLFunctionalSyntaxFactory()" num="135" count="0" type="method"/>
+            <line complexity="1" visibility="public" signature="ImportsDeclaration(IRI) : OWLImportsDeclaration" num="137" count="9" type="method"/>
+            <line num="139" count="9" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Class(IRI) : OWLClass" num="143" count="12278" type="method"/>
+            <line num="145" count="12278" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createClass() : OWLClass" num="148" count="11017" type="method"/>
+            <line num="150" count="11017" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createObjectProperty() : OWLObjectProperty" num="153" count="10" type="method"/>
+            <line num="155" count="10" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createDataProperty() : OWLDataProperty" num="158" count="3" type="method"/>
+            <line num="160" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createIndividual() : OWLNamedIndividual" num="163" count="11132" type="method"/>
+            <line num="165" count="11132" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createAnnotationProperty() : OWLAnnotationProperty" num="168" count="0" type="method"/>
+            <line num="170" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createOWLLiteral() : OWLLiteral" num="173" count="0" type="method"/>
+            <line num="174" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Class(String,PrefixManager) : OWLClass" num="178" count="25" type="method"/>
+            <line num="181" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RDFSComment() : OWLAnnotationProperty" num="184" count="40" type="method"/>
+            <line num="186" count="40" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RDFSLabel() : OWLAnnotationProperty" num="189" count="90" type="method"/>
+            <line num="191" count="90" type="stmt"/>
+            <line complexity="1" visibility="public" signature="TopDatatype() : OWLDatatype" num="194" count="26" type="method"/>
+            <line num="196" count="26" type="stmt"/>
+            <line complexity="1" visibility="public" signature="OWLThing() : OWLClass" num="199" count="107" type="method"/>
+            <line num="201" count="107" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Integer() : OWLDatatype" num="204" count="70" type="method"/>
+            <line num="206" count="70" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Double() : OWLDatatype" num="209" count="3" type="method"/>
+            <line num="211" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Float() : OWLDatatype" num="214" count="1" type="method"/>
+            <line num="216" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Boolean() : OWLDatatype" num="219" count="13" type="method"/>
+            <line num="221" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="OWLNothing() : OWLClass" num="224" count="55" type="method"/>
+            <line num="226" count="55" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectProperty(IRI) : OWLObjectProperty" num="229" count="1180" type="method"/>
+            <line num="231" count="1180" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectProperty(String,PrefixManager) : OWLObjectProperty" num="234" count="4" type="method"/>
+            <line num="237" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectInverseOf(OWLObjectPropertyExpression) : OWLObjectInverseOf" num="240" count="1" type="method"/>
+            <line num="243" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataProperty(IRI) : OWLDataProperty" num="246" count="561" type="method"/>
+            <line num="248" count="561" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataProperty(String,PrefixManager) : OWLDataProperty" num="251" count="0" type="method"/>
+            <line num="254" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationProperty(IRI) : OWLAnnotationProperty" num="257" count="1175" type="method"/>
+            <line num="259" count="1175" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationProperty(String,PrefixManager) : OWLAnnotationProperty" num="262" count="4" type="method"/>
+            <line num="265" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NamedIndividual(IRI) : OWLNamedIndividual" num="268" count="11666" type="method"/>
+            <line num="270" count="11666" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnonymousIndividual() : OWLAnonymousIndividual" num="273" count="184" type="method"/>
+            <line num="275" count="184" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnonymousIndividual(String) : OWLAnonymousIndividual" num="278" count="705" type="method"/>
+            <line num="281" count="705" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NamedIndividual(String,PrefixManager) : OWLNamedIndividual" num="284" count="4" type="method"/>
+            <line num="287" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Datatype(IRI) : OWLDatatype" num="290" count="38" type="method"/>
+            <line num="292" count="38" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Declaration(OWLEntity) : OWLDeclarationAxiom" num="295" count="25484" type="method"/>
+            <line num="297" count="25484" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Declaration(OWLEntity,Set&lt;OWLAnnotation&gt;) : OWLDeclarationAxiom" num="300" count="67" type="method"/>
+            <line num="303" count="67" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectIntersectionOf(OWLClassExpression) : OWLObjectIntersectionOf" num="307" count="17" type="method"/>
+            <line num="310" count="17" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectUnionOf(OWLClassExpression) : OWLObjectUnionOf" num="313" count="27" type="method"/>
+            <line num="316" count="27" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectComplementOf(OWLClassExpression) : OWLObjectComplementOf" num="319" count="47" type="method"/>
+            <line num="322" count="47" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectSomeValuesFrom(OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectSomeValuesFrom" num="325" count="75" type="method"/>
+            <line num="329" count="75" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectAllValuesFrom(OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectAllValuesFrom" num="332" count="9" type="method"/>
+            <line num="336" count="9" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectHasValue(OWLObjectPropertyExpression,OWLIndividual) : OWLObjectHasValue" num="339" count="4" type="method"/>
+            <line num="343" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectMinCardinality(int,OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectMinCardinality" num="346" count="13" type="method"/>
+            <line num="350" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectMaxCardinality(int,OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectMaxCardinality" num="353" count="10" type="method"/>
+            <line num="357" count="10" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectExactCardinality(int,OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectExactCardinality" num="360" count="4" type="method"/>
+            <line num="364" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectHasSelf(OWLObjectPropertyExpression) : OWLObjectHasSelf" num="367" count="3" type="method"/>
+            <line num="370" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectOneOf(OWLIndividual) : OWLObjectOneOf" num="373" count="5" type="method"/>
+            <line num="376" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataSomeValuesFrom(OWLDataPropertyExpression,OWLDataRange) : OWLDataSomeValuesFrom" num="379" count="2" type="method"/>
+            <line num="382" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataAllValuesFrom(OWLDataPropertyExpression,OWLDataRange) : OWLDataAllValuesFrom" num="385" count="2" type="method"/>
+            <line num="388" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataHasValue(OWLDataPropertyExpression,OWLLiteral) : OWLDataHasValue" num="391" count="2" type="method"/>
+            <line num="394" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataMinCardinality(int,OWLDataPropertyExpression,OWLDataRange) : OWLDataMinCardinality" num="397" count="13" type="method"/>
+            <line num="400" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataMaxCardinality(int,OWLDataPropertyExpression,OWLDataRange) : OWLDataMaxCardinality" num="403" count="14" type="method"/>
+            <line num="406" count="14" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataExactCardinality(int,OWLDataPropertyExpression,OWLDataRange) : OWLDataExactCardinality" num="409" count="12" type="method"/>
+            <line num="412" count="12" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataIntersectionOf(OWLDataRange) : OWLDataIntersectionOf" num="416" count="5" type="method"/>
+            <line num="419" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataUnionOf(OWLDataRange) : OWLDataUnionOf" num="422" count="10" type="method"/>
+            <line num="425" count="10" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataComplementOf(OWLDataRange) : OWLDataComplementOf" num="428" count="17" type="method"/>
+            <line num="431" count="17" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataOneOf(OWLLiteral) : OWLDataOneOf" num="434" count="5" type="method"/>
+            <line num="436" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DatatypeRestriction(OWLDatatype,OWLFacetRestriction) : OWLDatatypeRestriction" num="439" count="3" type="method"/>
+            <line num="443" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FacetRestriction(OWLFacet,OWLLiteral) : OWLFacetRestriction" num="446" count="4" type="method"/>
+            <line num="449" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubClassOf(OWLClassExpression,OWLClassExpression) : OWLSubClassOfAxiom" num="453" count="260" type="method"/>
+            <line num="457" count="260" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubClassOf(OWLClassExpression,OWLClassExpression,Set&lt;OWLAnnotation&gt;) : OWLSubClassOfAxiom" num="460" count="9" type="method"/>
+            <line num="465" count="9" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentClasses(OWLClassExpression) : OWLEquivalentClassesAxiom" num="468" count="49" type="method"/>
+            <line num="471" count="49" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentClasses(Set&lt;OWLAnnotation&gt;,OWLClassExpression) : OWLEquivalentClassesAxiom" num="474" count="21" type="method"/>
+            <line num="478" count="21" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointClasses(OWLClassExpression) : OWLDisjointClassesAxiom" num="482" count="13" type="method"/>
+            <line num="485" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointClasses(Set&lt;? extends OWLClassExpression&gt;) : OWLDisjointClassesAxiom" num="488" count="11" type="method"/>
+            <line num="491" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointClasses(Set&lt;OWLClassExpression&gt;,Set&lt;OWLAnnotation&gt;) : OWLDisjointClassesAxiom" num="494" count="0" type="method"/>
+            <line num="498" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointUnion(OWLClass,OWLClassExpression) : OWLDisjointUnionAxiom" num="501" count="6" type="method"/>
+            <line num="504" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointClasses(Set&lt;OWLAnnotation&gt;,OWLClassExpression) : OWLDisjointClassesAxiom" num="508" count="22" type="method"/>
+            <line num="512" count="22" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubObjectPropertyOf(OWLObjectPropertyExpression,OWLObjectPropertyExpression) : OWLSubObjectPropertyOfAxiom" num="516" count="45" type="method"/>
+            <line num="520" count="45" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubPropertyChainOf(List&lt;? extends OWLObjectPropertyExpression&gt;,OWLObjectPropertyExpression) : OWLSubPropertyChainOfAxiom" num="523" count="17" type="method"/>
+            <line num="527" count="17" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubPropertyChainOf(List&lt;? extends OWLObjectPropertyExpression&gt;,OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLSubPropertyChainOfAxiom" num="530" count="22" type="method"/>
+            <line num="535" count="22" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubObjectPropertyOf(OWLObjectPropertyExpression,OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLSubObjectPropertyOfAxiom" num="538" count="11" type="method"/>
+            <line num="543" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentObjectProperties(OWLObjectPropertyExpression) : OWLEquivalentObjectPropertiesAxiom" num="546" count="44" type="method"/>
+            <line num="550" count="44" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentObjectProperties(Set&lt;OWLAnnotation&gt;,OWLObjectPropertyExpression) : OWLEquivalentObjectPropertiesAxiom" num="553" count="21" type="method"/>
+            <line num="557" count="21" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointObjectProperties(OWLObjectPropertyExpression) : OWLDisjointObjectPropertiesAxiom" num="561" count="29" type="method"/>
+            <line num="564" count="29" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointObjectProperties(Set&lt;OWLAnnotation&gt;,OWLObjectPropertyExpression) : OWLDisjointObjectPropertiesAxiom" num="567" count="22" type="method"/>
+            <line num="571" count="22" type="stmt"/>
+            <line complexity="1" visibility="public" signature="InverseObjectProperties(OWLObjectPropertyExpression,OWLObjectPropertyExpression) : OWLInverseObjectPropertiesAxiom" num="575" count="31" type="method"/>
+            <line num="579" count="31" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyDomain(OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectPropertyDomainAxiom" num="582" count="29" type="method"/>
+            <line num="586" count="29" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyDomain(OWLObjectPropertyExpression,OWLClassExpression,Set&lt;OWLAnnotation&gt;) : OWLObjectPropertyDomainAxiom" num="589" count="11" type="method"/>
+            <line num="593" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyRange(OWLObjectPropertyExpression,OWLClassExpression) : OWLObjectPropertyRangeAxiom" num="596" count="37" type="method"/>
+            <line num="600" count="37" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyRange(OWLObjectPropertyExpression,OWLClassExpression,Set&lt;OWLAnnotation&gt;) : OWLObjectPropertyRangeAxiom" num="603" count="11" type="method"/>
+            <line num="607" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FunctionalObjectProperty(OWLObjectPropertyExpression) : OWLFunctionalObjectPropertyAxiom" num="610" count="28" type="method"/>
+            <line num="613" count="28" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FunctionalObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLFunctionalObjectPropertyAxiom" num="616" count="11" type="method"/>
+            <line num="620" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="InverseFunctionalObjectProperty(OWLObjectPropertyExpression) : OWLInverseFunctionalObjectPropertyAxiom" num="623" count="28" type="method"/>
+            <line num="627" count="28" type="stmt"/>
+            <line complexity="1" visibility="public" signature="InverseFunctionalObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLInverseFunctionalObjectPropertyAxiom" num="630" count="11" type="method"/>
+            <line num="635" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ReflexiveObjectProperty(OWLObjectPropertyExpression) : OWLReflexiveObjectPropertyAxiom" num="638" count="25" type="method"/>
+            <line num="641" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ReflexiveObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLReflexiveObjectPropertyAxiom" num="644" count="11" type="method"/>
+            <line num="648" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IrreflexiveObjectProperty(OWLObjectPropertyExpression) : OWLIrreflexiveObjectPropertyAxiom" num="651" count="28" type="method"/>
+            <line num="654" count="28" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IrreflexiveObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLIrreflexiveObjectPropertyAxiom" num="657" count="11" type="method"/>
+            <line num="661" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SymmetricObjectProperty(OWLObjectPropertyExpression) : OWLSymmetricObjectPropertyAxiom" num="664" count="26" type="method"/>
+            <line num="667" count="26" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SymmetricObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLSymmetricObjectPropertyAxiom" num="670" count="11" type="method"/>
+            <line num="674" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AsymmetricObjectProperty(OWLObjectPropertyExpression) : OWLAsymmetricObjectPropertyAxiom" num="677" count="37" type="method"/>
+            <line num="680" count="37" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AsymmetricObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLAsymmetricObjectPropertyAxiom" num="683" count="11" type="method"/>
+            <line num="687" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="TransitiveObjectProperty(OWLObjectPropertyExpression) : OWLTransitiveObjectPropertyAxiom" num="690" count="35" type="method"/>
+            <line num="693" count="35" type="stmt"/>
+            <line complexity="1" visibility="public" signature="TransitiveObjectProperty(OWLObjectPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLTransitiveObjectPropertyAxiom" num="696" count="11" type="method"/>
+            <line num="700" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubDataPropertyOf(OWLDataPropertyExpression,OWLDataPropertyExpression) : OWLSubDataPropertyOfAxiom" num="703" count="16" type="method"/>
+            <line num="707" count="16" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubDataPropertyOf(OWLDataPropertyExpression,OWLDataPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLSubDataPropertyOfAxiom" num="710" count="11" type="method"/>
+            <line num="715" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentDataProperties(OWLDataPropertyExpression) : OWLEquivalentDataPropertiesAxiom" num="718" count="19" type="method"/>
+            <line num="721" count="19" type="stmt"/>
+            <line complexity="1" visibility="public" signature="EquivalentDataProperties(Set&lt;OWLAnnotation&gt;,OWLDataPropertyExpression) : OWLEquivalentDataPropertiesAxiom" num="724" count="21" type="method"/>
+            <line num="728" count="21" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointDataProperties(OWLDataPropertyExpression) : OWLDisjointDataPropertiesAxiom" num="732" count="30" type="method"/>
+            <line num="735" count="30" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DisjointDataProperties(Set&lt;OWLAnnotation&gt;,OWLDataPropertyExpression) : OWLDisjointDataPropertiesAxiom" num="738" count="22" type="method"/>
+            <line num="742" count="22" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyDomain(OWLDataPropertyExpression,OWLClassExpression) : OWLDataPropertyDomainAxiom" num="746" count="19" type="method"/>
+            <line num="750" count="19" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyDomain(OWLDataPropertyExpression,OWLClassExpression,Set&lt;OWLAnnotation&gt;) : OWLDataPropertyDomainAxiom" num="753" count="11" type="method"/>
+            <line num="757" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyRange(OWLDataPropertyExpression,OWLDataRange) : OWLDataPropertyRangeAxiom" num="760" count="41" type="method"/>
+            <line num="764" count="41" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyRange(OWLDataPropertyExpression,OWLDataRange,Set&lt;OWLAnnotation&gt;) : OWLDataPropertyRangeAxiom" num="767" count="11" type="method"/>
+            <line num="771" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FunctionalDataProperty(OWLDataPropertyExpression) : OWLFunctionalDataPropertyAxiom" num="774" count="18" type="method"/>
+            <line num="777" count="18" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FunctionalDataProperty(OWLDataPropertyExpression,Set&lt;OWLAnnotation&gt;) : OWLFunctionalDataPropertyAxiom" num="780" count="11" type="method"/>
+            <line num="784" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DatatypeDefinition(OWLDatatype,OWLDataRange) : OWLDatatypeDefinitionAxiom" num="787" count="25" type="method"/>
+            <line num="790" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="HasKey(OWLClassExpression,OWLPropertyExpression) : OWLHasKeyAxiom" num="793" count="5" type="method"/>
+            <line num="797" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="HasKey(Set&lt;OWLAnnotation&gt;,OWLClassExpression,OWLPropertyExpression) : OWLHasKeyAxiom" num="800" count="11" type="method"/>
+            <line num="804" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SameIndividual(OWLIndividual) : OWLSameIndividualAxiom" num="808" count="27" type="method"/>
+            <line num="811" count="27" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DifferentIndividuals(OWLIndividual) : OWLDifferentIndividualsAxiom" num="814" count="70" type="method"/>
+            <line num="817" count="70" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ClassAssertion(OWLClassExpression,OWLIndividual,Set&lt;OWLAnnotation&gt;) : OWLClassAssertionAxiom" num="820" count="11" type="method"/>
+            <line num="824" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ClassAssertion(OWLClassExpression,OWLIndividual) : OWLClassAssertionAxiom" num="827" count="27" type="method"/>
+            <line num="830" count="27" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyAssertion(OWLObjectPropertyExpression,OWLIndividual,OWLIndividual) : OWLObjectPropertyAssertionAxiom" num="833" count="63" type="method"/>
+            <line num="837" count="63" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ObjectPropertyAssertion(OWLObjectPropertyExpression,OWLIndividual,OWLIndividual,Set&lt;OWLAnnotation&gt;) : OWLObjectPropertyAssertionAxiom" num="840" count="11" type="method"/>
+            <line num="845" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NegativeObjectPropertyAssertion(OWLObjectPropertyExpression,OWLIndividual,OWLIndividual) : OWLNegativeObjectPropertyAssertionAxiom" num="849" count="17" type="method"/>
+            <line num="855" count="17" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NegativeObjectPropertyAssertion(OWLObjectPropertyExpression,OWLIndividual,OWLIndividual,Set&lt;OWLAnnotation&gt;) : OWLNegativeObjectPropertyAssertionAxiom" num="859" count="11" type="method"/>
+            <line num="866" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyAssertion(OWLDataPropertyExpression,OWLIndividual,OWLLiteral) : OWLDataPropertyAssertionAxiom" num="870" count="137" type="method"/>
+            <line num="874" count="137" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DataPropertyAssertion(OWLDataPropertyExpression,OWLIndividual,OWLLiteral,Set&lt;OWLAnnotation&gt;) : OWLDataPropertyAssertionAxiom" num="877" count="11" type="method"/>
+            <line num="882" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NegativeDataPropertyAssertion(OWLDataPropertyExpression,OWLIndividual,OWLLiteral) : OWLNegativeDataPropertyAssertionAxiom" num="885" count="39" type="method"/>
+            <line num="890" count="39" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NegativeDataPropertyAssertion(OWLDataPropertyExpression,OWLIndividual,OWLLiteral,Set&lt;OWLAnnotation&gt;) : OWLNegativeDataPropertyAssertionAxiom" num="894" count="11" type="method"/>
+            <line num="900" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationAssertion(OWLAnnotationProperty,OWLAnnotationSubject,OWLAnnotationValue) : OWLAnnotationAssertionAxiom" num="904" count="368" type="method"/>
+            <line num="909" count="368" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Annotation(OWLAnnotationProperty,OWLAnnotationValue) : OWLAnnotation" num="912" count="65" type="method"/>
+            <line num="916" count="65" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SubAnnotationPropertyOf(OWLAnnotationProperty,OWLAnnotationProperty) : OWLSubAnnotationPropertyOfAxiom" num="919" count="15" type="method"/>
+            <line num="923" count="15" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationPropertyDomain(OWLAnnotationProperty,IRI) : OWLAnnotationPropertyDomainAxiom" num="927" count="2" type="method"/>
+            <line num="930" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationPropertyRange(OWLAnnotationProperty,IRI) : OWLAnnotationPropertyRangeAxiom" num="933" count="2" type="method"/>
+            <line num="936" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationPropertyDomain(OWLAnnotationProperty,String) : OWLAnnotationPropertyDomainAxiom" num="939" count="0" type="method"/>
+            <line num="942" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="AnnotationPropertyRange(OWLAnnotationProperty,String) : OWLAnnotationPropertyRangeAxiom" num="945" count="0" type="method"/>
+            <line num="948" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IRI(String) : IRI" num="951" count="6556" type="method"/>
+            <line num="953" count="6556" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IRI(String,String) : IRI" num="956" count="0" type="method"/>
+            <line num="958" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="PlainLiteral(String) : OWLLiteral" num="961" count="0" type="method"/>
+            <line num="963" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="PlainLiteral() : OWLDatatype" num="966" count="2" type="method"/>
+            <line num="968" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(String,String) : OWLLiteral" num="971" count="510" type="method"/>
+            <line num="973" count="510" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(String,OWLDatatype) : OWLLiteral" num="976" count="1" type="method"/>
+            <line num="979" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(String,OWL2Datatype) : OWLLiteral" num="982" count="39" type="method"/>
+            <line num="985" count="39" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(String) : OWLLiteral" num="988" count="474" type="method"/>
+            <line num="990" count="474" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(boolean) : OWLLiteral" num="993" count="22" type="method"/>
+            <line num="995" count="22" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(int) : OWLLiteral" num="998" count="88" type="method"/>
+            <line num="1000" count="88" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(double) : OWLLiteral" num="1003" count="35" type="method"/>
+            <line num="1005" count="35" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Literal(float) : OWLLiteral" num="1008" count="14" type="method"/>
+            <line num="1010" count="14" type="stmt"/>
+            <line complexity="2" visibility="public" signature="Ontology(OWLOntologyManager,OWLAxiom) : OWLOntology" num="1013" count="61" type="method"/>
+            <line num="1016" count="61" type="stmt"/>
+            <line num="1017" count="61" type="stmt"/>
+            <line num="1019" count="0" type="stmt"/>
+         </file>
+         <file path="/Users/shreyachaudhary/Desktop/extra/CS527-Project/Bugs/BugSwarm/2nd_round/owlapi-158989792/Buggy-version/apibinding/src/main/java/org/semanticweb/owlapi/apibinding/OWLManager.java" name="OWLManager.java">
+            <metrics coveredelements="17" coveredconditionals="0" complexity="7" loc="103" coveredmethods="7" methods="7" elements="17" classes="1" ncloc="47" statements="10" conditionals="0" coveredstatements="10"/>
+            <class name="OWLManager">
+               <metrics coveredelements="17" coveredconditionals="0" complexity="7" coveredmethods="7" methods="7" elements="17" statements="10" conditionals="0" coveredstatements="10"/>
+            </class>
+            <line complexity="1" visibility="public" signature="get() : OWLOntologyManager" num="45" count="1" type="method"/>
+            <line num="47" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createOWLOntologyManager() : OWLOntologyManager" num="56" count="414" type="method"/>
+            <line num="58" count="414" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createConcurrentOWLOntologyManager() : OWLOntologyManager" num="66" count="3" type="method"/>
+            <line num="68" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getOWLDataFactory() : OWLDataFactory" num="76" count="37" type="method"/>
+            <line num="78" count="37" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createManchesterParser() : ManchesterOWLSyntaxParser" num="84" count="142" type="method"/>
+            <line num="85" count="142" type="stmt"/>
+            <line complexity="1" visibility="private" signature="createInjector(Concurrency) : Injector" num="88" count="596" type="method"/>
+            <line num="89" count="596" type="stmt"/>
+            <line complexity="1" visibility="private" signature="instatiateOWLOntologyManager(Concurrency) : OWLOntologyManager" num="96" count="417" type="method"/>
+            <line num="97" count="417" type="stmt"/>
+            <line num="98" count="417" type="stmt"/>
+            <line num="99" count="417" type="stmt"/>
+            <line num="100" count="417" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="OWLAPI Binding and Config 4.2.5" timestamp="1714237538052">
+      <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
+   </testproject>
+</coverage>

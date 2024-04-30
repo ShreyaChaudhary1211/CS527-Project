@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":41,"id":7583,"methods":[{"el":40,"sc":5,"sl":33}],"name":"SubDataPropertyOfTestCase","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1767":{"methods":[{"sl":33}],"name":"testNQuads","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_1854":{"methods":[{"sl":33}],"name":"testRDFXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_1926":{"methods":[{"sl":33}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_194":{"methods":[{"sl":33}],"name":"testTrig","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2218":{"methods":[{"sl":33}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2724":{"methods":[{"sl":33}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2929":{"methods":[{"sl":33}],"name":"testNTriples","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_3291":{"methods":[{"sl":33}],"name":"testOWLXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_605":{"methods":[{"sl":33}],"name":"testTurtle","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_959":{"methods":[{"sl":33}],"name":"testRDFJSON","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_986":{"methods":[{"sl":33}],"name":"testJSONLD","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2218, 2929, 2724, 194, 1854, 1767, 605, 1926, 3291, 959, 986], [], [], [2218, 2929, 2724, 194, 1854, 1767, 605, 1926, 3291, 959, 986], [2218, 2929, 2724, 194, 1854, 1767, 605, 1926, 3291, 959, 986], [], [2218, 2929, 2724, 194, 1854, 1767, 605, 1926, 3291, 959, 986], [], []]

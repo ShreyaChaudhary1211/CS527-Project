@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":51,"id":90442,"methods":[{"el":44,"sc":5,"sl":37},{"el":50,"sc":5,"sl":46}],"name":"ObjectComplementOfTestCase","sl":34}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_122":{"methods":[{"sl":46}],"name":"testRDFJSON","pass":true,"statements":[{"sl":49}]},"test_123":{"methods":[{"sl":46}],"name":"testNQuads","pass":true,"statements":[{"sl":49}]},"test_1401":{"methods":[{"sl":46}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":49}]},"test_198":{"methods":[{"sl":46}],"name":"testJSONLD","pass":true,"statements":[{"sl":49}]},"test_2591":{"methods":[{"sl":46}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":49}]},"test_2820":{"methods":[{"sl":46}],"name":"testTurtle","pass":true,"statements":[{"sl":49}]},"test_304":{"methods":[{"sl":46}],"name":"testNTriples","pass":true,"statements":[{"sl":49}]},"test_3261":{"methods":[{"sl":46}],"name":"testOWLXML","pass":true,"statements":[{"sl":49}]},"test_3550":{"methods":[{"sl":46}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":49}]},"test_3568":{"methods":[{"sl":37},{"sl":46}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":49}]},"test_3722":{"methods":[{"sl":46}],"name":"testRDFXML","pass":true,"statements":[{"sl":49}]},"test_628":{"methods":[{"sl":46}],"name":"testTrig","pass":true,"statements":[{"sl":49}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3568], [], [3568], [3568], [3568], [3568], [3568], [], [], [198, 123, 2820, 3568, 122, 3722, 3550, 1401, 3261, 304, 628, 2591], [], [], [198, 123, 2820, 3568, 122, 3722, 3550, 1401, 3261, 304, 628, 2591], [], []]

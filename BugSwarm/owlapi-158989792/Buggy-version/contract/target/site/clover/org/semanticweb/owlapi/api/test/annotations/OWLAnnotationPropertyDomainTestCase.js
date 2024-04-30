@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":41,"id":3479,"methods":[{"el":40,"sc":5,"sl":33}],"name":"OWLAnnotationPropertyDomainTestCase","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1222":{"methods":[{"sl":33}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_1297":{"methods":[{"sl":33}],"name":"testTrig","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_1390":{"methods":[{"sl":33}],"name":"testRDFJSON","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_1441":{"methods":[{"sl":33}],"name":"testNTriples","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_207":{"methods":[{"sl":33}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_210":{"methods":[{"sl":33}],"name":"testOWLXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2468":{"methods":[{"sl":33}],"name":"testJSONLD","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2640":{"methods":[{"sl":33}],"name":"testRDFXML","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_2934":{"methods":[{"sl":33}],"name":"testTurtle","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_295":{"methods":[{"sl":33}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]},"test_3025":{"methods":[{"sl":33}],"name":"testNQuads","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":39}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1297, 295, 210, 2640, 207, 2934, 2468, 1222, 3025, 1390, 1441], [], [], [1297, 295, 210, 2640, 207, 2934, 2468, 1222, 3025, 1390, 1441], [1297, 295, 210, 2640, 207, 2934, 2468, 1222, 3025, 1390, 1441], [], [1297, 295, 210, 2640, 207, 2934, 2468, 1222, 3025, 1390, 1441], [], []]

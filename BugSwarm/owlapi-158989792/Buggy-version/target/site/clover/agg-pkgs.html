@@ -1,0 +1,4374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>OWLAPI 4.2.5 (Aggregated)</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://owlcs.github.io/owlapi/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://owlcs.github.io/owlapi/" target="_top">
+                                        OWLAPI 4.2.5 (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Apr 27 2024 12:06:00 CDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">16,712</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">56,114</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">13,827</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">1,827</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">1,350</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">74</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">216,740</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">135,814</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">26,238</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.06</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.57</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">24.69</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.9</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">16,712</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">56,114</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">13,827</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">1,827</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">1,350</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">74</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">216,740</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">135,814</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">26,238</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.06</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.57</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">24.69</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.9</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+        <table id="projectSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Project</th>
+                    <th colspan="1">
+                <label >Packages</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">Clover&#160;database&#160;Sat&#160;Apr&#160;27&#160;2024&#160;12:06:00&#160;CDT</span>
+                    Clover&#160;database&#160;Sat&#160;Apr&#160;27&#160;2024&#160;12:06:00&#160;CDT
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">74.0</span>
+            74
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8975917</span>
+            1.9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">42744.0</span>
+            42,744
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5067222</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5067222</span>50.7%</div><div style="display: table-cell">
+ <div title="50.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+                <div>
+    Metrics from sub-packages:
+            <p class="aui-buttons">
+        <a href="pkg-summary.html"
+           class="aui-button"
+           id="simple-tooltip"
+           title="Calculate code metrics from sub-packages separately">
+            Separated
+        </a>
+        <a href="agg-pkgs.html"
+           class="aui-button active"
+           id="simple-tooltip"
+           title="Calculate a sum of metrics from a given package and all its sub-packages">
+            Aggregated
+        </a>
+    </p>
+</div>
+        
+        <table id="aggregatedPacakgesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Package (aggregated)</th>
+                            <th colspan="1">
+                <label >
+                    Packages
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">
+                    % Filtered
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                <!-- render list of package coverage bargraphs -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <tr>
+    <td>
+                <span class="sortValue">de.uulm.ecs.ai</span>
+                    de.uulm.ecs.ai
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">de</span>
+                    de
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.debugging</span>
+                    <a href="org/semanticweb/owlapi/debugging/pkg-summary.html" title="org.semanticweb.owlapi.debugging">org.semanticweb.owlapi.debugging</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6375</span>
+            1.64
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">542.0</span>
+            542
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">de.uulm.ecs</span>
+                    de.uulm.ecs
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.explanation</span>
+                    uk.ac.manchester.cs.owl.explanation
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7722772</span>
+            1.77
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">585.0</span>
+            585
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi.explanation</span>
+                    <a href="com/clarkparsia/owlapi/explanation/pkg-summary.html" title="com.clarkparsia.owlapi.explanation">com.clarkparsia.owlapi.explanation</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8737864</span>
+            1.87
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">724.0</span>
+            724
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi.explanation.io</span>
+                    <a href="com/clarkparsia/owlapi/explanation/io/pkg-summary.html" title="com.clarkparsia.owlapi.explanation.io">com.clarkparsia.owlapi.explanation.io</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.625</span>
+            1.62
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">44.0</span>
+            44
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">de.uulm.ecs.ai.owlapi.krssparser</span>
+                    <a href="de/uulm/ecs/ai/owlapi/krssparser/pkg-summary.html" title="de.uulm.ecs.ai.owlapi.krssparser">de.uulm.ecs.ai.owlapi.krssparser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.latex</span>
+                    <a href="org/coode/owlapi/latex/pkg-summary.html" title="org.coode.owlapi.latex">org.coode.owlapi.latex</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.manchesterowlsyntax</span>
+                    <a href="org/coode/owlapi/manchesterowlsyntax/pkg-summary.html" title="org.coode.owlapi.manchesterowlsyntax">org.coode.owlapi.manchesterowlsyntax</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.05</span>
+            1.05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">46.0</span>
+            46
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer</span>
+                    <a href="uk/ac/manchester/cs/owl/owlapi/mansyntaxrenderer/pkg-summary.html" title="uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer">uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.normalform</span>
+                    <a href="org/semanticweb/owlapi/normalform/pkg-summary.html" title="org.semanticweb.owlapi.normalform">org.semanticweb.owlapi.normalform</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0769231</span>
+            1.08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">38.0</span>
+            38
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.obo</span>
+                    org.coode.owlapi.obo
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.explanation.ordering</span>
+                    <a href="uk/ac/manchester/cs/owl/explanation/ordering/pkg-summary.html" title="uk.ac.manchester.cs.owl.explanation.ordering">uk.ac.manchester.cs.owl.explanation.ordering</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7722772</span>
+            1.77
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">585.0</span>
+            585
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.owl</span>
+                    <a href="org/obolibrary/owl/pkg-summary.html" title="org.obolibrary.owl">org.obolibrary.owl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2222222</span>
+            1.22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">50.0</span>
+            50
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">de.uulm.ecs.ai.owlapi</span>
+                    de.uulm.ecs.ai.owlapi
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.obo.parser</span>
+                    <a href="org/coode/owlapi/obo/parser/pkg-summary.html" title="org.coode.owlapi.obo.parser">org.coode.owlapi.obo.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.dlsyntax.parser</span>
+                    <a href="org/semanticweb/owlapi/dlsyntax/parser/pkg-summary.html" title="org.semanticweb.owlapi.dlsyntax.parser">org.semanticweb.owlapi.dlsyntax.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.242857</span>
+            4.24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4095.0</span>
+            4,095
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi.explanation.util</span>
+                    <a href="com/clarkparsia/owlapi/explanation/util/pkg-summary.html" title="com.clarkparsia.owlapi.explanation.util">com.clarkparsia.owlapi.explanation.util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4615386</span>
+            2.46
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">95.0</span>
+            95
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">de.uulm</span>
+                    de.uulm
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.krss1</span>
+                    org.semanticweb.owlapi.krss1
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.04</span>
+            4.04
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3261.0</span>
+            3,261
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.129329E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.129329E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.krss1.parser</span>
+                    <a href="org/semanticweb/owlapi/krss1/parser/pkg-summary.html" title="org.semanticweb.owlapi.krss1.parser">org.semanticweb.owlapi.krss1.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.04</span>
+            4.04
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3261.0</span>
+            3,261
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.129329E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.129329E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.krss2.renderer</span>
+                    <a href="org/semanticweb/owlapi/krss2/renderer/pkg-summary.html" title="org.semanticweb.owlapi.krss2.renderer">org.semanticweb.owlapi.krss2.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.96</span>
+            1.96
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1125.0</span>
+            1,125
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0053050397</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0053050397</span>0.5%</div><div style="display: table-cell">
+ <div title="0.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.dlsyntax</span>
+                    org.semanticweb.owlapi.dlsyntax
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.2843373</span>
+            3.28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4565.0</span>
+            4,565
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03508772</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03508772</span>3.5%</div><div style="display: table-cell">
+ <div title="3.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.latex</span>
+                    org.semanticweb.owlapi.latex
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2847682</span>
+            1.28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">702.0</span>
+            702
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.10913706</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.10913706</span>10.9%</div><div style="display: table-cell">
+ <div title="10.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.latex.renderer</span>
+                    <a href="org/semanticweb/owlapi/latex/renderer/pkg-summary.html" title="org.semanticweb.owlapi.latex.renderer">org.semanticweb.owlapi.latex.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2847682</span>
+            1.28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">702.0</span>
+            702
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.10913706</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.10913706</span>10.9%</div><div style="display: table-cell">
+ <div title="10.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.metrics</span>
+                    <a href="org/semanticweb/owlapi/metrics/pkg-summary.html" title="org.semanticweb.owlapi.metrics">org.semanticweb.owlapi.metrics</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4</span>
+            1.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">300.0</span>
+            300
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.109792285</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.109792285</span>11%</div><div style="display: table-cell">
+ <div title="11% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:11%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.krss2</span>
+                    org.semanticweb.owlapi.krss2
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.8065174</span>
+            3.81
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5883.0</span>
+            5,883
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.11799101</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.11799101</span>11.8%</div><div style="display: table-cell">
+ <div title="11.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:11.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia</span>
+                    com.clarkparsia
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2606838</span>
+            2.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1490.0</span>
+            1,490
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.12661196</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.12661196</span>12.7%</div><div style="display: table-cell">
+ <div title="12.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:12.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com</span>
+                    com
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2606838</span>
+            2.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1490.0</span>
+            1,490
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.12661196</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.12661196</span>12.7%</div><div style="display: table-cell">
+ <div title="12.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:12.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi</span>
+                    com.clarkparsia.owlapi
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2606838</span>
+            2.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1490.0</span>
+            1,490
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.12661196</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.12661196</span>12.7%</div><div style="display: table-cell">
+ <div title="12.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:12.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.krss2.parser</span>
+                    <a href="org/semanticweb/owlapi/krss2/parser/pkg-summary.html" title="org.semanticweb.owlapi.krss2.parser">org.semanticweb.owlapi.krss2.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.4371586</span>
+            4.44
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4758.0</span>
+            4,758
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.14100018</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.14100018</span>14.1%</div><div style="display: table-cell">
+ <div title="14.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:14.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.change</span>
+                    <a href="org/semanticweb/owlapi/change/pkg-summary.html" title="org.semanticweb.owlapi.change">org.semanticweb.owlapi.change</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4453125</span>
+            1.45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">443.0</span>
+            443
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18114603</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18114603</span>18.1%</div><div style="display: table-cell">
+ <div title="18.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi.modularity.locality</span>
+                    <a href="com/clarkparsia/owlapi/modularity/locality/pkg-summary.html" title="com.clarkparsia.owlapi.modularity.locality">com.clarkparsia.owlapi.modularity.locality</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5648854</span>
+            2.56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">766.0</span>
+            766
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.21995927</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.21995927</span>22%</div><div style="display: table-cell">
+ <div title="22% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:22%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.clarkparsia.owlapi.modularity</span>
+                    com.clarkparsia.owlapi.modularity
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5648854</span>
+            2.56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">766.0</span>
+            766
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.21995927</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.21995927</span>22%</div><div style="display: table-cell">
+ <div title="22% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:22%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.search</span>
+                    <a href="org/semanticweb/owlapi/search/pkg-summary.html" title="org.semanticweb.owlapi.search">org.semanticweb.owlapi.search</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6177778</span>
+            1.62
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">797.0</span>
+            797
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.22319688</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.22319688</span>22.3%</div><div style="display: table-cell">
+ <div title="22.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:22.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.dlsyntax.renderer</span>
+                    <a href="org/semanticweb/owlapi/dlsyntax/renderer/pkg-summary.html" title="org.semanticweb.owlapi.dlsyntax.renderer">org.semanticweb.owlapi.dlsyntax.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2962962</span>
+            1.3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">470.0</span>
+            470
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.2610063</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.2610063</span>26.1%</div><div style="display: table-cell">
+ <div title="26.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:26.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.oboformat</span>
+                    <a href="org/semanticweb/owlapi/oboformat/pkg-summary.html" title="org.semanticweb.owlapi.oboformat">org.semanticweb.owlapi.oboformat</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8666667</span>
+            1.87
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">53.0</span>
+            53
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.36144578</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.36144578</span>36.1%</div><div style="display: table-cell">
+ <div title="36.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:36.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.reasoner.impl</span>
+                    <a href="org/semanticweb/owlapi/reasoner/impl/pkg-summary.html" title="org.semanticweb.owlapi.reasoner.impl">org.semanticweb.owlapi.reasoner.impl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1125828</span>
+            1.11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">246.0</span>
+            246
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.36434108</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.36434108</span>36.4%</div><div style="display: table-cell">
+ <div title="36.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:36.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.functional.parser</span>
+                    <a href="org/semanticweb/owlapi/functional/parser/pkg-summary.html" title="org.semanticweb.owlapi.functional.parser">org.semanticweb.owlapi.functional.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">7.399267</span>
+            7.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3804.0</span>
+            3,804
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.41781452</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.41781452</span>41.8%</div><div style="display: table-cell">
+ <div title="41.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:41.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.util</span>
+                    <a href="org/semanticweb/owlapi/util/pkg-summary.html" title="org.semanticweb.owlapi.util">org.semanticweb.owlapi.util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.305845</span>
+            1.31
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5457.0</span>
+            5,457
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4324493</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4324493</span>43.2%</div><div style="display: table-cell">
+ <div title="43.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:43.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi</span>
+                    <a href="org/semanticweb/owlapi/pkg-summary.html" title="org.semanticweb.owlapi">org.semanticweb.owlapi</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">46.0</span>
+            46
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0117235</span>
+            2.01
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">33555.0</span>
+            33,555
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4471447</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4471447</span>44.7%</div><div style="display: table-cell">
+ <div title="44.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:44.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode</span>
+                    org.coode
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3223882</span>
+            2.32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1547.0</span>
+            1,547
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4545134</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4545134</span>45.5%</div><div style="display: table-cell">
+ <div title="45.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:45.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi</span>
+                    org.coode.owlapi
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3223882</span>
+            2.32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1547.0</span>
+            1,547
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4545134</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4545134</span>45.5%</div><div style="display: table-cell">
+ <div title="45.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:45.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb</span>
+                    org.semanticweb
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">47.0</span>
+            47
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.970545</span>
+            1.97
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">33647.0</span>
+            33,647
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.45544443</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.45544443</span>45.5%</div><div style="display: table-cell">
+ <div title="45.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:45.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.obo12</span>
+                    org.coode.owlapi.obo12
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.421222</span>
+            2.42
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1493.0</span>
+            1,493
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.46333572</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.46333572</span>46.3%</div><div style="display: table-cell">
+ <div title="46.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.coode.owlapi.obo12.parser</span>
+                    <a href="org/coode/owlapi/obo12/parser/pkg-summary.html" title="org.coode.owlapi.obo12.parser">org.coode.owlapi.obo12.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.421222</span>
+            2.42
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1493.0</span>
+            1,493
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.46333572</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.46333572</span>46.3%</div><div style="display: table-cell">
+ <div title="46.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org</span>
+                    org
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">61.0</span>
+            61
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0321045</span>
+            2.03
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">37262.0</span>
+            37,262
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.47747925</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.47747925</span>47.7%</div><div style="display: table-cell">
+ <div title="47.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:47.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.functional</span>
+                    org.semanticweb.owlapi.functional
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.4463415</span>
+            5.45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3856.0</span>
+            3,856
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.48255503</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.48255503</span>48.3%</div><div style="display: table-cell">
+ <div title="48.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:48.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.reasoner</span>
+                    <a href="org/semanticweb/owlapi/reasoner/pkg-summary.html" title="org.semanticweb.owlapi.reasoner">org.semanticweb.owlapi.reasoner</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4545455</span>
+            1.45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">728.0</span>
+            728
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.48332152</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.48332152</span>48.3%</div><div style="display: table-cell">
+ <div title="48.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:48.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owlapi.modularity</span>
+                    <a href="uk/ac/manchester/cs/owlapi/modularity/pkg-summary.html" title="uk.ac.manchester.cs.owlapi.modularity">uk.ac.manchester.cs.owlapi.modularity</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.7096775</span>
+            2.71
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">170.0</span>
+            170
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owlapi</span>
+                    uk.ac.manchester.cs.owlapi
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.7096775</span>
+            2.71
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">170.0</span>
+            170
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.io</span>
+                    <a href="org/semanticweb/owlapi/io/pkg-summary.html" title="org.semanticweb.owlapi.io">org.semanticweb.owlapi.io</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.567474</span>
+            1.57
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">636.0</span>
+            636
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.50850075</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.50850075</span>50.9%</div><div style="display: table-cell">
+ <div title="50.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.owl</span>
+                    uk.ac.manchester.owl
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2110091</span>
+            1.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">253.0</span>
+            253
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.50873786</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.50873786</span>50.9%</div><div style="display: table-cell">
+ <div title="50.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.owl.owlapi</span>
+                    uk.ac.manchester.owl.owlapi
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2110091</span>
+            1.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">253.0</span>
+            253
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.50873786</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.50873786</span>50.9%</div><div style="display: table-cell">
+ <div title="50.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.owl.owlapi.tutorialowled2011</span>
+                    <a href="uk/ac/manchester/owl/owlapi/tutorialowled2011/pkg-summary.html" title="uk.ac.manchester.owl.owlapi.tutorialowled2011">uk.ac.manchester.owl.owlapi.tutorialowled2011</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2110091</span>
+            1.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">253.0</span>
+            253
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.50873786</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.50873786</span>50.9%</div><div style="display: table-cell">
+ <div title="50.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rio.utils</span>
+                    <a href="org/semanticweb/owlapi/rio/utils/pkg-summary.html" title="org.semanticweb.owlapi.rio.utils">org.semanticweb.owlapi.rio.utils</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.9</span>
+            1.9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">63.0</span>
+            63
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.519084</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.519084</span>51.9%</div><div style="display: table-cell">
+ <div title="51.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:51.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.macro</span>
+                    <a href="org/obolibrary/macro/pkg-summary.html" title="org.obolibrary.macro">org.obolibrary.macro</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6141732</span>
+            1.61
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">346.0</span>
+            346
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5260274</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5260274</span>52.6%</div><div style="display: table-cell">
+ <div title="52.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:52.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rio</span>
+                    <a href="org/semanticweb/owlapi/rio/pkg-summary.html" title="org.semanticweb.owlapi.rio">org.semanticweb.owlapi.rio</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.9183674</span>
+            1.92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">401.0</span>
+            401
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5406644</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5406644</span>54.1%</div><div style="display: table-cell">
+ <div title="54.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:54.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.model</span>
+                    <a href="org/semanticweb/owlapi/model/pkg-summary.html" title="org.semanticweb.owlapi.model">org.semanticweb.owlapi.model</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3846154</span>
+            1.38
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">547.0</span>
+            547
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.558871</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.558871</span>55.9%</div><div style="display: table-cell">
+ <div title="55.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:55.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.formats</span>
+                    <a href="org/semanticweb/owlapi/formats/pkg-summary.html" title="org.semanticweb.owlapi.formats">org.semanticweb.owlapi.formats</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0518519</span>
+            1.05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">132.0</span>
+            132
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.56578946</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.56578946</span>56.6%</div><div style="display: table-cell">
+ <div title="56.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:56.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.turtle.parser</span>
+                    <a href="org/semanticweb/owlapi/rdf/turtle/parser/pkg-summary.html" title="org.semanticweb.owlapi.rdf.turtle.parser">org.semanticweb.owlapi.rdf.turtle.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.361702</span>
+            4.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1790.0</span>
+            1,790
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5749228</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5749228</span>57.5%</div><div style="display: table-cell">
+ <div title="57.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:57.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.turtle</span>
+                    org.semanticweb.owlapi.rdf.turtle
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.1666665</span>
+            4.17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1819.0</span>
+            1,819
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.601009</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.601009</span>60.1%</div><div style="display: table-cell">
+ <div title="60.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.reasoner.structural</span>
+                    <a href="org/semanticweb/owlapi/reasoner/structural/pkg-summary.html" title="org.semanticweb.owlapi.reasoner.structural">org.semanticweb.owlapi.reasoner.structural</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.1376147</span>
+            2.14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">346.0</span>
+            346
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.60366553</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.60366553</span>60.4%</div><div style="display: table-cell">
+ <div title="60.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.expression</span>
+                    <a href="org/semanticweb/owlapi/expression/pkg-summary.html" title="org.semanticweb.owlapi.expression">org.semanticweb.owlapi.expression</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.75</span>
+            1.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6086956</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6086956</span>60.9%</div><div style="display: table-cell">
+ <div title="60.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.oboformat.model</span>
+                    <a href="org/obolibrary/oboformat/model/pkg-summary.html" title="org.obolibrary.oboformat.model">org.obolibrary.oboformat.model</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.9816514</span>
+            1.98
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">240.0</span>
+            240
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6581197</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6581197</span>65.8%</div><div style="display: table-cell">
+ <div title="65.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.vocab</span>
+                    <a href="org/semanticweb/owlapi/vocab/pkg-summary.html" title="org.semanticweb.owlapi.vocab">org.semanticweb.owlapi.vocab</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.18</span>
+            1.18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">115.0</span>
+            115
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.66374266</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.66374266</span>66.4%</div><div style="display: table-cell">
+ <div title="66.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.manchestersyntax.renderer</span>
+                    <a href="org/semanticweb/owlapi/manchestersyntax/renderer/pkg-summary.html" title="org.semanticweb.owlapi.manchestersyntax.renderer">org.semanticweb.owlapi.manchestersyntax.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.1026785</span>
+            2.1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">653.0</span>
+            653
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6683596</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6683596</span>66.8%</div><div style="display: table-cell">
+ <div title="66.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.obo2owl</span>
+                    <a href="org/obolibrary/obo2owl/pkg-summary.html" title="org.obolibrary.obo2owl">org.obolibrary.obo2owl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.213018</span>
+            4.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">934.0</span>
+            934
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.67670476</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.67670476</span>67.7%</div><div style="display: table-cell">
+ <div title="67.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:67.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.oboformat.diff</span>
+                    <a href="org/obolibrary/oboformat/diff/pkg-summary.html" title="org.obolibrary.oboformat.diff">org.obolibrary.oboformat.diff</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5555556</span>
+            1.56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">30.0</span>
+            30
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.68085104</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.68085104</span>68.1%</div><div style="display: table-cell">
+ <div title="68.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.manchestersyntax</span>
+                    org.semanticweb.owlapi.manchestersyntax
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2720451</span>
+            2.27
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1531.0</span>
+            1,531
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.68945235</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.68945235</span>68.9%</div><div style="display: table-cell">
+ <div title="68.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary</span>
+                    org.obolibrary
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.8199358</span>
+            2.82
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2068.0</span>
+            2,068
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.69078946</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.69078946</span>69.1%</div><div style="display: table-cell">
+ <div title="69.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:69.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.manchestersyntax.parser</span>
+                    <a href="org/semanticweb/owlapi/manchestersyntax/parser/pkg-summary.html" title="org.semanticweb.owlapi.manchestersyntax.parser">org.semanticweb.owlapi.manchestersyntax.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3948221</span>
+            2.39
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">878.0</span>
+            878
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7034786</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7034786</span>70.3%</div><div style="display: table-cell">
+ <div title="70.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac</span>
+                    uk.ac
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4143504</span>
+            1.41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3988.0</span>
+            3,988
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7074316</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7074316</span>70.7%</div><div style="display: table-cell">
+ <div title="70.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester</span>
+                    uk.ac.manchester
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4143504</span>
+            1.41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3988.0</span>
+            3,988
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7074316</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7074316</span>70.7%</div><div style="display: table-cell">
+ <div title="70.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk</span>
+                    uk
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4143504</span>
+            1.41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3988.0</span>
+            3,988
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7074316</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7074316</span>70.7%</div><div style="display: table-cell">
+ <div title="70.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs</span>
+                    uk.ac.manchester.cs
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4217756</span>
+            1.42
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3735.0</span>
+            3,735
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7152333</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7152333</span>71.5%</div><div style="display: table-cell">
+ <div title="71.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf</span>
+                    <a href="org/semanticweb/owlapi/rdf/pkg-summary.html" title="org.semanticweb.owlapi.rdf">org.semanticweb.owlapi.rdf</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2594142</span>
+            2.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3051.0</span>
+            3,051
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7194741</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7194741</span>71.9%</div><div style="display: table-cell">
+ <div title="71.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl</span>
+                    uk.ac.manchester.cs.owl
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.40826</span>
+            1.41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3565.0</span>
+            3,565
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.72096115</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.72096115</span>72.1%</div><div style="display: table-cell">
+ <div title="72.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.oboformat.parser</span>
+                    <a href="org/obolibrary/oboformat/parser/pkg-summary.html" title="org.obolibrary.oboformat.parser">org.obolibrary.oboformat.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.9172933</span>
+            2.92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">356.0</span>
+            356
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7505256</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7505256</span>75.1%</div><div style="display: table-cell">
+ <div title="75.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.oboformat</span>
+                    org.obolibrary.oboformat
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6461039</span>
+            2.65
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">738.0</span>
+            738
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7555482</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7555482</span>75.6%</div><div style="display: table-cell">
+ <div title="75.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.owlapi</span>
+                    <a href="uk/ac/manchester/cs/owl/owlapi/pkg-summary.html" title="uk.ac.manchester.cs.owl.owlapi">uk.ac.manchester.cs.owl.owlapi</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3953733</span>
+            1.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2980.0</span>
+            2,980
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.75555736</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75555736</span>75.6%</div><div style="display: table-cell">
+ <div title="75.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.rdfxml.parser</span>
+                    <a href="org/semanticweb/owlapi/rdf/rdfxml/parser/pkg-summary.html" title="org.semanticweb.owlapi.rdf.rdfxml.parser">org.semanticweb.owlapi.rdf.rdfxml.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6726835</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1035.0</span>
+            1,035
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.76840454</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.76840454</span>76.8%</div><div style="display: table-cell">
+ <div title="76.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:76.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.rdfxml</span>
+                    org.semanticweb.owlapi.rdf.rdfxml
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7136753</span>
+            1.71
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1170.0</span>
+            1,170
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7753456</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7753456</span>77.5%</div><div style="display: table-cell">
+ <div title="77.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.model.parameters</span>
+                    <a href="org/semanticweb/owlapi/model/parameters/pkg-summary.html" title="org.semanticweb.owlapi.model.parameters">org.semanticweb.owlapi.model.parameters</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7941176</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7941176</span>79.4%</div><div style="display: table-cell">
+ <div title="79.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:79.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.rdfxml.renderer</span>
+                    <a href="org/semanticweb/owlapi/rdf/rdfxml/renderer/pkg-summary.html" title="org.semanticweb.owlapi.rdf.rdfxml.renderer">org.semanticweb.owlapi.rdf.rdfxml.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0380952</span>
+            2.04
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">135.0</span>
+            135
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8173207</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8173207</span>81.7%</div><div style="display: table-cell">
+ <div title="81.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:81.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.obolibrary.oboformat.writer</span>
+                    <a href="org/obolibrary/oboformat/writer/pkg-summary.html" title="org.obolibrary.oboformat.writer">org.obolibrary.oboformat.writer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.8125</span>
+            3.81
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">112.0</span>
+            112
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8592965</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8592965</span>85.9%</div><div style="display: table-cell">
+ <div title="85.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.owlxml.parser</span>
+                    <a href="org/semanticweb/owlapi/owlxml/parser/pkg-summary.html" title="org.semanticweb.owlapi.owlxml.parser">org.semanticweb.owlapi.owlxml.parser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1893382</span>
+            1.19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">211.0</span>
+            211
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.86796</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.86796</span>86.8%</div><div style="display: table-cell">
+ <div title="86.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.profiles.violations</span>
+                    <a href="org/semanticweb/owlapi/profiles/violations/pkg-summary.html" title="org.semanticweb.owlapi.profiles.violations">org.semanticweb.owlapi.profiles.violations</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">64.0</span>
+            64
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.872</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.872</span>87.2%</div><div style="display: table-cell">
+ <div title="87.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.profiles</span>
+                    <a href="org/semanticweb/owlapi/profiles/pkg-summary.html" title="org.semanticweb.owlapi.profiles">org.semanticweb.owlapi.profiles</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2535714</span>
+            1.25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">211.0</span>
+            211
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8726614</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8726614</span>87.3%</div><div style="display: table-cell">
+ <div title="87.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.owlxml</span>
+                    org.semanticweb.owlapi.owlxml
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2257576</span>
+            1.23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">265.0</span>
+            265
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.88448125</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88448125</span>88.4%</div><div style="display: table-cell">
+ <div title="88.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.owlapi.util.collections</span>
+                    <a href="uk/ac/manchester/cs/owl/owlapi/util/collections/pkg-summary.html" title="uk.ac.manchester.cs.owl.owlapi.util.collections">uk.ac.manchester.cs.owl.owlapi.util.collections</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.5454545</span>
+            4.55
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">15.0</span>
+            15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.88461536</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88461536</span>88.5%</div><div style="display: table-cell">
+ <div title="88.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.owlapi.util</span>
+                    uk.ac.manchester.cs.owl.owlapi.util
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.5454545</span>
+            4.55
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">15.0</span>
+            15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.88461536</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88461536</span>88.5%</div><div style="display: table-cell">
+ <div title="88.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapitools.builders</span>
+                    <a href="org/semanticweb/owlapitools/builders/pkg-summary.html" title="org.semanticweb.owlapitools.builders">org.semanticweb.owlapitools.builders</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0605327</span>
+            1.06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">92.0</span>
+            92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.91590494</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.91590494</span>91.6%</div><div style="display: table-cell">
+ <div title="91.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapitools</span>
+                    org.semanticweb.owlapitools
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0605327</span>
+            1.06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">92.0</span>
+            92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.91590494</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.91590494</span>91.6%</div><div style="display: table-cell">
+ <div title="91.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.turtle.renderer</span>
+                    <a href="org/semanticweb/owlapi/rdf/turtle/renderer/pkg-summary.html" title="org.semanticweb.owlapi.rdf.turtle.renderer">org.semanticweb.owlapi.rdf.turtle.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6388888</span>
+            2.64
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">29.0</span>
+            29
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9166667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9166667</span>91.7%</div><div style="display: table-cell">
+ <div title="91.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.owlxml.renderer</span>
+                    <a href="org/semanticweb/owlapi/owlxml/renderer/pkg-summary.html" title="org.semanticweb.owlapi.owlxml.renderer">org.semanticweb.owlapi.owlxml.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3965517</span>
+            1.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">54.0</span>
+            54
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.92241377</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.92241377</span>92.2%</div><div style="display: table-cell">
+ <div title="92.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.rdf.model</span>
+                    <a href="org/semanticweb/owlapi/rdf/model/pkg-summary.html" title="org.semanticweb.owlapi.rdf.model">org.semanticweb.owlapi.rdf.model</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4825175</span>
+            1.48
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">45.0</span>
+            45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.93810177</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.93810177</span>93.8%</div><div style="display: table-cell">
+ <div title="93.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:93.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.apibinding</span>
+                    <a href="org/semanticweb/owlapi/apibinding/pkg-summary.html" title="org.semanticweb.owlapi.apibinding">org.semanticweb.owlapi.apibinding</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0068493</span>
+            1.01
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9391892</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9391892</span>93.9%</div><div style="display: table-cell">
+ <div title="93.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:93.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.semanticweb.owlapi.functional.renderer</span>
+                    <a href="org/semanticweb/owlapi/functional/renderer/pkg-summary.html" title="org.semanticweb.owlapi.functional.renderer">org.semanticweb.owlapi.functional.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5547445</span>
+            1.55
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">52.0</span>
+            52
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.94335514</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.94335514</span>94.3%</div><div style="display: table-cell">
+ <div title="94.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">uk.ac.manchester.cs.owl.owlapi.concurrent</span>
+                    <a href="uk/ac/manchester/cs/owl/owlapi/concurrent/pkg-summary.html" title="uk.ac.manchester.cs.owl.owlapi.concurrent">uk.ac.manchester.cs.owl.owlapi.concurrent</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0090498</span>
+            1.01
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">33.0</span>
+            33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9681159</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9681159</span>96.8%</div><div style="display: table-cell">
+ <div title="96.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Sat Apr 27 2024 12:06:32 CDT using coverage data from Sat Apr 27 2024 12:06:00 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

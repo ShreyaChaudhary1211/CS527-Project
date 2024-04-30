@@ -1,0 +1,2 @@
+processClover (  {"children":["org/semanticweb/owlapitools/builders/"],"name":"Clover database Sat Apr 27 2024 12:02:00 CDT","stats":{"AvgMethodComplexity":1.0605327,"Complexity":438,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":1,"TotalPercentageCovered":91.59049,"TotalStatements":645,"UncoveredElements":92},"title":"OWLAPITOOLS OWL profile and fixers 4.2.5"}
+ ); 

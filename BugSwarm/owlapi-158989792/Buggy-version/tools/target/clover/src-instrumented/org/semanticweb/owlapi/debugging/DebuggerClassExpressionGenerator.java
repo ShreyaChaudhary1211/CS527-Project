@@ -1,0 +1,160 @@
+/* $$ This file has been instrumented by Clover 4.5.2#20240131180750 $$ *//* This file is part of the OWL API.
+ * The contents of this file are subject to the LGPL License, Version 3.0.
+ * Copyright 2014, The University of Manchester
+ * 
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
+ *
+ * Alternatively, the contents of this file may be used under the terms of the Apache License, Version 2.0 in which case, the provisions of the Apache License Version 2.0 are applicable instead of those above.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. */
+package org.semanticweb.owlapi.debugging;
+
+import static org.semanticweb.owlapi.util.OWLAPIPreconditions.checkNotNull;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDataPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
+import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
+import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
+import org.semanticweb.owlapi.model.OWLSubObjectPropertyOfAxiom;
+import org.semanticweb.owlapi.util.CollectionFactory;
+import org.semanticweb.owlapi.util.OWLAxiomVisitorAdapter;
+
+/**
+ * @author Matthew Horridge, The University Of Manchester, Bio-Health
+ *         Informatics Group
+ * @since 2.0.0
+ */
+public class DebuggerClassExpressionGenerator extends OWLAxiomVisitorAdapter {public static class __CLR4_5_21k21k2lviclz7u{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_5_2();if(20240131180750L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation shall match the runtime version.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.5.2#20240131180750,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0055\u0073\u0065\u0072\u0073\u002f\u0073\u0068\u0072\u0065\u0079\u0061\u0063\u0068\u0061\u0075\u0064\u0068\u0061\u0072\u0079\u002f\u0044\u0065\u0073\u006b\u0074\u006f\u0070\u002f\u0065\u0078\u0074\u0072\u0061\u002f\u0043\u0053\u0035\u0032\u0037\u002d\u0050\u0072\u006f\u006a\u0065\u0063\u0074\u002f\u0042\u0075\u0067\u0073\u002f\u0042\u0075\u0067\u0053\u0077\u0061\u0072\u006d\u002f\u0032\u006e\u0064\u005f\u0072\u006f\u0075\u006e\u0064\u002f\u006f\u0077\u006c\u0061\u0070\u0069\u002d\u0031\u0035\u0038\u0039\u0038\u0039\u0037\u0039\u0032\u002f\u0042\u0075\u0067\u0067\u0079\u002d\u0076\u0065\u0072\u0073\u0069\u006f\u006e\u002f\u0074\u006f\u006f\u006c\u0073\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1714237269396L,8589935092L,2070,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_5_2_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+
+    @Nonnull
+    private final OWLDataFactory dataFactory;
+    private OWLClassExpression desc;
+
+    /**
+     * Instantiates a new debugger class expression generator.
+     * 
+     * @param dataFactory
+     *        factory to use
+     */
+    public DebuggerClassExpressionGenerator(@Nonnull OWLDataFactory dataFactory) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2018);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2019);this.dataFactory = checkNotNull(dataFactory,
+                "dataFactory cannot be null");
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    /**
+     * Gets the debugger class expression.
+     * 
+     * @return the class expression
+     */
+    @Nullable
+    public OWLClassExpression getDebuggerClassExpression() {try{__CLR4_5_21k21k2lviclz7u.R.inc(2020);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2021);return desc;
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(@Nonnull OWLSubClassOfAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2022);
+        // A and not (B)
+        __CLR4_5_21k21k2lviclz7u.R.inc(2023);OWLClassExpression complement = dataFactory
+                .getOWLObjectComplementOf(axiom.getSuperClass());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2024);desc = dataFactory.getOWLObjectIntersectionOf(CollectionFactory
+                .createSet(axiom.getSubClass(), complement));
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLDataPropertyDomainAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2025);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2026);OWLClassExpression sub = dataFactory.getOWLDataSomeValuesFrom(
+                axiom.getProperty(), dataFactory.getTopDatatype());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2027);OWLAxiom ax = dataFactory.getOWLSubClassOfAxiom(sub, axiom.getDomain());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2028);ax.accept(this);
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLObjectPropertyDomainAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2029);
+        // prop some Thing subclassOf domain
+        __CLR4_5_21k21k2lviclz7u.R.inc(2030);OWLClassExpression sub = dataFactory.getOWLObjectSomeValuesFrom(
+                axiom.getProperty(), dataFactory.getOWLThing());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2031);OWLSubClassOfAxiom ax = dataFactory.getOWLSubClassOfAxiom(sub,
+                axiom.getDomain());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2032);ax.accept(this);
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLObjectPropertyRangeAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2033);
+        // Thing subclassOf prop only Range
+        __CLR4_5_21k21k2lviclz7u.R.inc(2034);OWLClassExpression sup = dataFactory.getOWLObjectAllValuesFrom(
+                axiom.getProperty(), axiom.getRange());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2035);OWLSubClassOfAxiom ax = dataFactory.getOWLSubClassOfAxiom(
+                dataFactory.getOWLThing(), sup);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2036);ax.accept(this);
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLSubObjectPropertyOfAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2037);
+        // subProp some {a} subClassOf supProp some {a}
+        __CLR4_5_21k21k2lviclz7u.R.inc(2038);OWLIndividual ind = dataFactory.getOWLNamedIndividual(IRI.create(
+                "http://debugger.com#", "A" + System.nanoTime()));
+        __CLR4_5_21k21k2lviclz7u.R.inc(2039);OWLClassExpression sub = dataFactory.getOWLObjectHasValue(
+                axiom.getSubProperty(), ind);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2040);OWLClassExpression sup = dataFactory.getOWLObjectHasValue(
+                axiom.getSuperProperty(), ind);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2041);OWLAxiom ax = dataFactory.getOWLSubClassOfAxiom(sub, sup);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2042);ax.accept(this);
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLClassAssertionAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2043);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2044);OWLClassExpression sub = dataFactory.getOWLObjectOneOf(axiom
+                .getIndividual());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2045);OWLAxiom ax = dataFactory.getOWLSubClassOfAxiom(sub,
+                axiom.getClassExpression());
+        __CLR4_5_21k21k2lviclz7u.R.inc(2046);ax.accept(this);
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+
+    @Override
+    public void visit(OWLEquivalentClassesAxiom axiom) {try{__CLR4_5_21k21k2lviclz7u.R.inc(2047);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2048);if ((((axiom.getClassExpressions().size() == 2
+                && axiom.getClassExpressions().contains(
+                        dataFactory.getOWLNothing()))&&(__CLR4_5_21k21k2lviclz7u.R.iget(2049)!=0|true))||(__CLR4_5_21k21k2lviclz7u.R.iget(2050)==0&false))) {{
+            __CLR4_5_21k21k2lviclz7u.R.inc(2051);for (OWLClassExpression c : axiom.getClassExpressions()) {{
+                __CLR4_5_21k21k2lviclz7u.R.inc(2052);if ((((!c.isOWLNothing())&&(__CLR4_5_21k21k2lviclz7u.R.iget(2053)!=0|true))||(__CLR4_5_21k21k2lviclz7u.R.iget(2054)==0&false))) {{
+                    __CLR4_5_21k21k2lviclz7u.R.inc(2055);desc = c;
+                    __CLR4_5_21k21k2lviclz7u.R.inc(2056);return;
+                }
+            }}
+        }}
+        // (C and not D) or (not C and D)
+        }__CLR4_5_21k21k2lviclz7u.R.inc(2057);Set<OWLClassExpression> clses = axiom.getClassExpressions();
+        __CLR4_5_21k21k2lviclz7u.R.inc(2058);Iterator<OWLClassExpression> it = clses.iterator();
+        __CLR4_5_21k21k2lviclz7u.R.inc(2059);OWLClassExpression descC = it.next();
+        assert (((descC != null)&&(__CLR4_5_21k21k2lviclz7u.R.iget(2060)!=0|true))||(__CLR4_5_21k21k2lviclz7u.R.iget(2061)==0&false));
+        __CLR4_5_21k21k2lviclz7u.R.inc(2062);OWLClassExpression notC = dataFactory.getOWLObjectComplementOf(descC);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2063);OWLClassExpression descD = it.next();
+        assert (((descD != null)&&(__CLR4_5_21k21k2lviclz7u.R.iget(2064)!=0|true))||(__CLR4_5_21k21k2lviclz7u.R.iget(2065)==0&false));
+        __CLR4_5_21k21k2lviclz7u.R.inc(2066);OWLClassExpression notD = dataFactory.getOWLObjectComplementOf(descD);
+        __CLR4_5_21k21k2lviclz7u.R.inc(2067);OWLObjectIntersectionOf left = dataFactory
+                .getOWLObjectIntersectionOf(CollectionFactory.createSet(descC,
+                        notD));
+        __CLR4_5_21k21k2lviclz7u.R.inc(2068);OWLObjectIntersectionOf right = dataFactory
+                .getOWLObjectIntersectionOf(CollectionFactory.createSet(notC,
+                        descD));
+        __CLR4_5_21k21k2lviclz7u.R.inc(2069);desc = dataFactory.getOWLObjectUnionOf(CollectionFactory.createSet(
+                left, right));
+    }finally{__CLR4_5_21k21k2lviclz7u.R.flushNeeded();}}
+}

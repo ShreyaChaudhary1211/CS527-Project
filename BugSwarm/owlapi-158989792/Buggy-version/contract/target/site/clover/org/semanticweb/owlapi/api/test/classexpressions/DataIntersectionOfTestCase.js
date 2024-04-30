@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":58,"id":7115,"methods":[{"el":51,"sc":5,"sl":39},{"el":57,"sc":5,"sl":53}],"name":"DataIntersectionOfTestCase","sl":36}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1132":{"methods":[{"sl":53}],"name":"testManchesterOWLSyntax","pass":true,"statements":[{"sl":56}]},"test_1595":{"methods":[{"sl":53}],"name":"testTrig","pass":true,"statements":[{"sl":56}]},"test_1597":{"methods":[{"sl":53}],"name":"testNQuads","pass":true,"statements":[{"sl":56}]},"test_1716":{"methods":[{"sl":53}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":56}]},"test_1733":{"methods":[{"sl":53}],"name":"testOWLXML","pass":true,"statements":[{"sl":56}]},"test_1975":{"methods":[{"sl":53}],"name":"testJSONLD","pass":true,"statements":[{"sl":56}]},"test_2247":{"methods":[{"sl":53}],"name":"testTurtle","pass":true,"statements":[{"sl":56}]},"test_2827":{"methods":[{"sl":53}],"name":"testRDFJSON","pass":true,"statements":[{"sl":56}]},"test_3335":{"methods":[{"sl":39},{"sl":53}],"name":"testCorrectAxioms","pass":true,"statements":[{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46},{"sl":48},{"sl":49},{"sl":50},{"sl":56}]},"test_423":{"methods":[{"sl":53}],"name":"testRDFXML","pass":true,"statements":[{"sl":56}]},"test_708":{"methods":[{"sl":53}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":56}]},"test_870":{"methods":[{"sl":53}],"name":"testNTriples","pass":true,"statements":[{"sl":56}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3335], [], [3335], [3335], [3335], [3335], [3335], [3335], [], [3335], [3335], [3335], [], [], [1597, 3335, 1975, 2827, 870, 1132, 708, 1595, 2247, 1733, 423, 1716], [], [], [1597, 3335, 1975, 2827, 870, 1132, 708, 1595, 2247, 1733, 423, 1716], [], []]

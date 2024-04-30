@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":51,"id":7878,"methods":[{"el":38,"sc":5,"sl":34},{"el":43,"sc":5,"sl":40},{"el":50,"sc":5,"sl":45}],"name":"NamedIndividualDeclarationWithAnnotationsTestCase","sl":31}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1137":{"methods":[{"sl":34}],"name":"testJSONLD","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_1193":{"methods":[{"sl":34}],"name":"testFunctionalSyntax","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_16":{"methods":[{"sl":34}],"name":"testNTriples","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_1614":{"methods":[{"sl":34}],"name":"testNQuads","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_1783":{"methods":[{"sl":34}],"name":"testTurtle","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_2689":{"methods":[{"sl":34}],"name":"testRDFXML","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_2846":{"methods":[{"sl":45}],"name":"testManchesterOWLSyntax","pass":true,"statements":[]},"test_3005":{"methods":[{"sl":34}],"name":"roundTripRDFXMLAndFunctionalShouldBeSame","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_3056":{"methods":[{"sl":34}],"name":"testRDFJSON","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_3342":{"methods":[{"sl":34}],"name":"testOWLXML","pass":true,"statements":[{"sl":36},{"sl":37}]},"test_963":{"methods":[{"sl":34}],"name":"testTrig","pass":true,"statements":[{"sl":36},{"sl":37}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3342, 963, 3056, 3005, 2689, 1193, 16, 1783, 1137, 1614], [], [3342, 963, 3056, 3005, 2689, 1193, 16, 1783, 1137, 1614], [3342, 963, 3056, 3005, 2689, 1193, 16, 1783, 1137, 1614], [], [], [], [], [], [], [], [2846], [], [], [], [], [], []]

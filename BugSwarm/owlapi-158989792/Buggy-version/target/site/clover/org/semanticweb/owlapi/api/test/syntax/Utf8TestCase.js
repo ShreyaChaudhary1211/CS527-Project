@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":137,"id":91906,"methods":[{"el":45,"sc":5,"sl":35},{"el":69,"sc":5,"sl":47},{"el":87,"sc":5,"sl":71},{"el":99,"sc":5,"sl":89},{"el":119,"sc":5,"sl":101},{"el":128,"sc":5,"sl":121},{"el":136,"sc":5,"sl":130}],"name":"Utf8TestCase","sl":33}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1204":{"methods":[{"sl":71}],"name":"testInvalidUTF8roundTrip","pass":true,"statements":[{"sl":76},{"sl":84},{"sl":85},{"sl":86}]},"test_1623":{"methods":[{"sl":47}],"name":"testInvalidUTF8roundTripOWLXML","pass":true,"statements":[{"sl":52},{"sl":60},{"sl":61},{"sl":62},{"sl":63}]},"test_2116":{"methods":[{"sl":101},{"sl":121},{"sl":130}],"name":"testRoundTrip","pass":true,"statements":[{"sl":103},{"sl":104},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":118},{"sl":124},{"sl":125},{"sl":126},{"sl":127},{"sl":131},{"sl":132},{"sl":133}]},"test_2930":{"methods":[{"sl":89}],"name":"testPositiveUTF8roundTrip","pass":true,"statements":[{"sl":91},{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":97},{"sl":98}]},"test_3118":{"methods":[{"sl":35}],"name":"testUTF8roundTrip","pass":true,"statements":[{"sl":37},{"sl":40}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3118], [], [3118], [], [], [3118], [], [], [], [], [], [], [1623], [], [], [], [], [1623], [], [], [], [], [], [], [], [1623], [1623], [1623], [1623], [], [], [], [], [], [], [], [1204], [], [], [], [], [1204], [], [], [], [], [], [], [], [1204], [1204], [1204], [], [], [2930], [], [2930], [2930], [2930], [2930], [2930], [2930], [2930], [2930], [], [], [2116], [], [2116], [2116], [], [], [], [], [], [], [], [], [2116], [2116], [2116], [2116], [2116], [2116], [], [], [2116], [], [], [2116], [2116], [2116], [2116], [], [], [2116], [2116], [2116], [2116], [], [], [], []]
