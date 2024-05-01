@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.commons.lang3.event.EventUtilsTest
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.076 sec <<< FAILURE! - in org.apache.commons.lang3.event.EventUtilsTest
-testBindFilteredEventsToMethod(org.apache.commons.lang3.event.EventUtilsTest)  Time elapsed: 0.05 sec  <<< ERROR!
-java.lang.IllegalArgumentException: interface org.apache.commons.lang3.event.EventUtilsTest$MultipleEventListener is not visible from class loader: org.evosuite.runtime.instrumentation.EvoClassLoader@6121c9d6
-	at org.apache.commons.lang3.event.EventUtilsTest.__CLR4_5_2d34lcyzdx(EventUtilsTest.java:153)
-	at org.apache.commons.lang3.event.EventUtilsTest.testBindFilteredEventsToMethod(EventUtilsTest.java:152)
-

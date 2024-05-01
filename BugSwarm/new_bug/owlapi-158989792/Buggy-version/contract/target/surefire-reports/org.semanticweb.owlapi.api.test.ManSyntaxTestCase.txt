@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.semanticweb.owlapi.api.test.ManSyntaxTestCase
--------------------------------------------------------------------------------
-Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.775 sec - in org.semanticweb.owlapi.api.test.ManSyntaxTestCase

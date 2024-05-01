@@ -1,3 +1,0 @@
- TwoSecondIntersectionFinderTest.testSampleNumbers
- AC3TrackImplTest.freeze
-com.coremedia.iso.boxes.CompositionTimeToSample@3943a2be

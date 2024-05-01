@@ -1,2 +1,0 @@
-processClover (  {"children":["org/semanticweb/owlapi/formats/","org/semanticweb/owlapi/rio/","org/semanticweb/owlapi/rio/utils/"],"name":"Clover database Sat Apr 27 2024 12:02:13 CDT","stats":{"AvgMethodComplexity":1.71,"Complexity":342,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":3,"TotalPercentageCovered":56.663376,"TotalStatements":625,"UncoveredElements":439},"title":"OWLAPI :: Sesame Rio module 4.2.5"}
- ); 

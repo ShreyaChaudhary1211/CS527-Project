@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.commons.lang3.ClassUtilsTest
--------------------------------------------------------------------------------
-Tests run: 57, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec <<< FAILURE! - in org.apache.commons.lang3.ClassUtilsTest
-testGetInnerClass(org.apache.commons.lang3.ClassUtilsTest)  Time elapsed: 0.179 sec  <<< FAILURE!
-java.lang.AssertionError: expected: java.lang.Class<class org.apache.commons.lang3.ClassUtilsTest$Inner$DeeplyNested> but was: java.lang.Class<class org.apache.commons.lang3.ClassUtilsTest$Inner$DeeplyNested>
-	at org.apache.commons.lang3.ClassUtilsTest.__CLR4_5_25ve3m5o6r(ClassUtilsTest.java:996)
-	at org.apache.commons.lang3.ClassUtilsTest.testGetInnerClass(ClassUtilsTest.java:995)
-
