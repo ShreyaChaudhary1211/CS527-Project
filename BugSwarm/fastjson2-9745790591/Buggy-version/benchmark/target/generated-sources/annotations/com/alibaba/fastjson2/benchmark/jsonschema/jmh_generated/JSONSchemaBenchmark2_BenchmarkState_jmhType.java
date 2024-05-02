@@ -1,4 +1,0 @@
-package com.alibaba.fastjson2.benchmark.jsonschema.jmh_generated;
-public class JSONSchemaBenchmark2_BenchmarkState_jmhType extends JSONSchemaBenchmark2_BenchmarkState_jmhType_B3 {
-}
-

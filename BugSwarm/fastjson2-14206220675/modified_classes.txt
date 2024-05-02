@@ -1,2 +1,0 @@
-src/main/java/com/alibaba/fastjson2/reader/ObjectReaderImplEnum.java
-src/main/java/com/alibaba/fastjson2/reader/ObjectReaderImplEnum2X4.java

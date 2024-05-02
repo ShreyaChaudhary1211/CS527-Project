@@ -1,1 +1,0 @@
-src/main/java/io/swagger/oas/models/PathItem.java
